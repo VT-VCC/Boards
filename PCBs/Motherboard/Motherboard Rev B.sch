@@ -3825,65 +3825,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="linear4">
-<description>&lt;b&gt;Linear Devices&lt;/b&gt;&lt;p&gt;
-Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="TO92">
-<description>&lt;b&gt;TO-92&lt;/b&gt;</description>
-<wire x1="-2.095" y1="-1.651" x2="-0.7869" y2="2.5484" width="0.1524" layer="21" curve="-111.097684" cap="flat"/>
-<wire x1="0.7869" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="21" curve="-111.097684" cap="flat"/>
-<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
-<wire x1="-2.254" y1="-0.254" x2="-0.286" y2="-0.254" width="0.1524" layer="51"/>
-<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="-0.286" y1="-0.254" x2="0.286" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="0.286" y1="-0.254" x2="2.254" y2="-0.254" width="0.1524" layer="51"/>
-<wire x1="-0.7864" y1="2.5484" x2="0.7864" y2="2.5484" width="0.1524" layer="51" curve="-34.298964" cap="flat"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="3" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="2.413" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="2.921" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="AD590">
-<wire x1="0" y1="4.572" x2="0" y2="3.048" width="0.1524" layer="94"/>
-<wire x1="-0.889" y1="3.81" x2="0.889" y2="3.81" width="0.1524" layer="94"/>
-<wire x1="-0.889" y1="-1.27" x2="0.889" y2="-1.27" width="0.1524" layer="94"/>
-<circle x="0" y="2.54" radius="2.54" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
-<text x="3.81" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="3.81" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+" x="0" y="7.62" visible="pad" length="short" direction="in" rot="R270"/>
-<pin name="-" x="0" y="-5.08" visible="pad" length="short" direction="in" rot="R90"/>
-<pin name="CAN" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="AD590ZR" prefix="IC">
-<description>&lt;b&gt;TEMPERATURE SENSOR&lt;/b&gt;&lt;p&gt;
-current output</description>
-<gates>
-<gate name="A" symbol="AD590" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO92">
-<connects>
-<connect gate="A" pin="+" pad="1"/>
-<connect gate="A" pin="-" pad="2"/>
-<connect gate="A" pin="CAN" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-PowerSymbols">
 <description>&lt;h3&gt;SparkFun Power Symbols&lt;/h3&gt;
 This library contains power, ground, and voltage-supply symbols.
@@ -5323,6 +5264,92 @@ Source: 008-0260-0_E.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="ngspice-simulation" urn="urn:adsk.eagle:library:527439">
+<description>SPICE compatible library parts</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="OPAMP" urn="urn:adsk.eagle:symbol:527453/1" library_version="16">
+<description>Operational amplifier with power pins</description>
+<pin name="P" x="0" y="0" length="middle"/>
+<pin name="N" x="0" y="-7.62" length="middle"/>
+<pin name="VDD" x="20.32" y="7.62" length="middle" direction="pwr" rot="R270"/>
+<pin name="VSS" x="20.32" y="-12.7" length="middle" direction="pwr" rot="R90"/>
+<pin name="VOUT" x="35.56" y="-2.54" length="middle" rot="R180"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="30.48" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-2.54" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="12.7" y2="2.54" width="0.254" layer="94"/>
+<wire x1="11.43" y1="3.556" x2="11.43" y2="1.27" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<text x="16.764" y="0" size="1.778" layer="94">vdd</text>
+<text x="16.764" y="-7.366" size="1.778" layer="94">vss</text>
+<text x="25.4" y="-7.62" size="1.778" layer="94">&gt;NAME</text>
+<text x="25.4" y="-10.16" size="1.778" layer="94">&gt;SPICEMODEL</text>
+<text x="25.4" y="-12.7" size="1.778" layer="94">&gt;SPICEEXTRA</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="OPAMP" urn="urn:adsk.eagle:component:527472/12" prefix="X" library_version="16">
+<description>Operational amplifier with power pins</description>
+<gates>
+<gate name="G$1" symbol="OPAMP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="_EXTERNAL_" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+<spice>
+<pinmapping spiceprefix="X">
+<pinmap gate="G$1" pin="N" pinorder="2"/>
+<pinmap gate="G$1" pin="P" pinorder="1"/>
+<pinmap gate="G$1" pin="VDD" pinorder="3"/>
+<pinmap gate="G$1" pin="VOUT" pinorder="5"/>
+<pinmap gate="G$1" pin="VSS" pinorder="4"/>
+</pinmapping>
+<model name="OPAMP">
+* Autodesk EAGLE
+* BASIC OP AMP MODEL
+* Device Pins In+ In- vdd vss Vout
+* vdd vss unused in this model!!
+.SUBCKT opamp 1 2 vdd vss vout
+*
+* INPUT
+RIN   1   2   1e9
+*
+*  AMPLIFIER STAGE: GAIN, POLE, SLEW
+*   Aol=10000, fu=1000000 Hz
+G1   0    10  VALUE = { 1e-2 * V(1,2)  }
+R1   10   0   1e6
+C1   10   0   1.59e-9
+*
+* 2ND POLE 
+G2   0 20   10 0  1e-6
+R2   20       0     1e6
+C2   20       0     3.3e-14
+*
+* 3RD POLE 
+G3   0 30   20 0 1e-6
+R3   30       0     1e6
+C3   30       0     3.3e-14
+*
+* OUTPUT STAGE
+EBUFFER 80 0  30  0    1
+ROUT 80 vout 100
+.ENDS opamp</model>
+</spice>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5345,7 +5372,6 @@ Source: 008-0260-0_E.pdf</description>
 <part name="R2" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="350"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="350"/>
 <part name="STRAIN_GAUGE" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="IC1" library="linear4" deviceset="AD590ZR" device=""/>
 <part name="U1" library="VT_Parts_Eagle" deviceset="MSP430FR5994IPNR" device="" value="Value"/>
 <part name="C1" library="adafruit" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="C5" library="adafruit" deviceset="C-US" device="C0603" value="1uF"/>
@@ -5388,11 +5414,7 @@ Source: 008-0260-0_E.pdf</description>
 <part name="R8" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="350"/>
 <part name="R9" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="350"/>
 <part name="STRAIN_GAUGE1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="IC2" library="linear4" deviceset="AD590ZR" device=""/>
 <part name="U$9" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
-<part name="R10" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="RCAL"/>
-<part name="R11" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="950"/>
-<part name="U$10" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
 <part name="C18" library="adafruit" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C2" library="adafruit" deviceset="C-US" device="C0603" value="0.1uF"/>
@@ -5400,6 +5422,11 @@ Source: 008-0260-0_E.pdf</description>
 <part name="C19" library="adafruit" deviceset="C-US" device="C0603" value="10uF"/>
 <part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U$11" library="adafruit" deviceset="MICROSD" device=""/>
+<part name="X1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="OPAMP" device=""/>
+<part name="R12" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="RCAL"/>
+<part name="R13" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="950"/>
+<part name="U$12" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
+<part name="X2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="OPAMP" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5407,7 +5434,7 @@ Source: 008-0260-0_E.pdf</description>
 <text x="251.46" y="-33.02" size="5.08" layer="97">MPU-9250 Accelerometer</text>
 <text x="530.86" y="157.48" size="5.08" layer="97">MSP430FR59xx Processor</text>
 <text x="419.1" y="-43.18" size="5.08" layer="97">Strain gauges</text>
-<text x="614.68" y="-43.18" size="5.08" layer="97">AD590KF Temp sensor</text>
+<text x="614.68" y="-43.18" size="5.08" layer="97">AD590KRZ Temp sensor</text>
 <text x="233.68" y="114.3" size="5.08" layer="97">PC104 Header Block</text>
 <text x="614.68" y="-48.26" size="1.778" layer="97">RCAL will have to be determined to eliminate the calibration error</text>
 <text x="419.1" y="-48.26" size="1.778" layer="97">Need to measure the resistance of the wires leading from the header to the gauge. </text>
@@ -5430,7 +5457,6 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="R2" gate="G$1" x="419.1" y="-88.9" rot="R90"/>
 <instance part="R3" gate="G$1" x="441.96" y="-71.12" rot="R90"/>
 <instance part="STRAIN_GAUGE" gate="G$1" x="459.74" y="-81.28"/>
-<instance part="IC1" gate="A" x="645.16" y="-71.12"/>
 <instance part="U1" gate="A" x="612.14" y="78.74"/>
 <instance part="C1" gate="G$1" x="419.1" y="134.62"/>
 <instance part="C5" gate="G$1" x="429.26" y="134.62"/>
@@ -5462,9 +5488,9 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="SUPPLY17" gate="GND" x="340.36" y="60.96"/>
 <instance part="U$6" gate="G$1" x="279.4" y="50.8"/>
 <instance part="U$7" gate="G$1" x="431.8" y="-104.14"/>
-<instance part="R5" gate="G$1" x="645.16" y="-86.36" rot="R90"/>
-<instance part="R6" gate="G$1" x="645.16" y="-101.6" rot="R90"/>
-<instance part="U$8" gate="G$1" x="645.16" y="-114.3"/>
+<instance part="R5" gate="G$1" x="586.74" y="-71.12" rot="R90"/>
+<instance part="R6" gate="G$1" x="586.74" y="-86.36" rot="R90"/>
+<instance part="U$8" gate="G$1" x="586.74" y="-99.06"/>
 <instance part="C16" gate="G$1" x="330.2" y="96.52"/>
 <instance part="C17" gate="G$1" x="337.82" y="96.52"/>
 <instance part="SUPPLY6" gate="GND" x="330.2" y="86.36"/>
@@ -5473,11 +5499,7 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="R8" gate="G$1" x="485.14" y="-88.9" rot="R90"/>
 <instance part="R9" gate="G$1" x="508" y="-71.12" rot="R90"/>
 <instance part="STRAIN_GAUGE1" gate="G$1" x="525.78" y="-81.28"/>
-<instance part="IC2" gate="A" x="711.2" y="-71.12"/>
 <instance part="U$9" gate="G$1" x="497.84" y="-104.14"/>
-<instance part="R10" gate="G$1" x="711.2" y="-86.36" rot="R90"/>
-<instance part="R11" gate="G$1" x="711.2" y="-101.6" rot="R90"/>
-<instance part="U$10" gate="G$1" x="711.2" y="-114.3"/>
 <instance part="C18" gate="G$1" x="256.54" y="-60.96"/>
 <instance part="SUPPLY19" gate="GND" x="256.54" y="-68.58"/>
 <instance part="C2" gate="G$1" x="320.04" y="-88.9"/>
@@ -5485,6 +5507,11 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="C19" gate="G$1" x="386.08" y="-17.78"/>
 <instance part="SUPPLY20" gate="GND" x="386.08" y="-30.48"/>
 <instance part="U$11" gate="G$1" x="421.64" y="-2.54"/>
+<instance part="X1" gate="G$1" x="599.44" y="-63.5"/>
+<instance part="R12" gate="G$1" x="693.42" y="-71.12" rot="R90"/>
+<instance part="R13" gate="G$1" x="693.42" y="-86.36" rot="R90"/>
+<instance part="U$12" gate="G$1" x="693.42" y="-99.06"/>
+<instance part="X2" gate="G$1" x="706.12" y="-63.5"/>
 </instances>
 <busses>
 </busses>
@@ -5815,7 +5842,7 @@ Source: 008-0260-0_E.pdf</description>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="U$8" gate="G$1" pin="AGND"/>
-<wire x1="645.16" y1="-106.68" x2="645.16" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="586.74" y1="-91.44" x2="586.74" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="523.24" y1="-81.28" x2="508" y2="-81.28" width="0.1524" layer="91"/>
@@ -5830,9 +5857,9 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="U$9" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="1"/>
-<pinref part="U$10" gate="G$1" pin="AGND"/>
-<wire x1="711.2" y1="-106.68" x2="711.2" y2="-111.76" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="U$12" gate="G$1" pin="AGND"/>
+<wire x1="693.42" y1="-91.44" x2="693.42" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5875,12 +5902,6 @@ Source: 008-0260-0_E.pdf</description>
 </net>
 <net name="SW5" class="0">
 <segment>
-<wire x1="645.16" y1="-60.96" x2="614.68" y2="-60.96" width="0.1524" layer="91"/>
-<label x="614.68" y="-60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="A" pin="+"/>
-<wire x1="645.16" y1="-60.96" x2="645.16" y2="-63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C16" gate="G$1" pin="1"/>
 <wire x1="330.2" y1="104.14" x2="337.82" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="337.82" y1="104.14" x2="342.9" y2="104.14" width="0.1524" layer="91"/>
@@ -5895,25 +5916,12 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="U$1" gate="G$1" pin="IO.35"/>
 <wire x1="281.94" y1="81.28" x2="289.56" y2="81.28" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<wire x1="711.2" y1="-60.96" x2="680.72" y2="-60.96" width="0.1524" layer="91"/>
-<label x="680.72" y="-60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC2" gate="A" pin="+"/>
-<wire x1="711.2" y1="-60.96" x2="711.2" y2="-63.5" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="645.16" y1="-91.44" x2="645.16" y2="-96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="711.2" y1="-91.44" x2="711.2" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="586.74" y1="-76.2" x2="586.74" y2="-81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -5943,13 +5951,16 @@ Source: 008-0260-0_E.pdf</description>
 </net>
 <net name="ADC2" class="0">
 <segment>
-<pinref part="IC1" gate="A" pin="-"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="645.16" y1="-76.2" x2="645.16" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="645.16" y1="-78.74" x2="645.16" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="645.16" y1="-78.74" x2="660.4" y2="-78.74" width="0.1524" layer="91"/>
-<junction x="645.16" y="-78.74"/>
-<label x="660.4" y="-78.74" size="1.778" layer="95" xref="yes"/>
+<wire x1="635" y1="-66.04" x2="640.08" y2="-66.04" width="0.1524" layer="91"/>
+<label x="650.24" y="-66.04" size="1.778" layer="95" xref="yes"/>
+<pinref part="X1" gate="G$1" pin="VOUT"/>
+<pinref part="X1" gate="G$1" pin="N"/>
+<wire x1="640.08" y1="-66.04" x2="650.24" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="599.44" y1="-71.12" x2="596.9" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="596.9" y1="-71.12" x2="596.9" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="596.9" y1="-83.82" x2="640.08" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="640.08" y1="-83.82" x2="640.08" y2="-66.04" width="0.1524" layer="91"/>
+<junction x="640.08" y="-66.04"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="P1.1_TA0.2_TA1CLK_COUT_A1_C1_VREF+_VEREF+"/>
@@ -5961,20 +5972,23 @@ Source: 008-0260-0_E.pdf</description>
 </net>
 <net name="ADC4" class="0">
 <segment>
-<pinref part="IC2" gate="A" pin="-"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="711.2" y1="-76.2" x2="711.2" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="711.2" y1="-78.74" x2="711.2" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="711.2" y1="-78.74" x2="726.44" y2="-78.74" width="0.1524" layer="91"/>
-<junction x="711.2" y="-78.74"/>
-<label x="726.44" y="-78.74" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U1" gate="A" pin="P1.3_TA1.2_UCB0STE_A3_C3"/>
 <wire x1="525.78" y1="114.3" x2="515.62" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="515.62" y1="114.3" x2="515.62" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="515.62" y1="104.14" x2="485.14" y2="104.14" width="0.1524" layer="91"/>
 <label x="485.14" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="N"/>
+<wire x1="706.12" y1="-71.12" x2="703.58" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="703.58" y1="-71.12" x2="703.58" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="703.58" y1="-81.28" x2="746.76" y2="-81.28" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="VOUT"/>
+<wire x1="746.76" y1="-81.28" x2="746.76" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="746.76" y1="-66.04" x2="741.68" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="746.76" y1="-66.04" x2="751.84" y2="-66.04" width="0.1524" layer="91"/>
+<junction x="746.76" y="-66.04"/>
+<label x="751.84" y="-66.04" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -6129,6 +6143,45 @@ Source: 008-0260-0_E.pdf</description>
 <label x="490.22" y="-55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="TEMP1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="IO.23"/>
+<wire x1="236.22" y1="96.52" x2="233.68" y2="96.52" width="0.1524" layer="91"/>
+<label x="233.68" y="96.52" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="P"/>
+<wire x1="599.44" y1="-63.5" x2="586.74" y2="-63.5" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="586.74" y1="-66.04" x2="586.74" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="586.74" y1="-63.5" x2="579.12" y2="-63.5" width="0.1524" layer="91"/>
+<junction x="586.74" y="-63.5"/>
+<label x="579.12" y="-63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="TEMP2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="1O.21"/>
+<wire x1="236.22" y1="93.98" x2="220.98" y2="93.98" width="0.1524" layer="91"/>
+<label x="220.98" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="P"/>
+<wire x1="706.12" y1="-63.5" x2="693.42" y2="-63.5" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="693.42" y1="-63.5" x2="693.42" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="693.42" y1="-63.5" x2="688.34" y2="-63.5" width="0.1524" layer="91"/>
+<junction x="693.42" y="-63.5"/>
+<label x="688.34" y="-63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="693.42" y1="-76.2" x2="693.42" y2="-81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -6149,6 +6202,12 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="8.4" severity="warning">
+Since Version 8.4, EAGLE supports properties for SPICE simulation. 
+Probes in schematics and SPICE mapping objects found in parts and library devices
+will not be understood with this version. Update EAGLE to the latest version
+for full support of SPICE simulation. 
 </note>
 </compatibility>
 </eagle>
