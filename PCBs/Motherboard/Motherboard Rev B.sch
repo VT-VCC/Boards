@@ -1265,7 +1265,7 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="supply2">
+<library name="supply2" urn="urn:adsk.eagle:library:372">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
 GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
 Please keep in mind, that these devices are necessary for the
@@ -1276,7 +1276,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <packages>
 </packages>
 <symbols>
-<symbol name="GND">
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26990/1" library_version="2">
 <wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
@@ -1285,7 +1285,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" prefix="SUPPLY">
+<deviceset name="GND" urn="urn:adsk.eagle:component:27037/1" prefix="SUPPLY" library_version="2">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="GND" symbol="GND" x="0" y="0"/>
@@ -2855,6 +2855,38 @@ Metric Code Size 5664</description>
 <rectangle x1="-2.8" y1="-3.15" x2="-2.2" y2="3.15" layer="51"/>
 <rectangle x1="2.2" y1="-3.15" x2="2.8" y2="3.15" layer="51"/>
 </package>
+<package name="MICROSD">
+<wire x1="13" y1="-15.14" x2="14" y2="-15.14" width="0.127" layer="21"/>
+<wire x1="14" y1="-15.14" x2="14" y2="-0.04" width="0.127" layer="21"/>
+<wire x1="14" y1="-0.04" x2="0" y2="-0.04" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.04" x2="0" y2="-14.44" width="0.127" layer="21"/>
+<wire x1="0" y1="-14.44" x2="1" y2="-14.44" width="0.127" layer="21"/>
+<wire x1="1" y1="-14.44" x2="1.7" y2="-13.54" width="0.127" layer="21" curve="-90"/>
+<wire x1="1.7" y1="-13.54" x2="11.4" y2="-13.54" width="0.127" layer="21"/>
+<wire x1="11.4" y1="-13.54" x2="13" y2="-15.14" width="0.127" layer="21" curve="-90"/>
+<wire x1="0.4" y1="-14.7" x2="1.6" y2="-15.9" width="0.127" layer="21" curve="90"/>
+<wire x1="1.6" y1="-15.9" x2="10.8" y2="-15.9" width="0.127" layer="21"/>
+<wire x1="10.8" y1="-15.9" x2="12.1" y2="-14.8" width="0.127" layer="21" curve="90"/>
+<wire x1="0.4" y1="-15.6" x2="1.6" y2="-16.8" width="0.127" layer="21" curve="90"/>
+<wire x1="1.6" y1="-16.8" x2="10.8" y2="-16.8" width="0.127" layer="21"/>
+<wire x1="10.8" y1="-16.8" x2="12.1" y2="-15.7" width="0.127" layer="21" curve="90"/>
+<wire x1="0.4" y1="-19.4" x2="1.6" y2="-20.6" width="0.127" layer="21" curve="90"/>
+<wire x1="1.6" y1="-20.6" x2="10.8" y2="-20.6" width="0.127" layer="21"/>
+<wire x1="10.8" y1="-20.6" x2="12.1" y2="-19.5" width="0.127" layer="21" curve="90"/>
+<smd name="MT1" x="0.4" y="-13.54" dx="1.4" dy="1.9" layer="1"/>
+<smd name="MT2" x="13.6" y="-14.44" dx="1.4" dy="1.9" layer="1"/>
+<smd name="CD1" x="2" y="-0.44" dx="1.4" dy="1.8" layer="1" rot="R90"/>
+<smd name="CD2" x="8" y="-0.44" dx="1.4" dy="1.8" layer="1" rot="R90"/>
+<smd name="8" x="1.3" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<smd name="7" x="2.4" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<smd name="6" x="3.5" y="-11.04" dx="0.7" dy="1.5" layer="1"/>
+<smd name="5" x="4.6" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<smd name="4" x="5.7" y="-11.04" dx="0.7" dy="1.5" layer="1"/>
+<smd name="3" x="6.8" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<smd name="2" x="7.9" y="-10.24" dx="0.7" dy="1.5" layer="1"/>
+<smd name="1" x="9" y="-10.64" dx="0.7" dy="1.5" layer="1"/>
+<text x="3.7" y="-3.94" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-US">
@@ -2866,6 +2898,31 @@ Metric Code Size 5664</description>
 <text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="TRANSFLASH">
+<wire x1="-15.24" y1="20.32" x2="-15.24" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-25.4" x2="10.16" y2="20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-22.86" x2="-5.08" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-22.86" x2="-2.54" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-25.4" x2="0" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="-25.4" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="-22.86" x2="2.54" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-22.86" x2="2.54" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-25.4" x2="10.16" y2="-25.4" width="0.254" layer="94"/>
+<text x="-7.62" y="-10.16" size="2.1844" layer="94">SD &amp; MMC</text>
+<pin name="CS" x="-17.78" y="0" length="short" direction="in"/>
+<pin name="DATA_IN" x="-17.78" y="5.08" length="short" direction="in"/>
+<pin name="VSS" x="-17.78" y="-12.7" length="short" direction="sup"/>
+<pin name="VDD" x="-17.78" y="-10.16" length="short" direction="sup"/>
+<pin name="SCLK" x="-17.78" y="2.54" length="short" direction="in"/>
+<pin name="DATA_OUT" x="-17.78" y="7.62" length="short" direction="out"/>
+<pin name="DAT1" x="-17.78" y="-2.54" length="short"/>
+<pin name="DAT2" x="-17.78" y="-5.08" length="short"/>
+<pin name="CARD_DETECT" x="-17.78" y="17.78" length="short" direction="pas"/>
+<pin name="GND" x="-17.78" y="-20.32" length="short" direction="sup"/>
+<pin name="GND1" x="-17.78" y="-17.78" length="short" direction="sup"/>
+<pin name="CARD_DETECT1" x="-17.78" y="15.24" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3552,6 +3609,36 @@ Metric Code Size 5664</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MICROSD">
+<description>&lt;b&gt;Micro-SD / Transflash card holder with SPI pinout&lt;/b&gt;
+&lt;p&gt;
+For the 3M # 2908-05WB-MG and/or 4UCON #19656&lt;br&gt;
+push-push type</description>
+<gates>
+<gate name="G$1" symbol="TRANSFLASH" x="5.08" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="MICROSD">
+<connects>
+<connect gate="G$1" pin="CARD_DETECT" pad="CD1"/>
+<connect gate="G$1" pin="CARD_DETECT1" pad="CD2"/>
+<connect gate="G$1" pin="CS" pad="2"/>
+<connect gate="G$1" pin="DAT1" pad="8"/>
+<connect gate="G$1" pin="DAT2" pad="1"/>
+<connect gate="G$1" pin="DATA_IN" pad="3"/>
+<connect gate="G$1" pin="DATA_OUT" pad="7"/>
+<connect gate="G$1" pin="GND" pad="MT1"/>
+<connect gate="G$1" pin="GND1" pad="MT2"/>
+<connect gate="G$1" pin="SCLK" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="SparkFun-Resistors">
@@ -3628,11 +3715,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="pinhead">
+<library name="pinhead" urn="urn:adsk.eagle:library:325">
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="1X02">
+<package name="1X02" urn="urn:adsk.eagle:footprint:22309/1" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
@@ -3656,7 +3743,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 </package>
-<package name="1X02/90">
+<package name="1X02/90" urn="urn:adsk.eagle:footprint:22310/1" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
@@ -3677,8 +3764,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="1X02" urn="urn:adsk.eagle:package:22435/2" type="model" library_version="3">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X02"/>
+</packageinstances>
+</package3d>
+<package3d name="1X02/90" urn="urn:adsk.eagle:package:22437/2" type="model" library_version="3">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X02/90"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="PINHD2">
+<symbol name="PINHD2" urn="urn:adsk.eagle:symbol:22308/1" library_version="3">
 <wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
@@ -3690,7 +3791,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes">
+<deviceset name="PINHD-1X2" urn="urn:adsk.eagle:component:22516/3" prefix="JP" uservalue="yes" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="PINHD2" x="0" y="0"/>
@@ -3701,6 +3802,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22435/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3710,6 +3814,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22437/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3887,11 +3994,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="crystal">
+<library name="crystal" urn="urn:adsk.eagle:library:204">
 <description>&lt;b&gt;Crystals and Crystal Resonators&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="HC49/S">
+<package name="HC49/S" urn="urn:adsk.eagle:footprint:11992/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-3.048" y1="-2.159" x2="3.048" y2="-2.159" width="0.4064" layer="21"/>
 <wire x1="-3.048" y1="2.159" x2="3.048" y2="2.159" width="0.4064" layer="21"/>
@@ -3921,7 +4028,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="4.445" y1="-1.905" x2="5.08" y2="1.905" layer="43"/>
 <rectangle x1="5.08" y1="-1.27" x2="5.715" y2="1.27" layer="43"/>
 </package>
-<package name="HC49GW">
+<package name="HC49GW" urn="urn:adsk.eagle:footprint:11993/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-5.08" y1="-6.35" x2="5.08" y2="-6.35" width="0.8128" layer="21"/>
 <wire x1="4.445" y1="6.731" x2="1.016" y2="6.731" width="0.1524" layer="21"/>
@@ -3951,7 +4058,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-2.54" y="-5.08" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <rectangle x1="-5.715" y1="-8.255" x2="5.715" y2="8.255" layer="43"/>
 </package>
-<package name="HC49TL-H">
+<package name="HC49TL-H" urn="urn:adsk.eagle:footprint:11994/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="5.334" y1="-5.715" x2="-5.461" y2="-5.715" width="0.8128" layer="21"/>
 <wire x1="4.445" y1="7.366" x2="1.143" y2="7.366" width="0.1524" layer="21"/>
@@ -3983,7 +4090,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-6.35" y1="-6.985" x2="6.35" y2="-4.445" layer="43"/>
 <rectangle x1="-5.715" y1="-4.445" x2="5.715" y2="8.255" layer="43"/>
 </package>
-<package name="HC49U-H">
+<package name="HC49U-H" urn="urn:adsk.eagle:footprint:11995/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-5.08" y1="-3.175" x2="5.08" y2="-3.175" width="0.8128" layer="21"/>
 <wire x1="4.445" y1="9.906" x2="-4.445" y2="9.906" width="0.1524" layer="21"/>
@@ -4010,7 +4117,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-6.35" y1="-4.445" x2="6.35" y2="-1.905" layer="43"/>
 <rectangle x1="-5.715" y1="-1.905" x2="5.715" y2="10.795" layer="43"/>
 </package>
-<package name="HC49U-LM">
+<package name="HC49U-LM" urn="urn:adsk.eagle:footprint:11996/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-5.08" y1="-3.175" x2="5.08" y2="-3.175" width="0.8128" layer="21"/>
 <wire x1="4.445" y1="9.906" x2="-4.445" y2="9.906" width="0.1524" layer="21"/>
@@ -4047,7 +4154,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-4.572" y="0" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-5.715" y1="-5.08" x2="5.715" y2="10.795" layer="43"/>
 </package>
-<package name="HC49U-V">
+<package name="HC49U-V" urn="urn:adsk.eagle:footprint:11997/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-2.921" y1="-2.286" x2="2.921" y2="-2.286" width="0.4064" layer="21"/>
 <wire x1="-2.921" y1="2.286" x2="2.921" y2="2.286" width="0.4064" layer="21"/>
@@ -4081,7 +4188,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="4.826" y1="-1.778" x2="5.334" y2="1.778" layer="43"/>
 <rectangle x1="5.334" y1="-1.016" x2="5.588" y2="1.016" layer="43"/>
 </package>
-<package name="HC49U70">
+<package name="HC49U70" urn="urn:adsk.eagle:footprint:11998/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-3.048" y1="-2.54" x2="3.048" y2="-2.54" width="0.4064" layer="21"/>
 <wire x1="-3.048" y1="2.54" x2="3.048" y2="2.54" width="0.4064" layer="21"/>
@@ -4115,7 +4222,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="5.08" y1="-2.032" x2="5.588" y2="2.032" layer="43"/>
 <rectangle x1="5.588" y1="-1.27" x2="5.842" y2="1.27" layer="43"/>
 </package>
-<package name="HC49UP">
+<package name="HC49UP" urn="urn:adsk.eagle:footprint:11999/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-5.1091" y1="1.143" x2="-3.429" y2="2.0321" width="0.0508" layer="21" curve="-55.770993"/>
 <wire x1="-5.715" y1="1.143" x2="-5.715" y2="2.159" width="0.1524" layer="21"/>
@@ -4169,7 +4276,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-5.715" y="-4.191" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-6.604" y1="-3.048" x2="6.604" y2="3.048" layer="43"/>
 </package>
-<package name="HC13U-H">
+<package name="HC13U-H" urn="urn:adsk.eagle:footprint:12000/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-9.906" y1="-3.048" x2="-9.271" y2="-3.048" width="1.27" layer="21"/>
 <wire x1="-9.271" y1="-3.048" x2="9.271" y2="-3.048" width="1.27" layer="21"/>
@@ -4206,7 +4313,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-5.08" y="-1.27" size="1.778" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <rectangle x1="-10.795" y1="-5.08" x2="10.795" y2="34.925" layer="43"/>
 </package>
-<package name="HC18U-H">
+<package name="HC18U-H" urn="urn:adsk.eagle:footprint:12001/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="5.461" y1="-3.175" x2="5.08" y2="-3.175" width="0.8128" layer="21"/>
 <wire x1="5.08" y1="-3.175" x2="-5.08" y2="-3.175" width="0.8128" layer="21"/>
@@ -4245,7 +4352,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-4.445" y="-0.889" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-6.35" y1="-5.08" x2="6.35" y2="10.795" layer="43"/>
 </package>
-<package name="HC18U-V">
+<package name="HC18U-V" urn="urn:adsk.eagle:footprint:12002/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="5.08" y1="-1.905" x2="5.08" y2="1.905" width="0.4064" layer="21"/>
 <wire x1="-5.08" y1="1.905" x2="-5.08" y2="-1.905" width="0.4064" layer="21"/>
@@ -4279,7 +4386,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-5.08" y="-4.6228" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-5.715" y1="-3.175" x2="5.715" y2="3.175" layer="43"/>
 </package>
-<package name="HC33U-H">
+<package name="HC33U-H" urn="urn:adsk.eagle:footprint:12003/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-9.906" y1="-3.048" x2="-9.271" y2="-3.048" width="1.27" layer="21"/>
 <wire x1="-9.271" y1="-3.048" x2="9.271" y2="-3.048" width="1.27" layer="21"/>
@@ -4318,7 +4425,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="6.985" y1="-3.175" x2="7.62" y2="16.51" layer="21"/>
 <rectangle x1="-10.795" y1="-5.715" x2="10.795" y2="17.145" layer="43"/>
 </package>
-<package name="HC33U-V">
+<package name="HC33U-V" urn="urn:adsk.eagle:footprint:12004/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-0.3302" y1="2.54" x2="-0.3302" y2="0" width="0.3048" layer="21"/>
 <wire x1="-0.3302" y1="0" x2="0.3302" y2="0" width="0.3048" layer="21"/>
@@ -4350,7 +4457,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="8.255" y1="-3.175" x2="8.89" y2="3.175" layer="43"/>
 <rectangle x1="8.89" y1="-2.54" x2="9.525" y2="2.54" layer="43"/>
 </package>
-<package name="SM49">
+<package name="SM49" urn="urn:adsk.eagle:footprint:12005/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="3.429" y1="-2.032" x2="5.109" y2="-1.1429" width="0.0508" layer="21" curve="55.771157"/>
 <wire x1="5.715" y1="-1.143" x2="5.715" y2="-2.159" width="0.1524" layer="21"/>
@@ -4404,7 +4511,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-5.715" y="-4.064" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-6.604" y1="-2.54" x2="6.604" y2="2.794" layer="43"/>
 </package>
-<package name="TC26H">
+<package name="TC26H" urn="urn:adsk.eagle:footprint:12006/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-0.889" y1="1.651" x2="0.889" y2="1.651" width="0.1524" layer="21"/>
 <wire x1="0.762" y1="7.747" x2="1.016" y2="7.493" width="0.1524" layer="21" curve="-90"/>
@@ -4439,7 +4546,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-0.7112" y1="1.016" x2="-0.3048" y2="1.6002" layer="21"/>
 <rectangle x1="-1.778" y1="0.762" x2="1.778" y2="8.382" layer="43"/>
 </package>
-<package name="TC26V">
+<package name="TC26V" urn="urn:adsk.eagle:footprint:12007/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-0.127" y1="-0.508" x2="0.127" y2="-0.508" width="0.1524" layer="51"/>
 <wire x1="0.127" y1="0.508" x2="0.127" y2="-0.508" width="0.1524" layer="51"/>
@@ -4461,7 +4568,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-2.032" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.032" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TC38H">
+<package name="TC38H" urn="urn:adsk.eagle:footprint:12008/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-1.397" y1="1.651" x2="1.397" y2="1.651" width="0.1524" layer="21"/>
 <wire x1="1.27" y1="9.906" x2="1.524" y2="9.652" width="0.1524" layer="21" curve="-90"/>
@@ -4498,7 +4605,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-0.7112" y1="1.016" x2="-0.3048" y2="1.6002" layer="21"/>
 <rectangle x1="-1.778" y1="1.016" x2="1.778" y2="10.414" layer="43"/>
 </package>
-<package name="86SMX">
+<package name="86SMX" urn="urn:adsk.eagle:footprint:12009/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL RESONATOR&lt;/b&gt;</description>
 <wire x1="-3.81" y1="1.905" x2="2.413" y2="1.905" width="0.0508" layer="21"/>
 <wire x1="-3.81" y1="2.286" x2="2.413" y2="2.286" width="0.1524" layer="21"/>
@@ -4561,7 +4668,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-3.683" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.683" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="MM20SS">
+<package name="MM20SS" urn="urn:adsk.eagle:footprint:12010/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-2.032" y1="-1.27" x2="2.032" y2="-1.27" width="0.0508" layer="21"/>
 <wire x1="-2.032" y1="-1.778" x2="2.032" y2="-1.778" width="0.1524" layer="21"/>
@@ -4623,7 +4730,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-2.54" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="MM39SL">
+<package name="MM39SL" urn="urn:adsk.eagle:footprint:12011/1" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <wire x1="-3.683" y1="-1.651" x2="3.683" y2="-1.651" width="0.0508" layer="21"/>
 <wire x1="-3.683" y1="-2.286" x2="3.683" y2="-2.286" width="0.1524" layer="21"/>
@@ -4673,7 +4780,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-2.54" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.032" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="CTS406">
+<package name="CTS406" urn="urn:adsk.eagle:footprint:12012/1" library_version="1">
 <description>&lt;b&gt;Model 406 6.0x3.5mm Low Cost Surface Mount Crystal&lt;/b&gt;&lt;p&gt;
 Source: 008-0260-0_E.pdf</description>
 <wire x1="-2.475" y1="1.65" x2="-1.05" y2="1.65" width="0.2032" layer="51"/>
@@ -4701,8 +4808,137 @@ Source: 008-0260-0_E.pdf</description>
 <text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
+<packages3d>
+<package3d name="HC49/S" urn="urn:adsk.eagle:package:12071/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="HC49/S"/>
+</packageinstances>
+</package3d>
+<package3d name="HC49GW" urn="urn:adsk.eagle:package:12072/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="HC49GW"/>
+</packageinstances>
+</package3d>
+<package3d name="HC49TL-H" urn="urn:adsk.eagle:package:12073/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="HC49TL-H"/>
+</packageinstances>
+</package3d>
+<package3d name="HC49U-H" urn="urn:adsk.eagle:package:12074/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="HC49U-H"/>
+</packageinstances>
+</package3d>
+<package3d name="HC49U-LM" urn="urn:adsk.eagle:package:12077/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="HC49U-LM"/>
+</packageinstances>
+</package3d>
+<package3d name="HC49U-V" urn="urn:adsk.eagle:package:12075/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="HC49U-V"/>
+</packageinstances>
+</package3d>
+<package3d name="HC49U70" urn="urn:adsk.eagle:package:12079/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="HC49U70"/>
+</packageinstances>
+</package3d>
+<package3d name="HC49UP" urn="urn:adsk.eagle:package:12078/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="HC49UP"/>
+</packageinstances>
+</package3d>
+<package3d name="HC13U-H" urn="urn:adsk.eagle:package:12080/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="HC13U-H"/>
+</packageinstances>
+</package3d>
+<package3d name="HC18U-H" urn="urn:adsk.eagle:package:12081/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="HC18U-H"/>
+</packageinstances>
+</package3d>
+<package3d name="HC18U-V" urn="urn:adsk.eagle:package:12082/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="HC18U-V"/>
+</packageinstances>
+</package3d>
+<package3d name="HC33U-H" urn="urn:adsk.eagle:package:12083/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="HC33U-H"/>
+</packageinstances>
+</package3d>
+<package3d name="HC33U-V" urn="urn:adsk.eagle:package:12084/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="HC33U-V"/>
+</packageinstances>
+</package3d>
+<package3d name="SM49" urn="urn:adsk.eagle:package:12085/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="SM49"/>
+</packageinstances>
+</package3d>
+<package3d name="TC26H" urn="urn:adsk.eagle:package:12086/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="TC26H"/>
+</packageinstances>
+</package3d>
+<package3d name="TC26V" urn="urn:adsk.eagle:package:12088/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="TC26V"/>
+</packageinstances>
+</package3d>
+<package3d name="TC38H" urn="urn:adsk.eagle:package:12087/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="TC38H"/>
+</packageinstances>
+</package3d>
+<package3d name="86SMX" urn="urn:adsk.eagle:package:12091/1" type="box" library_version="1">
+<description>CRYSTAL RESONATOR</description>
+<packageinstances>
+<packageinstance name="86SMX"/>
+</packageinstances>
+</package3d>
+<package3d name="MM20SS" urn="urn:adsk.eagle:package:12092/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="MM20SS"/>
+</packageinstances>
+</package3d>
+<package3d name="MM39SL" urn="urn:adsk.eagle:package:12090/1" type="box" library_version="1">
+<description>CRYSTAL</description>
+<packageinstances>
+<packageinstance name="MM39SL"/>
+</packageinstances>
+</package3d>
+<package3d name="CTS406" urn="urn:adsk.eagle:package:12089/1" type="box" library_version="1">
+<description>Model 406 6.0x3.5mm Low Cost Surface Mount Crystal
+Source: 008-0260-0_E.pdf</description>
+<packageinstances>
+<packageinstance name="CTS406"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="Q">
+<symbol name="Q" urn="urn:adsk.eagle:symbol:11991/1" library_version="1">
 <wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
 <wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
@@ -4720,7 +4956,7 @@ Source: 008-0260-0_E.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CRYSTAL" prefix="Q" uservalue="yes">
+<deviceset name="CRYSTAL" urn="urn:adsk.eagle:component:12141/1" prefix="Q" uservalue="yes" library_version="1">
 <description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="Q" x="0" y="0"/>
@@ -4731,6 +4967,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12071/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4745,6 +4984,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12072/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4759,6 +5001,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12073/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4773,6 +5018,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12074/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4787,6 +5035,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12077/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4801,6 +5052,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12075/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4815,6 +5069,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12079/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4829,6 +5086,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12078/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4843,6 +5103,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12080/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4857,6 +5120,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12081/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4871,6 +5137,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12082/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4885,6 +5154,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12083/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4899,6 +5171,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12084/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4913,6 +5188,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12085/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4927,6 +5205,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12086/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4941,6 +5222,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12088/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4955,6 +5239,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12087/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4969,6 +5256,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="4"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12091/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4983,6 +5273,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="4"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12092/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -4997,6 +5290,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="4"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12090/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -5011,6 +5307,9 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12089/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -5018,101 +5317,6 @@ Source: 008-0260-0_E.pdf</description>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="sdCard">
-<packages>
-<package name="SDCMF-10915W010">
-<wire x1="-12.7" y1="12.7" x2="11.684" y2="12.7" width="0.127" layer="21"/>
-<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-3.556" width="0.127" layer="21"/>
-<wire x1="-12.7" y1="-3.556" x2="-11.43" y2="-3.556" width="0.127" layer="21"/>
-<wire x1="-11.43" y1="-3.556" x2="12.192" y2="-3.556" width="0.127" layer="20"/>
-<wire x1="12.192" y1="-3.556" x2="13.462" y2="-3.556" width="0.127" layer="21"/>
-<wire x1="13.462" y1="-3.556" x2="13.462" y2="5.334" width="0.127" layer="21"/>
-<wire x1="11.684" y1="12.7" x2="11.684" y2="7.62" width="0.127" layer="21"/>
-<wire x1="11.684" y1="7.62" x2="13.462" y2="5.334" width="0.127" layer="21"/>
-<wire x1="-11.43" y1="-12.192" x2="-11.43" y2="-11.684" width="0.127" layer="21"/>
-<wire x1="-11.43" y1="-3.556" x2="-11.43" y2="-23.368" width="0.127" layer="21"/>
-<wire x1="-11.43" y1="-23.368" x2="12.192" y2="-23.368" width="0.127" layer="21"/>
-<wire x1="12.192" y1="-23.368" x2="12.192" y2="-3.556" width="0.127" layer="21"/>
-<smd name="M4" x="-13.208" y="11.43" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="M3" x="-13.208" y="-2.54" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="M2" x="13.97" y="-2.54" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="M1" x="12.192" y="11.43" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="10" x="-11.938" y="13.462" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
-<smd name="11" x="-10.668" y="13.462" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
-<smd name="8" x="-9.398" y="13.462" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
-<smd name="7" x="-7.874" y="13.462" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
-<smd name="6" x="-5.334" y="13.462" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
-<smd name="5" x="-2.794" y="13.462" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
-<smd name="4" x="-0.254" y="13.462" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
-<smd name="3" x="2.286" y="13.462" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
-<smd name="2" x="4.826" y="13.462" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
-<smd name="1" x="7.366" y="13.462" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
-<smd name="9" x="9.906" y="13.462" dx="1.4224" dy="0.7112" layer="1" rot="R90"/>
-<text x="7.112" y="-16.764" size="1.27" layer="21" rot="R180">SD/MMC Card</text>
-<text x="-7.62" y="5.08" size="1.27" layer="22">Amphenol MMC/SD</text>
-<hole x="9.906" y="10.414" drill="1.6"/>
-<hole x="-11.176" y="10.414" drill="1.1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SDCARD_SYMBOL">
-<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<text x="-10.16" y="13.208" size="1.27" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="DAT0/DO" x="-15.24" y="-5.08" length="short"/>
-<pin name="DAT1" x="-15.24" y="-7.62" length="short"/>
-<pin name="DAT2" x="-15.24" y="-10.16" length="short"/>
-<pin name="CD/DAT3/CS" x="-15.24" y="10.16" length="short"/>
-<pin name="CMD/DI" x="-15.24" y="7.62" length="short"/>
-<pin name="CLK/SCLK" x="-15.24" y="0" length="short"/>
-<pin name="GND@1" x="15.24" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="GND@2" x="15.24" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="GND@3" x="15.24" y="-7.62" length="short" direction="pwr" rot="R180"/>
-<pin name="GND@4" x="15.24" y="-10.16" length="short" direction="pwr" rot="R180"/>
-<pin name="VSS2" x="-15.24" y="-2.54" length="short" direction="pwr"/>
-<pin name="VSS1" x="-15.24" y="5.08" length="short" direction="pwr"/>
-<pin name="VDD" x="-15.24" y="2.54" length="short" direction="pwr"/>
-<pin name="WP" x="15.24" y="5.08" length="short" direction="out" rot="R180"/>
-<pin name="CDI#" x="15.24" y="10.16" length="short" direction="out" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SDCARD" prefix="J" uservalue="yes">
-<description>SD card connector
-KINGFONT SDCMF-10915W010</description>
-<gates>
-<gate name="G$1" symbol="SDCARD_SYMBOL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SDCMF-10915W010">
-<connects>
-<connect gate="G$1" pin="CD/DAT3/CS" pad="1"/>
-<connect gate="G$1" pin="CDI#" pad="10"/>
-<connect gate="G$1" pin="CLK/SCLK" pad="5"/>
-<connect gate="G$1" pin="CMD/DI" pad="2"/>
-<connect gate="G$1" pin="DAT0/DO" pad="7"/>
-<connect gate="G$1" pin="DAT1" pad="8"/>
-<connect gate="G$1" pin="DAT2" pad="9"/>
-<connect gate="G$1" pin="GND@1" pad="M1"/>
-<connect gate="G$1" pin="GND@2" pad="M2"/>
-<connect gate="G$1" pin="GND@3" pad="M3"/>
-<connect gate="G$1" pin="GND@4" pad="M4"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
-<connect gate="G$1" pin="VSS1" pad="3"/>
-<connect gate="G$1" pin="VSS2" pad="6"/>
-<connect gate="G$1" pin="WP" pad="11"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -5131,16 +5335,16 @@ KINGFONT SDCMF-10915W010</description>
 <parts>
 <part name="U$1" library="Cubesat" deviceset="PC104" device=""/>
 <part name="U$2" library="VT_Parts_Eagle" deviceset="MPU-9250" device=""/>
-<part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C3" library="adafruit" deviceset="C-US" device="C0603" value="10nF"/>
-<part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C4" library="adafruit" deviceset="C-US" device="C0603" value="0.1uF"/>
-<part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R1" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="350"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="350"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="350"/>
-<part name="STRAIN_GAUGE" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="STRAIN_GAUGE" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="IC1" library="linear4" deviceset="AD590ZR" device=""/>
 <part name="U1" library="VT_Parts_Eagle" deviceset="MSP430FR5994IPNR" device="" value="Value"/>
 <part name="C1" library="adafruit" deviceset="C-US" device="C0603" value="0.1uF"/>
@@ -5154,23 +5358,23 @@ KINGFONT SDCMF-10915W010</description>
 <part name="U$3" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
 <part name="U$4" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
 <part name="U$5" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
-<part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C12" library="SparkFun-Capacitors" deviceset="560PF" device="-0603-50V-5%" value="10pF"/>
-<part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49S" value="32kHZ"/>
-<part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
+<part name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49S" package3d_urn="urn:adsk.eagle:package:12071/1" value="32kHZ"/>
+<part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C13" library="SparkFun-Capacitors" deviceset="560PF" device="-0603-50V-5%" value="10pF"/>
 <part name="C14" library="SparkFun-Capacitors" deviceset="560PF" device="-0603-50V-5%" value="2.2nF"/>
 <part name="R4" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="47K"/>
-<part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C15" library="adafruit" deviceset="C-US" device="C0603" value="10uF"/>
-<part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U$6" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
 <part name="U$7" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
 <part name="R5" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="RCAL"/>
@@ -5178,24 +5382,24 @@ KINGFONT SDCMF-10915W010</description>
 <part name="U$8" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
 <part name="C16" library="adafruit" deviceset="C-US" device="C0603" value="10uF"/>
 <part name="C17" library="adafruit" deviceset="C-US" device="C0603" value="0.1uF"/>
-<part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY18" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R7" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="350"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="350"/>
 <part name="R9" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="350"/>
-<part name="STRAIN_GAUGE1" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="STRAIN_GAUGE1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="IC2" library="linear4" deviceset="AD590ZR" device=""/>
 <part name="U$9" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
 <part name="R10" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="RCAL"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="950"/>
 <part name="U$10" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
-<part name="J1" library="sdCard" deviceset="SDCARD" device=""/>
 <part name="C18" library="adafruit" deviceset="C-US" device="C0603" value="0.1uF"/>
-<part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C2" library="adafruit" deviceset="C-US" device="C0603" value="0.1uF"/>
-<part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C19" library="adafruit" deviceset="C-US" device="C0603" value="10uF"/>
-<part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="U$11" library="adafruit" deviceset="MICROSD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5274,13 +5478,13 @@ KINGFONT SDCMF-10915W010</description>
 <instance part="R10" gate="G$1" x="711.2" y="-86.36" rot="R90"/>
 <instance part="R11" gate="G$1" x="711.2" y="-101.6" rot="R90"/>
 <instance part="U$10" gate="G$1" x="711.2" y="-114.3"/>
-<instance part="J1" gate="G$1" x="403.86" y="5.08"/>
 <instance part="C18" gate="G$1" x="256.54" y="-60.96"/>
 <instance part="SUPPLY19" gate="GND" x="256.54" y="-68.58"/>
 <instance part="C2" gate="G$1" x="320.04" y="-88.9"/>
 <instance part="SUPPLY3" gate="GND" x="320.04" y="-96.52"/>
-<instance part="C19" gate="G$1" x="381" y="2.54"/>
-<instance part="SUPPLY20" gate="GND" x="381" y="-5.08"/>
+<instance part="C19" gate="G$1" x="386.08" y="-17.78"/>
+<instance part="SUPPLY20" gate="GND" x="386.08" y="-30.48"/>
+<instance part="U$11" gate="G$1" x="421.64" y="-2.54"/>
 </instances>
 <busses>
 </busses>
@@ -5406,6 +5610,17 @@ KINGFONT SDCMF-10915W010</description>
 <segment>
 <pinref part="C19" gate="G$1" pin="2"/>
 <pinref part="SUPPLY20" gate="GND" pin="GND"/>
+<wire x1="386.08" y1="-27.94" x2="386.08" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="-25.4" x2="386.08" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="-25.4" x2="398.78" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="386.08" y="-25.4"/>
+<wire x1="398.78" y1="-25.4" x2="398.78" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="U$11" gate="G$1" pin="GND1"/>
+<wire x1="398.78" y1="-22.86" x2="398.78" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="-20.32" x2="403.86" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="U$11" gate="G$1" pin="GND"/>
+<wire x1="398.78" y1="-22.86" x2="403.86" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="398.78" y="-22.86"/>
 </segment>
 </net>
 <net name="SW8" class="0">
@@ -5484,13 +5699,13 @@ KINGFONT SDCMF-10915W010</description>
 <junction x="340.36" y="76.2"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="VDD"/>
-<wire x1="388.62" y1="7.62" x2="381" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="C19" gate="G$1" pin="1"/>
-<wire x1="381" y1="5.08" x2="381" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="381" y1="7.62" x2="378.46" y2="7.62" width="0.1524" layer="91"/>
-<junction x="381" y="7.62"/>
-<label x="378.46" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="386.08" y1="-15.24" x2="386.08" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="U$11" gate="G$1" pin="VDD"/>
+<wire x1="386.08" y1="-12.7" x2="403.86" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="-12.7" x2="381" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="386.08" y="-12.7"/>
+<label x="381" y="-12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -5919,4 +6134,21 @@ KINGFONT SDCMF-10915W010</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
