@@ -4516,7 +4516,7 @@ Source: AVX .. aphvc.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="VDD" class="0">
+<net name="SW9" class="0">
 <segment>
 <wire x1="48.26" y1="91.44" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VDD2"/>
@@ -4525,10 +4525,6 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="63.5" y1="91.44" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="91.44" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="91.44" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="63.5" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="63.5" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="3V3@1"/>
-<wire x1="40.64" y1="25.4" x2="45.72" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="86.36" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
 <junction x="63.5" y="91.44"/>
@@ -4541,6 +4537,10 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="48.26" y="91.44"/>
 <pinref part="U$1" gate="G$1" pin="VDD"/>
 <wire x1="15.24" y1="86.36" x2="17.78" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="63.5" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="IO.29"/>
+<wire x1="40.64" y1="63.5" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
