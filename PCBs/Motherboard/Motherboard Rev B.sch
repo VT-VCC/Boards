@@ -5522,10 +5522,6 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <part name="R5" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="RCAL"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="950"/>
 <part name="U$8" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
-<part name="C16" library="adafruit" deviceset="C-US" device="C0603" value="10uF"/>
-<part name="C17" library="adafruit" deviceset="C-US" device="C0603" value="0.1uF"/>
-<part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R7" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="350"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="350"/>
 <part name="R9" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="350"/>
@@ -5599,16 +5595,12 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <instance part="R4" gate="G$1" x="731.52" y="55.88" rot="R90"/>
 <instance part="SUPPLY15" gate="GND" x="731.52" y="30.48"/>
 <instance part="SUPPLY16" gate="GND" x="335.28" y="53.34"/>
-<instance part="C15" gate="G$1" x="340.36" y="71.12"/>
-<instance part="SUPPLY17" gate="GND" x="340.36" y="60.96"/>
+<instance part="C15" gate="G$1" x="347.98" y="71.12"/>
+<instance part="SUPPLY17" gate="GND" x="347.98" y="60.96"/>
 <instance part="U$7" gate="G$1" x="431.8" y="-104.14"/>
 <instance part="R5" gate="G$1" x="586.74" y="-71.12" rot="R90"/>
 <instance part="R6" gate="G$1" x="586.74" y="-86.36" rot="R90"/>
 <instance part="U$8" gate="G$1" x="586.74" y="-99.06"/>
-<instance part="C16" gate="G$1" x="330.2" y="96.52"/>
-<instance part="C17" gate="G$1" x="337.82" y="96.52"/>
-<instance part="SUPPLY6" gate="GND" x="330.2" y="86.36"/>
-<instance part="SUPPLY18" gate="GND" x="337.82" y="86.36"/>
 <instance part="R7" gate="G$1" x="485.14" y="-71.12" rot="R90"/>
 <instance part="R8" gate="G$1" x="485.14" y="-88.9" rot="R90"/>
 <instance part="R9" gate="G$1" x="508" y="-71.12" rot="R90"/>
@@ -5721,17 +5713,7 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <segment>
 <pinref part="C15" gate="G$1" pin="2"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
-<wire x1="340.36" y1="66.04" x2="340.36" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C16" gate="G$1" pin="2"/>
-<pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<wire x1="330.2" y1="91.44" x2="330.2" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C17" gate="G$1" pin="2"/>
-<pinref part="SUPPLY18" gate="GND" pin="GND"/>
-<wire x1="337.82" y1="91.44" x2="337.82" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="66.04" x2="347.98" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -5771,6 +5753,11 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <wire x1="289.56" y1="60.96" x2="284.48" y2="60.96" width="0.1524" layer="91"/>
 <label x="284.48" y="60.96" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="IO.27"/>
+<wire x1="289.56" y1="71.12" x2="284.48" y2="71.12" width="0.1524" layer="91"/>
+<label x="284.48" y="71.12" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="SW8" class="0">
 <segment>
@@ -5793,13 +5780,13 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <label x="736.6" y="63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="345.44" y="76.2" size="1.778" layer="95" xref="yes"/>
+<label x="353.06" y="76.2" size="1.778" layer="95" xref="yes"/>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="340.36" y1="76.2" x2="345.44" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="73.66" x2="340.36" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="76.2" x2="353.06" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="73.66" x2="347.98" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="IO.30"/>
-<wire x1="340.36" y1="76.2" x2="320.04" y2="76.2" width="0.1524" layer="91"/>
-<junction x="340.36" y="76.2"/>
+<wire x1="347.98" y1="76.2" x2="320.04" y2="76.2" width="0.1524" layer="91"/>
+<junction x="347.98" y="76.2"/>
 </segment>
 <segment>
 <wire x1="363.22" y1="22.86" x2="360.68" y2="22.86" width="0.1524" layer="91"/>
@@ -5975,24 +5962,18 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <pinref part="U$1" gate="G$1" pin="IO.34"/>
 <wire x1="320.04" y1="81.28" x2="325.12" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="325.12" y1="81.28" x2="327.66" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="81.28" x2="327.66" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="78.74" x2="330.2" y2="78.74" width="0.1524" layer="91"/>
-<label x="330.2" y="78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="IO.31"/>
-<wire x1="289.56" y1="76.2" x2="284.48" y2="76.2" width="0.1524" layer="91"/>
-<label x="284.48" y="76.2" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="IO.27"/>
-<wire x1="289.56" y1="71.12" x2="284.48" y2="71.12" width="0.1524" layer="91"/>
-<label x="284.48" y="71.12" size="1.778" layer="95" rot="R180"/>
+<wire x1="327.66" y1="81.28" x2="330.2" y2="81.28" width="0.1524" layer="91"/>
+<label x="330.2" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="IO.26"/>
 <wire x1="320.04" y1="71.12" x2="327.66" y2="71.12" width="0.1524" layer="91"/>
 <label x="327.66" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="IO.31"/>
+<wire x1="289.56" y1="76.2" x2="284.48" y2="76.2" width="0.1524" layer="91"/>
+<label x="284.48" y="76.2" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6031,23 +6012,6 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <wire x1="698.5" y1="48.26" x2="731.52" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="731.52" y1="48.26" x2="731.52" y2="45.72" width="0.1524" layer="91"/>
 <junction x="731.52" y="48.26"/>
-</segment>
-</net>
-<net name="SW5" class="0">
-<segment>
-<pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="330.2" y1="104.14" x2="337.82" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="104.14" x2="342.9" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="99.06" x2="330.2" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="337.82" y1="99.06" x2="337.82" y2="104.14" width="0.1524" layer="91"/>
-<junction x="337.82" y="104.14"/>
-<label x="342.9" y="104.14" size="1.778" layer="95" xref="yes"/>
-<wire x1="330.2" y1="104.14" x2="274.32" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="104.14" x2="274.32" y2="81.28" width="0.1524" layer="91"/>
-<junction x="330.2" y="104.14"/>
-<pinref part="U$1" gate="G$1" pin="IO.35"/>
-<wire x1="274.32" y1="81.28" x2="289.56" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -6201,26 +6165,26 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 </net>
 <net name="PINAVL1_RX" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P2.0_TB0.6_UCA0TXD_UCA0SIMO_TB0CLK_ACLK"/>
-<wire x1="698.5" y1="142.24" x2="734.06" y2="142.24" width="0.1524" layer="91"/>
-<label x="734.06" y="142.24" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="P$35"/>
 <wire x1="236.22" y1="53.34" x2="213.36" y2="53.34" width="0.1524" layer="91"/>
 <label x="213.36" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="P2.2_TB0.2_UCB0CLK"/>
+<wire x1="698.5" y1="137.16" x2="734.06" y2="137.16" width="0.1524" layer="91"/>
+<label x="734.06" y="137.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PINAVL1_TX" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="P2.1_TB0.0_UCA0RXD_UCA0SOMI"/>
-<wire x1="698.5" y1="139.7" x2="734.06" y2="139.7" width="0.1524" layer="91"/>
-<label x="734.06" y="139.7" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$33"/>
 <wire x1="236.22" y1="55.88" x2="231.14" y2="55.88" width="0.1524" layer="91"/>
 <label x="231.14" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="P8.1"/>
+<wire x1="698.5" y1="71.12" x2="734.06" y2="71.12" width="0.1524" layer="91"/>
+<label x="734.06" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LITHIUM_RX" class="0">
@@ -6229,12 +6193,22 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <wire x1="236.22" y1="50.8" x2="231.14" y2="50.8" width="0.1524" layer="91"/>
 <label x="231.14" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="P2.1_TB0.0_UCA0RXD_UCA0SOMI"/>
+<wire x1="698.5" y1="139.7" x2="734.06" y2="139.7" width="0.1524" layer="91"/>
+<label x="734.06" y="139.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LITHIUM_TX" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$39"/>
 <wire x1="236.22" y1="48.26" x2="213.36" y2="48.26" width="0.1524" layer="91"/>
 <label x="213.36" y="48.26" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="P2.0_TB0.6_UCA0TXD_UCA0SIMO_TB0CLK_ACLK"/>
+<wire x1="698.5" y1="142.24" x2="734.06" y2="142.24" width="0.1524" layer="91"/>
+<label x="734.06" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SW10" class="0">
@@ -6245,8 +6219,8 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="IO.28"/>
-<wire x1="320.04" y1="73.66" x2="327.66" y2="73.66" width="0.1524" layer="91"/>
-<label x="327.66" y="73.66" size="1.778" layer="95" xref="yes"/>
+<wire x1="320.04" y1="73.66" x2="335.28" y2="73.66" width="0.1524" layer="91"/>
+<label x="335.28" y="73.66" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="VDD"/>
@@ -6336,6 +6310,11 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <wire x1="401.32" y1="17.78" x2="378.46" y2="17.78" width="0.1524" layer="91"/>
 <label x="378.46" y="17.78" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="P2.7"/>
+<wire x1="698.5" y1="124.46" x2="734.06" y2="124.46" width="0.1524" layer="91"/>
+<label x="734.06" y="124.46" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VDD" class="0">
 <segment>
@@ -6357,9 +6336,58 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <label x="353.06" y="10.16" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P4.3_A11"/>
-<wire x1="698.5" y1="111.76" x2="734.06" y2="111.76" width="0.1524" layer="91"/>
-<label x="734.06" y="111.76" size="1.778" layer="95"/>
+<pinref part="U1" gate="A" pin="P7.2_UCB2CLK"/>
+<wire x1="525.78" y1="48.26" x2="508" y2="48.26" width="0.1524" layer="91"/>
+<label x="508" y="48.26" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="CARD_DET1" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="CARD_DETECT"/>
+<wire x1="401.32" y1="35.56" x2="378.46" y2="35.56" width="0.1524" layer="91"/>
+<label x="378.46" y="35.56" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="CARD_DET2" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="CARD_DETECT1"/>
+<wire x1="401.32" y1="33.02" x2="378.46" y2="33.02" width="0.1524" layer="91"/>
+<label x="378.46" y="33.02" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="JTAG_DO" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PJ.0_TDO_TB0OUTH_SMCLK_SRSCG1_C6"/>
+<wire x1="525.78" y1="30.48" x2="520.7" y2="30.48" width="0.1524" layer="91"/>
+<label x="520.7" y="30.48" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="JTAG_DI" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PJ.1_TDI_TCLK_MCLK_SRSCG0_C7"/>
+<wire x1="525.78" y1="27.94" x2="520.7" y2="27.94" width="0.1524" layer="91"/>
+<label x="520.7" y="27.94" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="JTAG_STATE" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PJ.2_TMS_ACLK_SROSCOFF_C8"/>
+<wire x1="525.78" y1="25.4" x2="520.7" y2="25.4" width="0.1524" layer="91"/>
+<label x="520.7" y="25.4" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="JTAG_CLK" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PJ.3_TCK_SRCPUOFF_C9"/>
+<wire x1="525.78" y1="22.86" x2="520.7" y2="22.86" width="0.1524" layer="91"/>
+<label x="520.7" y="22.86" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="JTAG_ENABLE" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="TEST_SBWTCK"/>
+<wire x1="698.5" y1="55.88" x2="706.12" y2="55.88" width="0.1524" layer="91"/>
+<label x="706.12" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
