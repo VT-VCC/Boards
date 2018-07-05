@@ -5531,8 +5531,6 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <part name="R9" library="SparkFun-Resistors" deviceset="12.1KOHM" device="-0603-1/10W-1%" value="350"/>
 <part name="STRAIN_GAUGE1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="U$9" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
-<part name="C18" library="adafruit" deviceset="C-US" device="C0603" value="0.1uF"/>
-<part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C2" library="adafruit" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C19" library="adafruit" deviceset="C-US" device="C0603" value="10uF"/>
@@ -5616,8 +5614,6 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <instance part="R9" gate="G$1" x="508" y="-71.12" rot="R90"/>
 <instance part="STRAIN_GAUGE1" gate="G$1" x="525.78" y="-81.28"/>
 <instance part="U$9" gate="G$1" x="497.84" y="-104.14"/>
-<instance part="C18" gate="G$1" x="256.54" y="-60.96"/>
-<instance part="SUPPLY19" gate="GND" x="256.54" y="-68.58"/>
 <instance part="C2" gate="G$1" x="320.04" y="-88.9"/>
 <instance part="SUPPLY3" gate="GND" x="320.04" y="-96.52"/>
 <instance part="C19" gate="G$1" x="383.54" y="2.54"/>
@@ -5736,10 +5732,6 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <pinref part="C17" gate="G$1" pin="2"/>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
 <wire x1="337.82" y1="91.44" x2="337.82" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C18" gate="G$1" pin="2"/>
-<pinref part="SUPPLY19" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -6167,14 +6159,14 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <label x="734.06" y="129.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="ADO/SDO"/>
-<wire x1="266.7" y1="-76.2" x2="254" y2="-76.2" width="0.1524" layer="91"/>
-<label x="254" y="-76.2" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$11" gate="G$1" pin="DATA_IN"/>
 <wire x1="401.32" y1="22.86" x2="378.46" y2="22.86" width="0.1524" layer="91"/>
 <label x="378.46" y="22.86" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="SDA/SDI"/>
+<wire x1="312.42" y1="-55.88" x2="327.66" y2="-55.88" width="0.1524" layer="91"/>
+<label x="327.66" y="-55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -6184,14 +6176,14 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <label x="734.06" y="127" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="SDA/SDI"/>
-<wire x1="312.42" y1="-55.88" x2="327.66" y2="-55.88" width="0.1524" layer="91"/>
-<label x="327.66" y="-55.88" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$11" gate="G$1" pin="DATA_OUT"/>
 <wire x1="401.32" y1="25.4" x2="378.46" y2="25.4" width="0.1524" layer="91"/>
 <label x="378.46" y="25.4" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="ADO/SDO"/>
+<wire x1="266.7" y1="-76.2" x2="254" y2="-76.2" width="0.1524" layer="91"/>
+<label x="254" y="-76.2" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="SS_IMU" class="0">
@@ -6248,12 +6240,8 @@ http://www.onsemi.com/pub/Collateral/FDN340P-D.PDF</description>
 <net name="SW10" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="RESV"/>
-<wire x1="266.7" y1="-55.88" x2="256.54" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="-55.88" x2="254" y2="-55.88" width="0.1524" layer="91"/>
 <label x="254" y="-55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="C18" gate="G$1" pin="1"/>
-<wire x1="256.54" y1="-55.88" x2="254" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="-58.42" x2="256.54" y2="-55.88" width="0.1524" layer="91"/>
-<junction x="256.54" y="-55.88"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="IO.28"/>
