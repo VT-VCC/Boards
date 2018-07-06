@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5098,9 +5098,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="60.96" y="101.6" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="H1_P39"/>
-<wire x1="22.86" y1="17.78" x2="-7.62" y2="17.78" width="0.1524" layer="91"/>
-<label x="-7.62" y="17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="H1_P31"/>
+<wire x1="22.86" y1="27.94" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
+<label x="10.16" y="27.94" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="LITHIUM_RX_UART" class="0">
@@ -5110,9 +5110,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="55.88" y="99.06" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="H1_P37"/>
-<wire x1="22.86" y1="20.32" x2="17.78" y2="20.32" width="0.1524" layer="91"/>
-<label x="17.78" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="H1_P29"/>
+<wire x1="22.86" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
+<label x="10.16" y="30.48" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="SW5" class="0">
