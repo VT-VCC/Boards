@@ -1439,19 +1439,17 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </class>
 </classes>
 <designrules name="oshpark-2layer">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<description language="en">&lt;b&gt;OSH Park Design Rules&lt;/b&gt;
 &lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
+Please make sure your boards conform to these design rules.
+&lt;/p&gt;
 &lt;p&gt;
-Please make sure your boards conform to these design rules.</description>
+Note, that not all DRC settings must be set by the manufacturer. Several can be adjusted for the design, including those listed on our docs page here. 
+&lt;a href=&quot;http://docs.oshpark.com/design-tools/eagle/design-rules-files/&quot;&gt;Adjustable Settings&lt;/a&gt;
+&lt;/p&gt;</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
-<param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
+<param name="mtCopper" value="0.035559375mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.035559375mm"/>
+<param name="mtIsolate" value="1.6mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
 <param name="mdWireWire" value="6mil"/>
 <param name="mdWirePad" value="6mil"/>
 <param name="mdWireVia" value="6mil"/>
@@ -1467,8 +1465,8 @@ Please make sure your boards conform to these design rules.</description>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="13mil"/>
-<param name="msMicroVia" value="13mil"/>
+<param name="msDrill" value="10mil"/>
+<param name="msMicroVia" value="10mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -1477,19 +1475,19 @@ Please make sure your boards conform to these design rules.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="7mil"/>
+<param name="rlMinPadTop" value="5mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="7mil"/>
+<param name="rlMinPadInner" value="5mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="7mil"/>
+<param name="rlMinPadBottom" value="5mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="7mil"/>
+<param name="rlMinViaOuter" value="5mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="7mil"/>
+<param name="rlMinViaInner" value="5mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMinMicroViaOuter" value="5mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMinMicroViaInner" value="5mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
@@ -1673,9 +1671,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$2" pad="P$69"/>
 <contactref element="U$2" pad="P$73"/>
 <contactref element="U$2" pad="P$74"/>
-<wire x1="53.46" y1="74.14" x2="53.34" y2="74.02" width="0.1524" layer="1"/>
-<wire x1="38.22" y1="79.08" x2="38.227" y2="79.2" width="0.1524" layer="1"/>
-<wire x1="66.4845" y1="84.1765" x2="66.548" y2="84.14" width="0.635" layer="1"/>
 <wire x1="48.38" y1="74.14" x2="48.38" y2="72.143" width="0.381" layer="1"/>
 <wire x1="48.38" y1="72.143" x2="48.387" y2="72.136" width="0.381" layer="1"/>
 <via x="48.387" y="72.136" extent="1-16" drill="0.381"/>
@@ -1688,19 +1683,19 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="38.22" y1="74.14" x2="38.22" y2="72.143" width="0.381" layer="1"/>
 <wire x1="38.22" y1="72.143" x2="38.227" y2="72.136" width="0.381" layer="1"/>
 <via x="38.227" y="72.136" extent="1-16" drill="0.381"/>
-<wire x1="66.548" y1="84.14" x2="66.548" y2="81.915" width="0.381" layer="1"/>
-<via x="66.548" y="81.915" extent="1-16" drill="0.381"/>
-<wire x1="64.135" y1="84.14" x2="64.135" y2="81.915" width="0.381" layer="1"/>
-<via x="64.135" y="81.915" extent="1-16" drill="0.381"/>
+<wire x1="66.548" y1="84.14" x2="66.548" y2="82.169" width="0.381" layer="1"/>
+<via x="66.548" y="82.169" extent="1-16" drill="0.381"/>
+<wire x1="64.135" y1="84.14" x2="64.135" y2="82.169" width="0.381" layer="1"/>
+<via x="64.135" y="82.169" extent="1-16" drill="0.381"/>
 </signal>
 <signal name="VPP">
 <contactref element="U$1" pad="5"/>
 <contactref element="U$2" pad="P$23"/>
 <wire x1="50.92" y1="74.14" x2="50.92" y2="70.365" width="0.2032" layer="1"/>
-<wire x1="71.755" y1="49.53" x2="74.93" y2="49.53" width="0.2032" layer="1"/>
-<via x="74.93" y="49.53" extent="1-16" drill="0.35"/>
-<wire x1="74.93" y1="49.53" x2="82.15121875" y2="49.53" width="0.2032" layer="16"/>
+<wire x1="71.755" y1="49.53" x2="76.454" y2="49.53" width="0.2032" layer="1"/>
+<via x="76.454" y="49.53" extent="1-16" drill="0.35"/>
 <wire x1="50.92" y1="70.365" x2="71.755" y2="49.53" width="0.2032" layer="1"/>
+<wire x1="82.15121875" y1="49.53" x2="76.454" y2="49.53" width="0.1524" layer="16"/>
 </signal>
 <signal name="PF">
 <contactref element="U$1" pad="6"/>
@@ -1709,11 +1704,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="50.92" y1="77.35" x2="52.07" y2="76.2" width="0.2032" layer="1"/>
 <wire x1="52.07" y1="76.2" x2="52.07" y2="71.12" width="0.2032" layer="1"/>
 <wire x1="52.07" y1="71.12" x2="72.39" y2="50.8" width="0.2032" layer="1"/>
-<wire x1="72.39" y1="50.8" x2="73.66" y2="50.8" width="0.2032" layer="1"/>
-<via x="73.66" y="50.8" extent="1-16" drill="0.35"/>
-<wire x1="73.66" y1="50.8" x2="83.82" y2="50.8" width="0.2032" layer="16"/>
-<wire x1="83.82" y1="50.8" x2="84.69121875" y2="49.92878125" width="0.2032" layer="16"/>
-<wire x1="84.69121875" y1="49.92878125" x2="84.69121875" y2="49.53" width="0.2032" layer="16"/>
+<wire x1="72.39" y1="50.8" x2="75.184" y2="50.8" width="0.2032" layer="1"/>
+<via x="75.184" y="50.8" extent="1-16" drill="0.35"/>
+<wire x1="84.69121875" y1="49.53" x2="84.69121875" y2="49.92878125" width="0.1524" layer="1"/>
+<wire x1="84.69121875" y1="49.92878125" x2="83.82" y2="50.8" width="0.1524" layer="1"/>
+<wire x1="83.82" y1="50.8" x2="79.248" y2="50.8" width="0.1524" layer="1"/>
+<via x="79.248" y="50.8" extent="1-16" drill="0.35"/>
+<wire x1="79.248" y1="50.8" x2="75.184" y2="50.8" width="0.1524" layer="16"/>
 </signal>
 <signal name="TX">
 <contactref element="U$1" pad="1"/>
@@ -1734,9 +1731,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="54.864" y1="76.166" x2="54.864" y2="72.263" width="0.2032" layer="1"/>
 <wire x1="54.864" y1="72.263" x2="78.74" y2="48.387" width="0.2032" layer="1"/>
 <wire x1="56" y1="79.08" x2="56" y2="77.302" width="0.2032" layer="1"/>
-</signal>
-<signal name="SW5">
-<contactref element="U$2" pad="P$65"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
