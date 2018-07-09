@@ -1700,9 +1700,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="84.455" y1="43.18" x2="84.69121875" y2="43.18" width="0.2032" layer="1"/>
 <wire x1="75.057" y1="23.368" x2="81.28" y2="29.591" width="0.2032" layer="1"/>
 </signal>
-<signal name="SW5">
-<contactref element="U$2" pad="P$65"/>
-</signal>
 <signal name="3V3">
 <contactref element="U$2" pad="P$79"/>
 <contactref element="U$1" pad="3.3V"/>
@@ -1716,6 +1713,16 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="77.597" y1="33.081" x2="73.379" y2="33.081" width="0.762" layer="1"/>
 <wire x1="73.379" y1="33.081" x2="73.367" y2="33.093" width="0.604" layer="1"/>
 </signal>
+<signal name="OA_RESET">
+<contactref element="U$1" pad="CONFIG1"/>
+<wire x1="41.067" y1="20.013" x2="55.552" y2="20.013" width="0.2032" layer="1"/>
+<wire x1="55.552" y1="20.013" x2="57.785" y2="17.78" width="0.2032" layer="1"/>
+<wire x1="57.785" y1="17.78" x2="79.375" y2="17.78" width="0.2032" layer="1"/>
+<contactref element="U$2" pad="P$47"/>
+<wire x1="79.375" y1="17.78" x2="79.61121875" y2="17.78" width="0.2032" layer="1"/>
+<wire x1="79.375" y1="17.78" x2="82.15121875" y2="17.78" width="0.2032" layer="1"/>
+<wire x1="82.15121875" y1="17.78" x2="84.69121875" y2="20.32" width="0.2032" layer="1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -1724,6 +1731,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="19,1,e2b8102eec3d1eab"/>
+<approved hash="19,1,e26df6330a211e7f"/>
+<approved hash="19,1,7262663cea2efe70"/>
+<approved hash="19,1,72b780210c32fea4"/>
+<approved hash="21,19,1e481e481c4a9c4a"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
