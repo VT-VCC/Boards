@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -342,7 +342,7 @@
 <wire x1="40.64" y1="85.09" x2="45.72" y2="90.17" width="0.127" layer="20" curve="-90"/>
 <wire x1="45.72" y1="90.17" x2="90.805" y2="90.17" width="0.127" layer="20"/>
 </package>
-<package name="PINAV-L1">
+<package name="PINAV-L1_">
 <wire x1="35" y1="0" x2="35" y2="75" width="0.127" layer="21"/>
 <wire x1="35" y1="75" x2="0" y2="75" width="0.127" layer="21"/>
 <wire x1="0" y1="75" x2="0" y2="0" width="0.127" layer="21"/>
@@ -387,7 +387,7 @@
 <dimension x1="5.2424625" y1="5.2424625" x2="3.7575375" y2="3.7575375" x3="3.7575375" y3="3.7575375" textsize="1.27" layer="21" dtype="diameter"/>
 <dimension x1="35" y1="75" x2="30.48" y2="63.5" x3="38.1" y3="69.25" textsize="1.27" layer="21" dtype="vertical"/>
 </package>
-<package name="OLD_PC104">
+<package name="_OLD_PC104">
 <wire x1="79.2" y1="0" x2="4.1" y2="0" width="0.127" layer="21"/>
 <wire x1="4.1" y1="0" x2="0" y2="4.1" width="0.127" layer="21" curve="-90"/>
 <wire x1="0" y1="4.1" x2="0" y2="85.2" width="0.127" layer="21"/>
@@ -544,6 +544,29 @@
 <pad name="P$3" x="25.4" y="38.1" drill="3.81" shape="square"/>
 <pad name="P$4" x="7.62" y="38.1" drill="3.81" shape="square"/>
 </package>
+<package name="_OLD_LI-1">
+<description>This is the footprint for the Astrodev Lithium Li-1 radio</description>
+<wire x1="0" y1="0" x2="0" y2="64.1" width="0.127" layer="21"/>
+<wire x1="0" y1="64.1" x2="32.9" y2="64.1" width="0.127" layer="21"/>
+<wire x1="32.9" y1="64.1" x2="32.9" y2="0" width="0.127" layer="21"/>
+<wire x1="32.9" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<smd name="3.3V" x="32.6" y="16.71" dx="3" dy="2.15" layer="1"/>
+<smd name="CONFIG1" x="0.3" y="3.63" dx="3" dy="2.15" layer="1"/>
+<smd name="CONFIG2" x="0.3" y="6.9" dx="3" dy="2.15" layer="1"/>
+<smd name="EXT_EVT" x="0.3" y="10.17" dx="3" dy="2.15" layer="1"/>
+<smd name="GND1" x="0.3" y="13.44" dx="3" dy="2.15" layer="1"/>
+<smd name="GND2" x="32.6" y="13.44" dx="3" dy="2.15" layer="1"/>
+<smd name="NC" x="0.3" y="16.71" dx="3" dy="2.15" layer="1"/>
+<smd name="RESET" x="32.6" y="10.17" dx="3" dy="2.15" layer="1"/>
+<smd name="RF_GND1" x="32.6" y="54.48" dx="3" dy="2.15" layer="1"/>
+<smd name="RF_GND2" x="32.6" y="57.75" dx="3" dy="2.15" layer="1"/>
+<smd name="RF_GND3" x="16.3" y="46.1" dx="25.35" dy="25.35" layer="1"/>
+<smd name="RX_UART" x="32.6" y="6.9" dx="3" dy="2.15" layer="1"/>
+<smd name="TX_UART" x="32.6" y="3.63" dx="3" dy="2.15" layer="1"/>
+<smd name="V_AMP1" x="32.6" y="47.94" dx="3" dy="2.15" layer="1"/>
+<smd name="V_AMP2" x="32.6" y="51.21" dx="3" dy="2.15" layer="1"/>
+<text x="6.35" y="66.04" size="1.27" layer="21" rot="R180">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CUBESAT_KIT_HEADER">
@@ -662,7 +685,7 @@
 <pin name="H2.51" x="68.58" y="-63.5" length="middle"/>
 <pin name="H2.52" x="109.22" y="-63.5" length="middle" rot="R180"/>
 </symbol>
-<symbol name="PINAV-L1">
+<symbol name="PINAV-L1_">
 <wire x1="-10.16" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-2.54" x2="7.62" y2="15.24" width="0.254" layer="94"/>
 <wire x1="7.62" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
@@ -676,7 +699,7 @@
 <pin name="VDD2" x="12.7" y="12.7" length="middle" direction="pwr" rot="R180"/>
 <pin name="VPP" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
 </symbol>
-<symbol name="OLD_PC104">
+<symbol name="_OLD_PC104">
 <wire x1="0" y1="58.42" x2="0" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="0" y1="-10.16" x2="25.4" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="25.4" y1="-10.16" x2="25.4" y2="58.42" width="0.254" layer="94"/>
@@ -793,6 +816,23 @@
 <text x="54.864" y="58.928" size="1.27" layer="94">H2</text>
 </symbol>
 <symbol name="LI-1">
+<wire x1="0" y1="25.4" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="25.4" x2="0" y2="25.4" width="0.254" layer="94"/>
+<pin name="!RESET" x="-5.08" y="17.78" length="middle"/>
+<pin name="3.3V" x="-5.08" y="12.7" length="middle"/>
+<pin name="CONFIG1" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="CONFIG2" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="EXT_EVT" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="GND" x="-5.08" y="15.24" length="middle"/>
+<pin name="RF_GND" x="-5.08" y="2.54" length="middle"/>
+<pin name="RX_UART" x="-5.08" y="20.32" length="middle"/>
+<pin name="TX_UART" x="-5.08" y="22.86" length="middle"/>
+<pin name="V_AMP" x="-5.08" y="7.62" length="middle"/>
+<text x="0" y="25.4" size="1.778" layer="94">LITHIUM_LI-1</text>
+</symbol>
+<symbol name="_OLD_LI-1">
 <wire x1="0" y1="25.4" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
 <wire x1="20.32" y1="0" x2="20.32" y2="25.4" width="0.254" layer="94"/>
@@ -940,12 +980,12 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINAV-L1">
+<deviceset name="PINAV-L1_">
 <gates>
-<gate name="G$1" symbol="PINAV-L1" x="2.54" y="-7.62"/>
+<gate name="G$1" symbol="PINAV-L1_" x="2.54" y="-7.62"/>
 </gates>
 <devices>
-<device name="" package="PINAV-L1">
+<device name="" package="PINAV-L1_">
 <connects>
 <connect gate="G$1" pin="GND" pad="7 16"/>
 <connect gate="G$1" pin="GND2" pad="3 15"/>
@@ -962,12 +1002,12 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="OLD_PC104">
+<deviceset name="_OLD_PC104">
 <gates>
-<gate name="G$1" symbol="OLD_PC104" x="-40.64" y="-25.4"/>
+<gate name="G$1" symbol="_OLD_PC104" x="-40.64" y="-25.4"/>
 </gates>
 <devices>
-<device name="" package="OLD_PC104">
+<device name="" package="_OLD_PC104">
 <connects>
 <connect gate="G$1" pin="1O.21" pad="P$3"/>
 <connect gate="G$1" pin="3V3@1" pad="P$79"/>
@@ -1086,6 +1126,30 @@
 </gates>
 <devices>
 <device name="" package="LI-1">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="RESET"/>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="CONFIG1" pad="CONFIG1"/>
+<connect gate="G$1" pin="CONFIG2" pad="CONFIG2"/>
+<connect gate="G$1" pin="EXT_EVT" pad="EXT_EVT"/>
+<connect gate="G$1" pin="GND" pad="GND1 GND2"/>
+<connect gate="G$1" pin="RF_GND" pad="RF_GND1 RF_GND2 RF_GND3"/>
+<connect gate="G$1" pin="RX_UART" pad="RX_UART"/>
+<connect gate="G$1" pin="TX_UART" pad="TX_UART"/>
+<connect gate="G$1" pin="V_AMP" pad="V_AMP1 V_AMP2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="_OLD_LI-1">
+<gates>
+<gate name="G$1" symbol="_OLD_LI-1" x="-10.16" y="15.24"/>
+</gates>
+<devices>
+<device name="" package="_OLD_LI-1">
 <connects>
 <connect gate="G$1" pin="!RESET" pad="RESET"/>
 <connect gate="G$1" pin="3.3V" pad="3.3V"/>
