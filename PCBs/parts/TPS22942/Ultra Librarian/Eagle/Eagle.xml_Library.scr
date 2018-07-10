@@ -1,0 +1,118 @@
+# Created by Ultra Librarian Gold 8.2.225 Copyright © 1999-2018
+# Frank Frank, Accelerated Designs
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'DCK0005A.pac';
+Layer 1;
+Smd '1' 15.748 33.4646 -0 R90 (-37.4015 25.5906);
+Layer 1;
+Smd '2' 15.748 33.4646 -0 R90 (-37.4015 0);
+Layer 1;
+Smd '3' 15.748 33.4646 -0 R90 (-37.4015 -25.5905);
+Layer 1;
+Smd '4' 15.748 33.4646 -0 R90 (37.4016 -25.5905);
+Layer 1;
+Smd '5' 15.748 33.4646 -0 R90 (37.4016 25.5906);
+Layer 21;
+Wire 8 (6 -43) (6 43);
+Wire 8 (-6 -43) (-6 43);
+Wire 8 (-6 -43) (6 -43);
+Wire 8 (-6 43) (6 43);
+Layer 51;
+Wire 6 (-28 -42) (28 -42);
+Wire 6 (-28 42) (28 42);
+Wire 6 (28 -42) (28 42);
+Wire 6 (-28 -42) (-28 42);
+Wire 6 (38 -30) (45 -30);
+Wire 6 (33 -21) (34 -21);
+Wire 6 (28 -21) (33 -21);
+Wire 6 (38 -21) (45 -21);
+Wire 6 (34 -30) (38 -30);
+Wire 6 (33 -30) (34 -30);
+Wire 6 (28 -30) (33 -30);
+Wire 6 (45 -30) (45 -21);
+Wire 6 (34 -21) (38 -21);
+Wire 6 (38 21) (45 21);
+Wire 6 (33 30) (34 30);
+Wire 6 (28 30) (33 30);
+Wire 6 (38 30) (45 30);
+Wire 6 (34 21) (38 21);
+Wire 6 (33 21) (34 21);
+Wire 6 (28 21) (33 21);
+Wire 6 (45 21) (45 30);
+Wire 6 (34 30) (38 30);
+Wire 6 (-45 -21) (-38 -21);
+Wire 6 (-34 -30) (-34 -30);
+Wire 6 (-34 -30) (-28 -30);
+Wire 6 (-45 -30) (-38 -30);
+Wire 6 (-38 -21) (-34 -21);
+Wire 6 (-34 -21) (-34 -21);
+Wire 6 (-34 -21) (-28 -21);
+Wire 6 (-45 -30) (-45 -21);
+Wire 6 (-38 -30) (-34 -30);
+Wire 6 (-45 4) (-38 4);
+Wire 6 (-34 -4) (-34 -4);
+Wire 6 (-34 -4) (-28 -4);
+Wire 6 (-45 -4) (-38 -4);
+Wire 6 (-38 4) (-34 4);
+Wire 6 (-34 4) (-34 4);
+Wire 6 (-34 4) (-28 4);
+Wire 6 (-45 -4) (-45 4);
+Wire 6 (-38 -4) (-34 -4);
+Wire 6 (-45 30) (-38 30);
+Wire 6 (-34 21) (-34 21);
+Wire 6 (-34 21) (-28 21);
+Wire 6 (-45 21) (-38 21);
+Wire 6 (-38 30) (-28 30);
+Wire 6 (-34 30) (-34 30);
+Wire 6 (-45 21) (-45 30);
+Wire 6 (-38 21) (-34 21);
+Change Size 50;
+Change Ratio 6;
+Text '.Designator' SR270 (-35 36);
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (-129 -25);
+Layer 27;
+
+Edit 'TPS22942DCK.sym';
+Layer 94;
+Pin 'VOUT' Pwr None Middle R180 Both 0 (800 400)
+Pin 'GND' Pwr None Middle R180 Both 0 (800 -400)
+Pin 'OC' Out None Middle R180 Both 0 (800 0)
+Pin 'ON' In None Middle R0 Both 0 (-700 0)
+Pin 'VIN' Pwr None Middle R0 Both 0 (-700 400)
+Wire 6 (-500 -600) (600 -600);
+Wire 6 (600 -600) (600 600);
+Wire 6 (600 600) (-500 600);
+Wire 6 (-500 600) (-500 -600);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (-186 59);
+Layer 96;
+Change Size 82;
+Change Ratio 6;
+Text '>Value' SR0 (-211 -41);
+Layer 96;
+Change Size 82;
+Change Ratio 6;
+Text '>Value' SR0 (-211 -41);
+
+Edit 'TPS22942DCKR.dev';
+Prefix 'U';
+Description '';
+Value Off;
+Add TPS22942DCK 'A' Next  0 (0 0);
+Package 'DCK0005A';
+Technology '';
+Connect 'A.VOUT' '1';
+Connect 'A.GND' '2';
+Connect 'A.OC' '3';
+Connect 'A.ON' '4';
+Connect 'A.VIN' '5';
