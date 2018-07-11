@@ -743,6 +743,147 @@
 <wire x1="0" y1="85.09" x2="5.08" y2="90.17" width="0.127" layer="20" curve="-90"/>
 <wire x1="5.08" y1="90.17" x2="90.678" y2="90.17" width="0.127" layer="20"/>
 </package>
+<package name="PC104_MOBO">
+<description>ELEVATED SOCKET, .100 inch(2.54mm) PITCH</description>
+<pad name="1" x="83.185" y="76.2" drill="1.016" diameter="1.524"/>
+<pad name="2" x="85.725" y="76.2" drill="1.016" diameter="1.524"/>
+<pad name="3" x="83.185" y="73.66" drill="1.016" diameter="1.524"/>
+<pad name="4" x="85.725" y="73.66" drill="1.016" diameter="1.524"/>
+<pad name="5" x="83.185" y="71.12" drill="1.016" diameter="1.524"/>
+<pad name="6" x="85.725" y="71.12" drill="1.016" diameter="1.524"/>
+<pad name="7" x="83.185" y="68.58" drill="1.016" diameter="1.524"/>
+<pad name="8" x="85.725" y="68.58" drill="1.016" diameter="1.524"/>
+<pad name="9" x="83.185" y="66.04" drill="1.016" diameter="1.524"/>
+<pad name="10" x="85.725" y="66.04" drill="1.016" diameter="1.524"/>
+<pad name="11" x="83.185" y="63.5" drill="1.016" diameter="1.524"/>
+<pad name="12" x="85.725" y="63.5" drill="1.016" diameter="1.524"/>
+<pad name="13" x="83.185" y="60.96" drill="1.016" diameter="1.524"/>
+<pad name="14" x="85.725" y="60.96" drill="1.016" diameter="1.524"/>
+<pad name="15" x="83.185" y="58.42" drill="1.016" diameter="1.524"/>
+<pad name="16" x="85.725" y="58.42" drill="1.016" diameter="1.524"/>
+<pad name="17" x="83.185" y="55.88" drill="1.016" diameter="1.524"/>
+<pad name="18" x="85.725" y="55.88" drill="1.016" diameter="1.524"/>
+<pad name="19" x="83.185" y="53.34" drill="1.016" diameter="1.524"/>
+<pad name="20" x="85.725" y="53.34" drill="1.016" diameter="1.524"/>
+<pad name="21" x="83.185" y="50.8" drill="1.016" diameter="1.524"/>
+<pad name="22" x="85.725" y="50.8" drill="1.016" diameter="1.524"/>
+<pad name="23" x="83.185" y="48.26" drill="1.016" diameter="1.524"/>
+<pad name="24" x="85.725" y="48.26" drill="1.016" diameter="1.524"/>
+<pad name="25" x="83.185" y="45.72" drill="1.016" diameter="1.524"/>
+<pad name="26" x="85.725" y="45.72" drill="1.016" diameter="1.524"/>
+<pad name="27" x="83.185" y="43.18" drill="1.016" diameter="1.524"/>
+<pad name="28" x="85.725" y="43.18" drill="1.016" diameter="1.524"/>
+<pad name="29" x="83.185" y="40.64" drill="1.016" diameter="1.524"/>
+<pad name="30" x="85.725" y="40.64" drill="1.016" diameter="1.524"/>
+<pad name="31" x="83.185" y="38.1" drill="1.016" diameter="1.524"/>
+<pad name="32" x="85.725" y="38.1" drill="1.016" diameter="1.524"/>
+<pad name="33" x="83.185" y="35.56" drill="1.016" diameter="1.524"/>
+<pad name="34" x="85.725" y="35.56" drill="1.016" diameter="1.524"/>
+<pad name="35" x="83.185" y="33.02" drill="1.016" diameter="1.524"/>
+<pad name="36" x="85.725" y="33.02" drill="1.016" diameter="1.524"/>
+<pad name="37" x="83.185" y="30.48" drill="1.016" diameter="1.524"/>
+<pad name="38" x="85.725" y="30.48" drill="1.016" diameter="1.524"/>
+<pad name="39" x="83.185" y="27.94" drill="1.016" diameter="1.524"/>
+<pad name="40" x="85.725" y="27.94" drill="1.016" diameter="1.524"/>
+<pad name="41" x="83.185" y="25.4" drill="1.016" diameter="1.524"/>
+<pad name="42" x="85.725" y="25.4" drill="1.016" diameter="1.524"/>
+<pad name="43" x="83.185" y="22.86" drill="1.016" diameter="1.524"/>
+<pad name="44" x="85.725" y="22.86" drill="1.016" diameter="1.524"/>
+<pad name="45" x="83.185" y="20.32" drill="1.016" diameter="1.524"/>
+<pad name="46" x="85.725" y="20.32" drill="1.016" diameter="1.524"/>
+<pad name="47" x="83.185" y="17.78" drill="1.016" diameter="1.524"/>
+<pad name="48" x="85.725" y="17.78" drill="1.016" diameter="1.524"/>
+<pad name="49" x="83.185" y="15.24" drill="1.016" diameter="1.524"/>
+<pad name="50" x="85.725" y="15.24" drill="1.016" diameter="1.524"/>
+<pad name="51" x="83.185" y="12.7" drill="1.016" diameter="1.524"/>
+<pad name="52" x="85.725" y="12.7" drill="1.016" diameter="1.524"/>
+<wire x1="81.979" y1="77.724" x2="86.931" y2="77.724" width="0.254" layer="51"/>
+<wire x1="86.931" y1="77.724" x2="86.931" y2="11.176" width="0.254" layer="51"/>
+<wire x1="86.931" y1="11.176" x2="81.979" y2="11.176" width="0.254" layer="51"/>
+<wire x1="81.979" y1="11.176" x2="81.979" y2="77.724" width="0.254" layer="51"/>
+<wire x1="0" y1="0" x2="95.885" y2="0" width="0.127" layer="21"/>
+<wire x1="95.885" y1="0" x2="95.885" y2="90.17" width="0.127" layer="21"/>
+<wire x1="95.885" y1="90.17" x2="0" y2="90.17" width="0.127" layer="21"/>
+<wire x1="0" y1="90.17" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="53" x="88.265" y="76.2" drill="1.016" diameter="1.524"/>
+<pad name="54" x="90.805" y="76.2" drill="1.016" diameter="1.524"/>
+<pad name="55" x="88.265" y="73.66" drill="1.016" diameter="1.524"/>
+<pad name="56" x="90.805" y="73.66" drill="1.016" diameter="1.524"/>
+<pad name="57" x="88.265" y="71.12" drill="1.016" diameter="1.524"/>
+<pad name="58" x="90.805" y="71.12" drill="1.016" diameter="1.524"/>
+<pad name="59" x="88.265" y="68.58" drill="1.016" diameter="1.524"/>
+<pad name="60" x="90.805" y="68.58" drill="1.016" diameter="1.524"/>
+<pad name="61" x="88.265" y="66.04" drill="1.016" diameter="1.524"/>
+<pad name="62" x="90.805" y="66.04" drill="1.016" diameter="1.524"/>
+<pad name="63" x="88.265" y="63.5" drill="1.016" diameter="1.524"/>
+<pad name="64" x="90.805" y="63.5" drill="1.016" diameter="1.524"/>
+<pad name="65" x="88.265" y="60.96" drill="1.016" diameter="1.524"/>
+<pad name="66" x="90.805" y="60.96" drill="1.016" diameter="1.524"/>
+<pad name="67" x="88.265" y="58.42" drill="1.016" diameter="1.524"/>
+<pad name="68" x="90.805" y="58.42" drill="1.016" diameter="1.524"/>
+<pad name="69" x="88.265" y="55.88" drill="1.016" diameter="1.524"/>
+<pad name="70" x="90.805" y="55.88" drill="1.016" diameter="1.524"/>
+<pad name="71" x="88.265" y="53.34" drill="1.016" diameter="1.524"/>
+<pad name="72" x="90.805" y="53.34" drill="1.016" diameter="1.524"/>
+<pad name="73" x="88.265" y="50.8" drill="1.016" diameter="1.524"/>
+<pad name="74" x="90.805" y="50.8" drill="1.016" diameter="1.524"/>
+<pad name="75" x="88.265" y="48.26" drill="1.016" diameter="1.524"/>
+<pad name="76" x="90.805" y="48.26" drill="1.016" diameter="1.524"/>
+<pad name="77" x="88.265" y="45.72" drill="1.016" diameter="1.524"/>
+<pad name="78" x="90.805" y="45.72" drill="1.016" diameter="1.524"/>
+<pad name="79" x="88.265" y="43.18" drill="1.016" diameter="1.524"/>
+<pad name="80" x="90.805" y="43.18" drill="1.016" diameter="1.524"/>
+<pad name="81" x="88.265" y="40.64" drill="1.016" diameter="1.524"/>
+<pad name="82" x="90.805" y="40.64" drill="1.016" diameter="1.524"/>
+<pad name="83" x="88.265" y="38.1" drill="1.016" diameter="1.524"/>
+<pad name="84" x="90.805" y="38.1" drill="1.016" diameter="1.524"/>
+<pad name="85" x="88.265" y="35.56" drill="1.016" diameter="1.524"/>
+<pad name="86" x="90.805" y="35.56" drill="1.016" diameter="1.524"/>
+<pad name="87" x="88.265" y="33.02" drill="1.016" diameter="1.524"/>
+<pad name="88" x="90.805" y="33.02" drill="1.016" diameter="1.524"/>
+<pad name="89" x="88.265" y="30.48" drill="1.016" diameter="1.524"/>
+<pad name="90" x="90.805" y="30.48" drill="1.016" diameter="1.524"/>
+<pad name="91" x="88.265" y="27.94" drill="1.016" diameter="1.524"/>
+<pad name="92" x="90.805" y="27.94" drill="1.016" diameter="1.524"/>
+<pad name="93" x="88.265" y="25.4" drill="1.016" diameter="1.524"/>
+<pad name="94" x="90.805" y="25.4" drill="1.016" diameter="1.524"/>
+<pad name="95" x="88.265" y="22.86" drill="1.016" diameter="1.524"/>
+<pad name="96" x="90.805" y="22.86" drill="1.016" diameter="1.524"/>
+<pad name="97" x="88.265" y="20.32" drill="1.016" diameter="1.524"/>
+<pad name="98" x="90.805" y="20.32" drill="1.016" diameter="1.524"/>
+<pad name="99" x="88.265" y="17.78" drill="1.016" diameter="1.524"/>
+<pad name="100" x="90.805" y="17.78" drill="1.016" diameter="1.524"/>
+<pad name="101" x="88.265" y="15.24" drill="1.016" diameter="1.524"/>
+<pad name="102" x="90.805" y="15.24" drill="1.016" diameter="1.524"/>
+<pad name="103" x="88.265" y="12.7" drill="1.016" diameter="1.524"/>
+<pad name="104" x="90.805" y="12.7" drill="1.016" diameter="1.524"/>
+<wire x1="87.059" y1="77.724" x2="92.011" y2="77.724" width="0.254" layer="51"/>
+<wire x1="92.011" y1="77.724" x2="92.011" y2="11.176" width="0.254" layer="51"/>
+<wire x1="92.011" y1="11.176" x2="87.059" y2="11.176" width="0.254" layer="51"/>
+<wire x1="87.059" y1="11.176" x2="87.059" y2="77.724" width="0.254" layer="51"/>
+<pad name="MNT2" x="5.08" y="5.08" drill="3.175" diameter="6.35"/>
+<pad name="MNT1" x="5.08" y="85.09" drill="3.175" diameter="6.35"/>
+<pad name="MNT3" x="90.805" y="81.28" drill="3.175" diameter="6.35"/>
+<pad name="MNT4" x="90.805" y="7.62" drill="3.175" diameter="6.35"/>
+<text x="82.55" y="77.978" size="1.27" layer="25">1</text>
+<text x="85.09" y="77.978" size="1.27" layer="25">2</text>
+<text x="86.868" y="77.978" size="1.27" layer="25">53</text>
+<text x="92.329" y="75.692" size="1.27" layer="25">54</text>
+<text x="82.169" y="9.652" size="1.27" layer="25">51</text>
+<text x="84.836" y="9.652" size="1.27" layer="25">52</text>
+<wire x1="0" y1="85.09" x2="0" y2="5.08" width="0.127" layer="20"/>
+<wire x1="0" y1="5.08" x2="5.08" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="5.08" y1="0" x2="90.805" y2="0" width="0.127" layer="20"/>
+<wire x1="90.805" y1="0" x2="95.885" y2="5.08" width="0.127" layer="20" curve="90"/>
+<wire x1="95.885" y1="5.08" x2="95.885" y2="85.09" width="0.127" layer="20"/>
+<wire x1="95.885" y1="85.09" x2="90.678" y2="90.17" width="0.127" layer="20" curve="91.414625"/>
+<wire x1="0" y1="85.09" x2="10.16" y2="85.09" width="0.127" layer="20" curve="-180"/>
+<wire x1="10.16" y1="85.09" x2="15.24" y2="80.01" width="0.127" layer="20" curve="90"/>
+<wire x1="15.24" y1="80.01" x2="31.75" y2="80.01" width="0.127" layer="20"/>
+<wire x1="31.75" y1="80.01" x2="36.83" y2="85.09" width="0.127" layer="20" curve="90"/>
+<wire x1="36.83" y1="85.09" x2="41.91" y2="90.17" width="0.127" layer="20" curve="-90"/>
+<wire x1="41.91" y1="90.17" x2="90.678" y2="90.17" width="0.127" layer="20"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CUBESAT_KIT_HEADER">
@@ -1386,6 +1527,124 @@
 </gates>
 <devices>
 <device name="" package="PC104_GPS">
+<connects>
+<connect gate="A" pin="12VBUS1" pad="75"/>
+<connect gate="A" pin="12VBUS2" pad="76"/>
+<connect gate="A" pin="3V3BUS1" pad="79"/>
+<connect gate="A" pin="3V3BUS2" pad="80"/>
+<connect gate="A" pin="5VBUS1" pad="77"/>
+<connect gate="A" pin="5VBUS2" pad="78"/>
+<connect gate="A" pin="5VUSB_CHG" pad="32"/>
+<connect gate="A" pin="BATVBUS1" pad="97"/>
+<connect gate="A" pin="BATVBUS2" pad="98"/>
+<connect gate="A" pin="BCR_OUT1" pad="93"/>
+<connect gate="A" pin="BCR_OUT2" pad="94"/>
+<connect gate="A" pin="BCR_OUT3" pad="95"/>
+<connect gate="A" pin="BCR_OUT4" pad="96"/>
+<connect gate="A" pin="DNU_RSV1" pad="85"/>
+<connect gate="A" pin="DNU_RSV2" pad="86"/>
+<connect gate="A" pin="DNU_RSV3" pad="89"/>
+<connect gate="A" pin="DNU_RSV4" pad="90"/>
+<connect gate="A" pin="DNU_RSV5" pad="91"/>
+<connect gate="A" pin="DNU_RSV6" pad="92"/>
+<connect gate="A" pin="GND1" pad="61"/>
+<connect gate="A" pin="GND10" pad="100"/>
+<connect gate="A" pin="GND2" pad="66"/>
+<connect gate="A" pin="GND3" pad="69"/>
+<connect gate="A" pin="GND4" pad="73"/>
+<connect gate="A" pin="GND5" pad="74"/>
+<connect gate="A" pin="GND6" pad="81"/>
+<connect gate="A" pin="GND7" pad="82"/>
+<connect gate="A" pin="GND8" pad="84"/>
+<connect gate="A" pin="GND9" pad="99"/>
+<connect gate="A" pin="GPS_PF" pad="24"/>
+<connect gate="A" pin="GPS_RX" pad="35"/>
+<connect gate="A" pin="GPS_TX" pad="33"/>
+<connect gate="A" pin="GPS_VPP" pad="23"/>
+<connect gate="A" pin="H1.1" pad="1"/>
+<connect gate="A" pin="H1.10" pad="10"/>
+<connect gate="A" pin="H1.11" pad="11"/>
+<connect gate="A" pin="H1.12" pad="12"/>
+<connect gate="A" pin="H1.13" pad="13"/>
+<connect gate="A" pin="H1.14" pad="14"/>
+<connect gate="A" pin="H1.15" pad="15"/>
+<connect gate="A" pin="H1.16" pad="16"/>
+<connect gate="A" pin="H1.17" pad="17"/>
+<connect gate="A" pin="H1.18" pad="18"/>
+<connect gate="A" pin="H1.19" pad="19"/>
+<connect gate="A" pin="H1.2" pad="2"/>
+<connect gate="A" pin="H1.20" pad="20"/>
+<connect gate="A" pin="H1.21" pad="21"/>
+<connect gate="A" pin="H1.22" pad="22"/>
+<connect gate="A" pin="H1.25" pad="25"/>
+<connect gate="A" pin="H1.26" pad="26"/>
+<connect gate="A" pin="H1.27" pad="27"/>
+<connect gate="A" pin="H1.28" pad="28"/>
+<connect gate="A" pin="H1.3" pad="3"/>
+<connect gate="A" pin="H1.30" pad="30"/>
+<connect gate="A" pin="H1.34" pad="34"/>
+<connect gate="A" pin="H1.36" pad="36"/>
+<connect gate="A" pin="H1.37" pad="37"/>
+<connect gate="A" pin="H1.38" pad="38"/>
+<connect gate="A" pin="H1.39" pad="39"/>
+<connect gate="A" pin="H1.4" pad="4"/>
+<connect gate="A" pin="H1.40" pad="40"/>
+<connect gate="A" pin="H1.42" pad="42"/>
+<connect gate="A" pin="H1.44" pad="44"/>
+<connect gate="A" pin="H1.45" pad="45"/>
+<connect gate="A" pin="H1.46" pad="46"/>
+<connect gate="A" pin="H1.48" pad="48"/>
+<connect gate="A" pin="H1.49" pad="49"/>
+<connect gate="A" pin="H1.5" pad="5"/>
+<connect gate="A" pin="H1.50" pad="50"/>
+<connect gate="A" pin="H1.51" pad="51"/>
+<connect gate="A" pin="H1.52" pad="52"/>
+<connect gate="A" pin="H1.6" pad="6"/>
+<connect gate="A" pin="H1.7" pad="7"/>
+<connect gate="A" pin="H1.8" pad="8"/>
+<connect gate="A" pin="H1.9" pad="9"/>
+<connect gate="A" pin="H2.1" pad="53"/>
+<connect gate="A" pin="H2.2" pad="54"/>
+<connect gate="A" pin="H2.3" pad="55"/>
+<connect gate="A" pin="H2.31" pad="83"/>
+<connect gate="A" pin="H2.4" pad="56"/>
+<connect gate="A" pin="H2.49" pad="101"/>
+<connect gate="A" pin="H2.5" pad="57"/>
+<connect gate="A" pin="H2.50" pad="102"/>
+<connect gate="A" pin="H2.51" pad="103"/>
+<connect gate="A" pin="H2.52" pad="104"/>
+<connect gate="A" pin="H2.6" pad="58"/>
+<connect gate="A" pin="H2.7" pad="59"/>
+<connect gate="A" pin="I2C_CLK" pad="43"/>
+<connect gate="A" pin="I2C_DATA" pad="41"/>
+<connect gate="A" pin="LI_OA_RST" pad="47"/>
+<connect gate="A" pin="LI_RX" pad="29"/>
+<connect gate="A" pin="LI_TX" pad="31"/>
+<connect gate="A" pin="PCM_IN1" pad="87"/>
+<connect gate="A" pin="PCM_IN2" pad="88"/>
+<connect gate="A" pin="SW10_3V3" pad="72"/>
+<connect gate="A" pin="SW1_12V" pad="60"/>
+<connect gate="A" pin="SW2_12V" pad="62"/>
+<connect gate="A" pin="SW3_BAT" pad="63"/>
+<connect gate="A" pin="SW4_BAT" pad="64"/>
+<connect gate="A" pin="SW5_5V" pad="65"/>
+<connect gate="A" pin="SW6_5V" pad="67"/>
+<connect gate="A" pin="SW7_5V" pad="68"/>
+<connect gate="A" pin="SW8_3V3" pad="70"/>
+<connect gate="A" pin="SW9_3V3" pad="71"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PC104_MOBO">
+<gates>
+<gate name="A" symbol="CUBESAT_KIT_HEADER" x="-5.08" y="66.04"/>
+</gates>
+<devices>
+<device name="" package="PC104_MOBO">
 <connects>
 <connect gate="A" pin="12VBUS1" pad="75"/>
 <connect gate="A" pin="12VBUS2" pad="76"/>
