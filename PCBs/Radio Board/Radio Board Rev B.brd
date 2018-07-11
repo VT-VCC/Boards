@@ -1725,7 +1725,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="38.4" y1="17.6" x2="40.76" y2="15.24" width="0.2032" layer="1"/>
 <wire x1="40.76" y1="15.24" x2="80.645" y2="15.24" width="0.2032" layer="1"/>
 <contactref element="U$2" pad="47"/>
-<wire x1="80.645" y1="15.24" x2="83.185" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="80.645" y1="15.24" x2="83.185" y2="17.78" width="0.2032" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -1735,13 +1735,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="19,1,e2b8102eec3d1eab"/>
-<approved hash="19,1,e26df6330a211e7f"/>
-<approved hash="19,1,7262663cea2efe70"/>
-<approved hash="19,1,72b780210c32fea4"/>
-<approved hash="21,19,1e481e481c4a9c4a"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
