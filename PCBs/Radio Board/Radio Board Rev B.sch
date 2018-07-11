@@ -180,7 +180,7 @@
 <smd name="RESET" x="32.6" y="10.17" dx="3" dy="2.15" layer="1"/>
 <smd name="RF_GND1" x="32.6" y="54.48" dx="3" dy="2.15" layer="1"/>
 <smd name="RF_GND2" x="32.6" y="57.75" dx="3" dy="2.15" layer="1"/>
-<smd name="RF_GND3" x="16.3" y="46.1" dx="25.35" dy="25.35" layer="1"/>
+<smd name="RF_GND3" x="16.3" y="46.1" dx="25.35" dy="25.35" layer="1" thermals="no"/>
 <smd name="RX_UART" x="32.6" y="6.9" dx="3" dy="2.15" layer="1"/>
 <smd name="TX_UART" x="32.6" y="3.63" dx="3" dy="2.15" layer="1"/>
 <smd name="V_AMP1" x="32.6" y="47.94" dx="3" dy="2.15" layer="1"/>
@@ -190,10 +190,10 @@
 <hole x="2" y="32.100059375" drill="1.25"/>
 <hole x="30.9" y="62.1" drill="1.25"/>
 <hole x="30.9" y="32.100059375" drill="1.25"/>
-<pad name="P$1" x="7.62" y="54.61" drill="3.81" shape="square"/>
-<pad name="P$2" x="25.4" y="54.61" drill="3.81" shape="square"/>
-<pad name="P$3" x="25.4" y="38.1" drill="3.81" shape="square"/>
-<pad name="P$4" x="7.62" y="38.1" drill="3.81" shape="square"/>
+<pad name="THERM1" x="7.62" y="54.61" drill="3.81" thermals="no"/>
+<pad name="THERM2" x="25.4" y="54.61" drill="3.81" thermals="no"/>
+<pad name="THERM3" x="25.4" y="38.1" drill="3.81" thermals="no"/>
+<pad name="THERM4" x="7.62" y="38.1" drill="3.81" thermals="no"/>
 </package>
 <package name="PC104_RADIO">
 <description>ELEVATED SOCKET, .100 inch(2.54mm) PITCH</description>
@@ -486,7 +486,7 @@
 <connect gate="G$1" pin="CONFIG2" pad="CONFIG2"/>
 <connect gate="G$1" pin="EXT_EVT" pad="EXT_EVT"/>
 <connect gate="G$1" pin="GND" pad="GND1 GND2"/>
-<connect gate="G$1" pin="RF_GND" pad="RF_GND1 RF_GND2 RF_GND3"/>
+<connect gate="G$1" pin="RF_GND" pad="RF_GND1 RF_GND2 RF_GND3 THERM1 THERM2 THERM3 THERM4"/>
 <connect gate="G$1" pin="RX_UART" pad="RX_UART"/>
 <connect gate="G$1" pin="TX_UART" pad="TX_UART"/>
 <connect gate="G$1" pin="V_AMP" pad="V_AMP1 V_AMP2"/>
@@ -4754,7 +4754,7 @@ Source: AVX .. aphvc.pdf</description>
 <parts>
 <part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="10uF"/>
 <part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="0.1uF"/>
-<part name="U$1" library="Cubesat" deviceset="LI-1" device=""/>
+<part name="LI-1" library="Cubesat" deviceset="LI-1" device=""/>
 <part name="U$2" library="Cubesat" deviceset="PC104_RADIO" device=""/>
 </parts>
 <sheets>
@@ -4764,7 +4764,7 @@ Source: AVX .. aphvc.pdf</description>
 <instances>
 <instance part="C1" gate="G$1" x="55.88" y="81.28"/>
 <instance part="C2" gate="G$1" x="35.56" y="86.36"/>
-<instance part="U$1" gate="G$1" x="76.2" y="78.74"/>
+<instance part="LI-1" gate="G$1" x="76.2" y="78.74"/>
 <instance part="U$2" gate="A" x="22.86" y="66.04"/>
 </instances>
 <busses>
@@ -4784,7 +4784,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="71.12" y1="93.98" x2="60.96" y2="93.98" width="0.1524" layer="91"/>
 <label x="60.96" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="LI-1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="40.64" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
@@ -4836,7 +4836,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="68.58" y1="76.2" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="81.28" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
 <label x="68.58" y="76.2" size="1.778" layer="95" rot="R270" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="RF_GND"/>
+<pinref part="LI-1" gate="G$1" pin="RF_GND"/>
 </segment>
 </net>
 <net name="SW3" class="0">
@@ -4852,14 +4852,14 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="55.88" y1="86.36" x2="50.8" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="86.36" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
 <junction x="55.88" y="86.36"/>
-<pinref part="U$1" gate="G$1" pin="V_AMP"/>
+<pinref part="LI-1" gate="G$1" pin="V_AMP"/>
 </segment>
 </net>
 <net name="LITHIUM_TX" class="0">
 <segment>
 <wire x1="71.12" y1="101.6" x2="60.96" y2="101.6" width="0.1524" layer="91"/>
 <label x="60.96" y="101.6" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="TX_UART"/>
+<pinref part="LI-1" gate="G$1" pin="TX_UART"/>
 </segment>
 <segment>
 <wire x1="22.86" y1="27.94" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
@@ -4871,7 +4871,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="71.12" y1="99.06" x2="55.88" y2="99.06" width="0.1524" layer="91"/>
 <label x="55.88" y="99.06" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="RX_UART"/>
+<pinref part="LI-1" gate="G$1" pin="RX_UART"/>
 </segment>
 <segment>
 <wire x1="22.86" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
@@ -4892,14 +4892,14 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="35.56" y1="91.44" x2="33.02" y2="91.44" width="0.1524" layer="91"/>
 <junction x="35.56" y="91.44"/>
 <label x="33.02" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="3.3V"/>
+<pinref part="LI-1" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="OA_RESET" class="0">
 <segment>
 <wire x1="101.6" y1="96.52" x2="111.76" y2="96.52" width="0.1524" layer="91"/>
 <label x="111.76" y="96.52" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="CONFIG1"/>
+<pinref part="LI-1" gate="G$1" pin="CONFIG1"/>
 </segment>
 <segment>
 <wire x1="22.86" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="91"/>

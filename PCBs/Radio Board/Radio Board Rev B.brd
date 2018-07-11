@@ -182,7 +182,7 @@
 <smd name="RESET" x="32.6" y="10.17" dx="3" dy="2.15" layer="1"/>
 <smd name="RF_GND1" x="32.6" y="54.48" dx="3" dy="2.15" layer="1"/>
 <smd name="RF_GND2" x="32.6" y="57.75" dx="3" dy="2.15" layer="1"/>
-<smd name="RF_GND3" x="16.3" y="46.1" dx="25.35" dy="25.35" layer="1"/>
+<smd name="RF_GND3" x="16.3" y="46.1" dx="25.35" dy="25.35" layer="1" thermals="no"/>
 <smd name="RX_UART" x="32.6" y="6.9" dx="3" dy="2.15" layer="1"/>
 <smd name="TX_UART" x="32.6" y="3.63" dx="3" dy="2.15" layer="1"/>
 <smd name="V_AMP1" x="32.6" y="47.94" dx="3" dy="2.15" layer="1"/>
@@ -192,10 +192,10 @@
 <hole x="2" y="32.100059375" drill="1.25"/>
 <hole x="30.9" y="62.1" drill="1.25"/>
 <hole x="30.9" y="32.100059375" drill="1.25"/>
-<pad name="P$1" x="7.62" y="54.61" drill="3.81" shape="square"/>
-<pad name="P$2" x="25.4" y="54.61" drill="3.81" shape="square"/>
-<pad name="P$3" x="25.4" y="38.1" drill="3.81" shape="square"/>
-<pad name="P$4" x="7.62" y="38.1" drill="3.81" shape="square"/>
+<pad name="THERM1" x="7.62" y="54.61" drill="3.81" thermals="no"/>
+<pad name="THERM2" x="25.4" y="54.61" drill="3.81" thermals="no"/>
+<pad name="THERM3" x="25.4" y="38.1" drill="3.81" thermals="no"/>
+<pad name="THERM4" x="7.62" y="38.1" drill="3.81" thermals="no"/>
 </package>
 <package name="PC104_RADIO">
 <description>ELEVATED SOCKET, .100 inch(2.54mm) PITCH</description>
@@ -1631,26 +1631,26 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="73.533" y="32.004" size="1.27" layer="25"/>
 <attribute name="VALUE" x="76.327" y="32.258" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="U$1" library="Cubesat" package="LI-1" value="LI-1" x="38.1" y="13.97"/>
+<element name="LI-1" library="Cubesat" package="LI-1" value="LI-1" x="38.1" y="13.97"/>
 <element name="U$2" library="Cubesat" package="PC104_RADIO" value="PC104_RADIO" x="0" y="0"/>
 </elements>
 <signals>
 <signal name="GND">
 <polygon width="0.1524" layer="16">
-<vertex x="0.635" y="89.535"/>
-<vertex x="95.25" y="89.535"/>
-<vertex x="95.25" y="0.635"/>
-<vertex x="0.635" y="0.635"/>
+<vertex x="0" y="90.17"/>
+<vertex x="95.885" y="90.17"/>
+<vertex x="95.885" y="0"/>
+<vertex x="0" y="0"/>
 </polygon>
 <contactref element="C2" pad="2"/>
 <contactref element="C1" pad="2"/>
 <wire x1="75.057" y1="28.768" x2="75.057" y2="27.178" width="0.762" layer="1"/>
 <via x="75.057" y="27.178" extent="1-16" drill="0.508"/>
-<contactref element="U$1" pad="GND1"/>
-<contactref element="U$1" pad="GND2"/>
-<contactref element="U$1" pad="RF_GND3"/>
-<contactref element="U$1" pad="RF_GND2"/>
-<contactref element="U$1" pad="RF_GND1"/>
+<contactref element="LI-1" pad="GND1"/>
+<contactref element="LI-1" pad="GND2"/>
+<contactref element="LI-1" pad="RF_GND3"/>
+<contactref element="LI-1" pad="RF_GND2"/>
+<contactref element="LI-1" pad="RF_GND1"/>
 <wire x1="75.565" y1="61.661" x2="75.565" y2="59.69" width="1.27" layer="1"/>
 <via x="75.565" y="59.69" extent="1-16" drill="0.846665625"/>
 <wire x1="70.7" y1="27.41" x2="73.257" y2="27.41" width="0.508" layer="1"/>
@@ -1675,14 +1675,18 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U$2" pad="82"/>
 <contactref element="U$2" pad="84"/>
 <contactref element="U$2" pad="100"/>
-<wire x1="70.7" y1="68.45" x2="54.4" y2="60.07" width="0" layer="19" extent="1-1"/>
+<contactref element="LI-1" pad="THERM1"/>
+<contactref element="LI-1" pad="THERM2"/>
+<contactref element="LI-1" pad="THERM3"/>
+<contactref element="LI-1" pad="THERM4"/>
+<wire x1="45.72" y1="52.07" x2="54.4" y2="60.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SW3">
 <contactref element="C1" pad="1"/>
 <wire x1="81.28" y1="63.5" x2="82.55" y2="64.77" width="0.6096" layer="1"/>
 <wire x1="81.28" y1="63.5" x2="82.55" y2="62.23" width="0.6096" layer="1"/>
-<contactref element="U$1" pad="V_AMP1"/>
-<contactref element="U$1" pad="V_AMP2"/>
+<contactref element="LI-1" pad="V_AMP1"/>
+<contactref element="LI-1" pad="V_AMP2"/>
 <wire x1="81.28" y1="63.5" x2="75.626" y2="63.5" width="1.27" layer="1"/>
 <wire x1="75.626" y1="63.5" x2="75.565" y2="63.561" width="1.27" layer="1"/>
 <wire x1="75.565" y1="63.561" x2="72.319" y2="63.561" width="1.27" layer="1"/>
@@ -1696,14 +1700,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="88.265" y1="63.5" x2="86.995" y2="62.23" width="0.6096" layer="1"/>
 </signal>
 <signal name="LITHIUM_TX">
-<contactref element="U$1" pad="TX_UART"/>
+<contactref element="LI-1" pad="TX_UART"/>
 <wire x1="81.28" y1="28.18" x2="70.7" y2="17.6" width="0.2032" layer="1"/>
 <wire x1="81.28" y1="36.195" x2="81.28" y2="28.18" width="0.2032" layer="1"/>
 <contactref element="U$2" pad="31"/>
 <wire x1="83.185" y1="38.1" x2="81.28" y2="36.195" width="0.2032" layer="1"/>
 </signal>
 <signal name="LITHIUM_RX">
-<contactref element="U$1" pad="RX_UART"/>
+<contactref element="LI-1" pad="RX_UART"/>
 <wire x1="80.01" y1="37.465" x2="80.01" y2="30.18" width="0.2032" layer="1"/>
 <wire x1="80.01" y1="30.18" x2="70.7" y2="20.87" width="0.2032" layer="1"/>
 <contactref element="U$2" pad="29"/>
@@ -1711,7 +1715,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="3V3">
 <contactref element="C2" pad="1"/>
-<contactref element="U$1" pad="3.3V"/>
+<contactref element="LI-1" pad="3.3V"/>
 <wire x1="75.057" y1="30.668" x2="70.712" y2="30.668" width="0.762" layer="1"/>
 <wire x1="70.712" y1="30.668" x2="70.7" y2="30.68" width="0.762" layer="1"/>
 <wire x1="82.55" y1="41.91" x2="75.057" y2="34.417" width="0.2032" layer="1"/>
@@ -1721,7 +1725,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="88.265" y1="43.18" x2="86.995" y2="41.91" width="0.2032" layer="1"/>
 </signal>
 <signal name="OA_RESET">
-<contactref element="U$1" pad="CONFIG1"/>
+<contactref element="LI-1" pad="CONFIG1"/>
 <wire x1="38.4" y1="17.6" x2="40.76" y2="15.24" width="0.2032" layer="1"/>
 <wire x1="40.76" y1="15.24" x2="80.645" y2="15.24" width="0.2032" layer="1"/>
 <contactref element="U$2" pad="47"/>
