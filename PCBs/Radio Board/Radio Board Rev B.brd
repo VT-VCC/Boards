@@ -197,7 +197,7 @@
 <pad name="P$3" x="25.4" y="38.1" drill="3.81" shape="square"/>
 <pad name="P$4" x="7.62" y="38.1" drill="3.81" shape="square"/>
 </package>
-<package name="PC104_WITH_CSK_HEADER">
+<package name="PC104_RADIO">
 <description>ELEVATED SOCKET, .100 inch(2.54mm) PITCH</description>
 <pad name="1" x="83.185" y="76.2" drill="1.016" diameter="1.524"/>
 <pad name="2" x="85.725" y="76.2" drill="1.016" diameter="1.524"/>
@@ -1632,7 +1632,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="76.327" y="32.258" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="U$1" library="Cubesat" package="LI-1" value="LI-1" x="38.1" y="13.97"/>
-<element name="U$2" library="Cubesat" package="PC104_WITH_CSK_HEADER" value="PC104_BOARD" x="0" y="0"/>
+<element name="U$2" library="Cubesat" package="PC104_RADIO" value="PC104_RADIO" x="0" y="0"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1653,16 +1653,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U$1" pad="RF_GND1"/>
 <wire x1="75.565" y1="61.661" x2="75.565" y2="59.69" width="1.27" layer="1"/>
 <via x="75.565" y="59.69" extent="1-16" drill="0.846665625"/>
-<contactref element="U$2" pad="61"/>
-<contactref element="U$2" pad="73"/>
-<contactref element="U$2" pad="69"/>
-<contactref element="U$2" pad="81"/>
-<contactref element="U$2" pad="99"/>
-<contactref element="U$2" pad="74"/>
-<contactref element="U$2" pad="66"/>
-<contactref element="U$2" pad="82"/>
-<contactref element="U$2" pad="84"/>
-<contactref element="U$2" pad="100"/>
 <wire x1="70.7" y1="27.41" x2="73.257" y2="27.41" width="0.508" layer="1"/>
 <wire x1="73.257" y1="27.41" x2="73.279" y2="27.432" width="0.508" layer="1"/>
 <via x="73.279" y="27.432" extent="1-16" drill="0.381"/>
@@ -1675,6 +1665,16 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="70.7" y1="71.72" x2="73.752" y2="71.72" width="1.27" layer="1"/>
 <wire x1="73.752" y1="71.72" x2="73.787" y2="71.755" width="1.27" layer="1"/>
 <via x="73.787" y="71.755" extent="1-16" drill="0.846665625"/>
+<contactref element="U$2" pad="61"/>
+<contactref element="U$2" pad="74"/>
+<contactref element="U$2" pad="73"/>
+<contactref element="U$2" pad="66"/>
+<contactref element="U$2" pad="69"/>
+<contactref element="U$2" pad="81"/>
+<contactref element="U$2" pad="99"/>
+<contactref element="U$2" pad="82"/>
+<contactref element="U$2" pad="84"/>
+<contactref element="U$2" pad="100"/>
 <wire x1="70.7" y1="68.45" x2="54.4" y2="60.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SW3">
@@ -1689,43 +1689,43 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="72.319" y1="63.561" x2="70.7" y2="65.18" width="1.27" layer="1"/>
 <wire x1="72.319" y1="63.561" x2="70.7" y2="61.942" width="1.27" layer="1"/>
 <wire x1="70.7" y1="61.942" x2="70.7" y2="61.91" width="1.27" layer="1"/>
+<wire x1="86.995" y1="64.77" x2="82.55" y2="64.77" width="0.6096" layer="1"/>
+<wire x1="86.995" y1="62.23" x2="82.55" y2="62.23" width="0.6096" layer="1"/>
 <contactref element="U$2" pad="63"/>
-<wire x1="86.995" y1="64.77" x2="88.265" y2="63.5" width="0.6096" layer="1"/>
-<wire x1="82.55" y1="64.77" x2="86.995" y2="64.77" width="0.6096" layer="1"/>
-<wire x1="86.995" y1="62.23" x2="88.265" y2="63.5" width="0.6096" layer="1"/>
-<wire x1="82.55" y1="62.23" x2="86.995" y2="62.23" width="0.6096" layer="1"/>
+<wire x1="88.265" y1="63.5" x2="86.995" y2="64.77" width="0.6096" layer="1"/>
+<wire x1="88.265" y1="63.5" x2="86.995" y2="62.23" width="0.6096" layer="1"/>
 </signal>
 <signal name="LITHIUM_TX">
 <contactref element="U$1" pad="TX_UART"/>
-<contactref element="U$2" pad="31"/>
-<wire x1="83.185" y1="38.1" x2="81.28" y2="36.195" width="0.2032" layer="1"/>
 <wire x1="81.28" y1="28.18" x2="70.7" y2="17.6" width="0.2032" layer="1"/>
 <wire x1="81.28" y1="36.195" x2="81.28" y2="28.18" width="0.2032" layer="1"/>
+<contactref element="U$2" pad="31"/>
+<wire x1="83.185" y1="38.1" x2="81.28" y2="36.195" width="0.2032" layer="1"/>
 </signal>
 <signal name="LITHIUM_RX">
 <contactref element="U$1" pad="RX_UART"/>
-<contactref element="U$2" pad="29"/>
-<wire x1="83.185" y1="40.64" x2="80.01" y2="37.465" width="0.2032" layer="1"/>
 <wire x1="80.01" y1="37.465" x2="80.01" y2="30.18" width="0.2032" layer="1"/>
 <wire x1="80.01" y1="30.18" x2="70.7" y2="20.87" width="0.2032" layer="1"/>
+<contactref element="U$2" pad="29"/>
+<wire x1="83.185" y1="40.64" x2="80.01" y2="37.465" width="0.2032" layer="1"/>
 </signal>
 <signal name="3V3">
 <contactref element="C2" pad="1"/>
 <contactref element="U$1" pad="3.3V"/>
-<contactref element="U$2" pad="79"/>
 <wire x1="75.057" y1="30.668" x2="70.712" y2="30.668" width="0.762" layer="1"/>
 <wire x1="70.712" y1="30.668" x2="70.7" y2="30.68" width="0.762" layer="1"/>
-<wire x1="88.265" y1="43.18" x2="86.995" y2="41.91" width="0.2032" layer="1"/>
 <wire x1="82.55" y1="41.91" x2="75.057" y2="34.417" width="0.2032" layer="1"/>
 <wire x1="75.057" y1="34.417" x2="75.057" y2="30.668" width="0.2032" layer="1"/>
 <wire x1="86.995" y1="41.91" x2="82.55" y2="41.91" width="0.2032" layer="1"/>
+<contactref element="U$2" pad="79"/>
+<wire x1="88.265" y1="43.18" x2="86.995" y2="41.91" width="0.2032" layer="1"/>
 </signal>
 <signal name="OA_RESET">
 <contactref element="U$1" pad="CONFIG1"/>
-<contactref element="U$2" pad="47"/>
 <wire x1="38.4" y1="17.6" x2="40.76" y2="15.24" width="0.2032" layer="1"/>
-<wire x1="80.645" y1="15.24" x2="83.185" y2="17.78" width="0.2032" layer="1"/>
 <wire x1="40.76" y1="15.24" x2="80.645" y2="15.24" width="0.2032" layer="1"/>
+<contactref element="U$2" pad="47"/>
+<wire x1="80.645" y1="15.24" x2="83.185" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

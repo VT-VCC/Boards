@@ -195,7 +195,7 @@
 <pad name="P$3" x="25.4" y="38.1" drill="3.81" shape="square"/>
 <pad name="P$4" x="7.62" y="38.1" drill="3.81" shape="square"/>
 </package>
-<package name="PC104_WITH_CSK_HEADER">
+<package name="PC104_RADIO">
 <description>ELEVATED SOCKET, .100 inch(2.54mm) PITCH</description>
 <pad name="1" x="83.185" y="76.2" drill="1.016" diameter="1.524"/>
 <pad name="2" x="85.725" y="76.2" drill="1.016" diameter="1.524"/>
@@ -413,63 +413,63 @@
 <pin name="H1.50" x="40.64" y="-60.96" length="middle" rot="R180"/>
 <pin name="H1.51" x="0" y="-63.5" length="middle"/>
 <pin name="H1.52" x="40.64" y="-63.5" length="middle" rot="R180"/>
-<wire x1="81.28" y1="2.54" x2="111.76" y2="2.54" width="0.254" layer="94"/>
-<wire x1="111.76" y1="2.54" x2="111.76" y2="-66.04" width="0.254" layer="94"/>
-<wire x1="111.76" y1="-66.04" x2="81.28" y2="-66.04" width="0.254" layer="94"/>
-<wire x1="81.28" y1="-66.04" x2="81.28" y2="2.54" width="0.254" layer="94"/>
-<text x="86.36" y="3.302" size="1.27" layer="95">H2</text>
-<pin name="H2.1" x="76.2" y="0" length="middle"/>
-<pin name="H2.2" x="116.84" y="0" length="middle" rot="R180"/>
-<pin name="H2.3" x="76.2" y="-2.54" length="middle"/>
-<pin name="H2.4" x="116.84" y="-2.54" length="middle" rot="R180"/>
-<pin name="H2.5" x="76.2" y="-5.08" length="middle"/>
-<pin name="H2.6" x="116.84" y="-5.08" length="middle" rot="R180"/>
-<pin name="H2.7" x="76.2" y="-7.62" length="middle"/>
-<pin name="SW1_12V" x="116.84" y="-7.62" length="middle" rot="R180"/>
-<pin name="GND1" x="76.2" y="-10.16" length="middle"/>
-<pin name="SW2_12V" x="116.84" y="-10.16" length="middle" rot="R180"/>
-<pin name="SW3_BAT" x="76.2" y="-12.7" length="middle"/>
-<pin name="SW4_BAT" x="116.84" y="-12.7" length="middle" rot="R180"/>
-<pin name="SW5_5V" x="76.2" y="-15.24" length="middle"/>
-<pin name="GND2" x="116.84" y="-15.24" length="middle" rot="R180"/>
-<pin name="SW6_5V" x="76.2" y="-17.78" length="middle"/>
-<pin name="SW7_5V" x="116.84" y="-17.78" length="middle" rot="R180"/>
-<pin name="GND3" x="76.2" y="-20.32" length="middle"/>
-<pin name="SW8_3V3" x="116.84" y="-20.32" length="middle" rot="R180"/>
-<pin name="SW9_3V3" x="76.2" y="-22.86" length="middle"/>
-<pin name="SW10_3V3" x="116.84" y="-22.86" length="middle" rot="R180"/>
-<pin name="GND4" x="76.2" y="-25.4" length="middle"/>
-<pin name="GND5" x="116.84" y="-25.4" length="middle" rot="R180"/>
-<pin name="12VBUS1" x="76.2" y="-27.94" length="middle"/>
-<pin name="12VBUS2" x="116.84" y="-27.94" length="middle" rot="R180"/>
-<pin name="5VBUS1" x="76.2" y="-30.48" length="middle"/>
-<pin name="5VBUS2" x="116.84" y="-30.48" length="middle" rot="R180"/>
-<pin name="3V3BUS1" x="76.2" y="-33.02" length="middle"/>
-<pin name="3V3BUS2" x="116.84" y="-33.02" length="middle" rot="R180"/>
-<pin name="GND6" x="76.2" y="-35.56" length="middle"/>
-<pin name="GND7" x="116.84" y="-35.56" length="middle" rot="R180"/>
-<pin name="H2.31" x="76.2" y="-38.1" length="middle"/>
-<pin name="GND8" x="116.84" y="-38.1" length="middle" rot="R180"/>
-<pin name="DNU_RSV1" x="76.2" y="-40.64" length="middle"/>
-<pin name="DNU_RSV2" x="116.84" y="-40.64" length="middle" rot="R180"/>
-<pin name="PCM_IN1" x="76.2" y="-43.18" length="middle"/>
-<pin name="PCM_IN2" x="116.84" y="-43.18" length="middle" rot="R180"/>
-<pin name="DNU_RSV3" x="76.2" y="-45.72" length="middle"/>
-<pin name="DNU_RSV4" x="116.84" y="-45.72" length="middle" rot="R180"/>
-<pin name="DNU_RSV5" x="76.2" y="-48.26" length="middle"/>
-<pin name="DNU_RSV6" x="116.84" y="-48.26" length="middle" rot="R180"/>
-<pin name="BCR_OUT1" x="76.2" y="-50.8" length="middle"/>
-<pin name="BCR_OUT2" x="116.84" y="-50.8" length="middle" rot="R180"/>
-<pin name="BCR_OUT3" x="76.2" y="-53.34" length="middle"/>
-<pin name="BCR_OUT4" x="116.84" y="-53.34" length="middle" rot="R180"/>
-<pin name="BATVBUS1" x="76.2" y="-55.88" length="middle"/>
-<pin name="BATVBUS2" x="116.84" y="-55.88" length="middle" rot="R180"/>
-<pin name="GND9" x="76.2" y="-58.42" length="middle"/>
-<pin name="GND10" x="116.84" y="-58.42" length="middle" rot="R180"/>
-<pin name="H2.49" x="76.2" y="-60.96" length="middle"/>
-<pin name="H2.50" x="116.84" y="-60.96" length="middle" rot="R180"/>
-<pin name="H2.51" x="76.2" y="-63.5" length="middle"/>
-<pin name="H2.52" x="116.84" y="-63.5" length="middle" rot="R180"/>
+<wire x1="73.66" y1="2.54" x2="104.14" y2="2.54" width="0.254" layer="94"/>
+<wire x1="104.14" y1="2.54" x2="104.14" y2="-66.04" width="0.254" layer="94"/>
+<wire x1="104.14" y1="-66.04" x2="73.66" y2="-66.04" width="0.254" layer="94"/>
+<wire x1="73.66" y1="-66.04" x2="73.66" y2="2.54" width="0.254" layer="94"/>
+<text x="78.74" y="3.302" size="1.27" layer="95">H2</text>
+<pin name="H2.1" x="68.58" y="0" length="middle"/>
+<pin name="H2.2" x="109.22" y="0" length="middle" rot="R180"/>
+<pin name="H2.3" x="68.58" y="-2.54" length="middle"/>
+<pin name="H2.4" x="109.22" y="-2.54" length="middle" rot="R180"/>
+<pin name="H2.5" x="68.58" y="-5.08" length="middle"/>
+<pin name="H2.6" x="109.22" y="-5.08" length="middle" rot="R180"/>
+<pin name="H2.7" x="68.58" y="-7.62" length="middle"/>
+<pin name="SW1_12V" x="109.22" y="-7.62" length="middle" rot="R180"/>
+<pin name="GND1" x="68.58" y="-10.16" length="middle"/>
+<pin name="SW2_12V" x="109.22" y="-10.16" length="middle" rot="R180"/>
+<pin name="SW3_BAT" x="68.58" y="-12.7" length="middle"/>
+<pin name="SW4_BAT" x="109.22" y="-12.7" length="middle" rot="R180"/>
+<pin name="SW5_5V" x="68.58" y="-15.24" length="middle"/>
+<pin name="GND2" x="109.22" y="-15.24" length="middle" rot="R180"/>
+<pin name="SW6_5V" x="68.58" y="-17.78" length="middle"/>
+<pin name="SW7_5V" x="109.22" y="-17.78" length="middle" rot="R180"/>
+<pin name="GND3" x="68.58" y="-20.32" length="middle"/>
+<pin name="SW8_3V3" x="109.22" y="-20.32" length="middle" rot="R180"/>
+<pin name="SW9_3V3" x="68.58" y="-22.86" length="middle"/>
+<pin name="SW10_3V3" x="109.22" y="-22.86" length="middle" rot="R180"/>
+<pin name="GND4" x="68.58" y="-25.4" length="middle"/>
+<pin name="GND5" x="109.22" y="-25.4" length="middle" rot="R180"/>
+<pin name="12VBUS1" x="68.58" y="-27.94" length="middle"/>
+<pin name="12VBUS2" x="109.22" y="-27.94" length="middle" rot="R180"/>
+<pin name="5VBUS1" x="68.58" y="-30.48" length="middle"/>
+<pin name="5VBUS2" x="109.22" y="-30.48" length="middle" rot="R180"/>
+<pin name="3V3BUS1" x="68.58" y="-33.02" length="middle"/>
+<pin name="3V3BUS2" x="109.22" y="-33.02" length="middle" rot="R180"/>
+<pin name="GND6" x="68.58" y="-35.56" length="middle"/>
+<pin name="GND7" x="109.22" y="-35.56" length="middle" rot="R180"/>
+<pin name="H2.31" x="68.58" y="-38.1" length="middle"/>
+<pin name="GND8" x="109.22" y="-38.1" length="middle" rot="R180"/>
+<pin name="DNU_RSV1" x="68.58" y="-40.64" length="middle"/>
+<pin name="DNU_RSV2" x="109.22" y="-40.64" length="middle" rot="R180"/>
+<pin name="PCM_IN1" x="68.58" y="-43.18" length="middle"/>
+<pin name="PCM_IN2" x="109.22" y="-43.18" length="middle" rot="R180"/>
+<pin name="DNU_RSV3" x="68.58" y="-45.72" length="middle"/>
+<pin name="DNU_RSV4" x="109.22" y="-45.72" length="middle" rot="R180"/>
+<pin name="DNU_RSV5" x="68.58" y="-48.26" length="middle"/>
+<pin name="DNU_RSV6" x="109.22" y="-48.26" length="middle" rot="R180"/>
+<pin name="BCR_OUT1" x="68.58" y="-50.8" length="middle"/>
+<pin name="BCR_OUT2" x="109.22" y="-50.8" length="middle" rot="R180"/>
+<pin name="BCR_OUT3" x="68.58" y="-53.34" length="middle"/>
+<pin name="BCR_OUT4" x="109.22" y="-53.34" length="middle" rot="R180"/>
+<pin name="BATVBUS1" x="68.58" y="-55.88" length="middle"/>
+<pin name="BATVBUS2" x="109.22" y="-55.88" length="middle" rot="R180"/>
+<pin name="GND9" x="68.58" y="-58.42" length="middle"/>
+<pin name="GND10" x="109.22" y="-58.42" length="middle" rot="R180"/>
+<pin name="H2.49" x="68.58" y="-60.96" length="middle"/>
+<pin name="H2.50" x="109.22" y="-60.96" length="middle" rot="R180"/>
+<pin name="H2.51" x="68.58" y="-63.5" length="middle"/>
+<pin name="H2.52" x="109.22" y="-63.5" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -497,12 +497,12 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="PC104_BOARD">
+<deviceset name="PC104_RADIO">
 <gates>
 <gate name="A" symbol="CUBESAT_KIT_HEADER" x="-5.08" y="66.04"/>
 </gates>
 <devices>
-<device name="" package="PC104_WITH_CSK_HEADER">
+<device name="" package="PC104_RADIO">
 <connects>
 <connect gate="A" pin="12VBUS1" pad="75"/>
 <connect gate="A" pin="12VBUS2" pad="76"/>
@@ -4755,7 +4755,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="10uF"/>
 <part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="0.1uF"/>
 <part name="U$1" library="Cubesat" deviceset="LI-1" device=""/>
-<part name="U$2" library="Cubesat" deviceset="PC104_BOARD" device=""/>
+<part name="U$2" library="Cubesat" deviceset="PC104_RADIO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4772,13 +4772,13 @@ Source: AVX .. aphvc.pdf</description>
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="99.06" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
-<label x="93.98" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="91.44" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
+<label x="86.36" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$2" gate="A" pin="GND1"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="40.64" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
-<label x="154.94" y="40.64" size="1.778" layer="95" xref="yes"/>
+<wire x1="132.08" y1="40.64" x2="147.32" y2="40.64" width="0.1524" layer="91"/>
+<label x="147.32" y="40.64" size="1.778" layer="95" xref="yes"/>
 <pinref part="U$2" gate="A" pin="GND5"/>
 </segment>
 <segment>
@@ -4787,43 +4787,43 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="99.06" y1="40.64" x2="91.44" y2="40.64" width="0.1524" layer="91"/>
-<label x="91.44" y="40.64" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="91.44" y1="40.64" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
+<label x="83.82" y="40.64" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$2" gate="A" pin="GND4"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="50.8" x2="144.78" y2="50.8" width="0.1524" layer="91"/>
-<label x="144.78" y="50.8" size="1.778" layer="95" xref="yes"/>
+<wire x1="132.08" y1="50.8" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
+<label x="137.16" y="50.8" size="1.778" layer="95" xref="yes"/>
 <pinref part="U$2" gate="A" pin="GND2"/>
 </segment>
 <segment>
-<wire x1="99.06" y1="45.72" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
-<label x="91.44" y="45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="91.44" y1="45.72" x2="83.82" y2="45.72" width="0.1524" layer="91"/>
+<label x="83.82" y="45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$2" gate="A" pin="GND3"/>
 </segment>
 <segment>
-<wire x1="99.06" y1="30.48" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
-<label x="91.44" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="91.44" y1="30.48" x2="83.82" y2="30.48" width="0.1524" layer="91"/>
+<label x="83.82" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$2" gate="A" pin="GND6"/>
 </segment>
 <segment>
-<wire x1="99.06" y1="7.62" x2="91.44" y2="7.62" width="0.1524" layer="91"/>
-<label x="91.44" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="91.44" y1="7.62" x2="83.82" y2="7.62" width="0.1524" layer="91"/>
+<label x="83.82" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$2" gate="A" pin="GND9"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="30.48" x2="144.78" y2="30.48" width="0.1524" layer="91"/>
-<label x="144.78" y="30.48" size="1.778" layer="95" xref="yes"/>
+<wire x1="132.08" y1="30.48" x2="137.16" y2="30.48" width="0.1524" layer="91"/>
+<label x="137.16" y="30.48" size="1.778" layer="95" xref="yes"/>
 <pinref part="U$2" gate="A" pin="GND7"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="27.94" x2="152.4" y2="27.94" width="0.1524" layer="91"/>
-<label x="152.4" y="27.94" size="1.778" layer="95" xref="yes"/>
+<wire x1="132.08" y1="27.94" x2="144.78" y2="27.94" width="0.1524" layer="91"/>
+<label x="144.78" y="27.94" size="1.778" layer="95" xref="yes"/>
 <pinref part="U$2" gate="A" pin="GND8"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="7.62" x2="144.78" y2="7.62" width="0.1524" layer="91"/>
-<label x="144.78" y="7.62" size="1.778" layer="95" xref="yes"/>
+<wire x1="132.08" y1="7.62" x2="137.16" y2="7.62" width="0.1524" layer="91"/>
+<label x="137.16" y="7.62" size="1.778" layer="95" xref="yes"/>
 <pinref part="U$2" gate="A" pin="GND10"/>
 </segment>
 <segment>
@@ -4841,8 +4841,8 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="SW3" class="0">
 <segment>
-<wire x1="99.06" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
-<label x="86.36" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="91.44" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
+<label x="78.74" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$2" gate="A" pin="SW3_BAT"/>
 </segment>
 <segment>
@@ -4881,8 +4881,8 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="3V3" class="0">
 <segment>
-<wire x1="99.06" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
-<label x="83.82" y="33.02" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="91.44" y1="33.02" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
+<label x="76.2" y="33.02" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$2" gate="A" pin="3V3BUS1"/>
 </segment>
 <segment>
