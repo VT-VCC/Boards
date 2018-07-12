@@ -12300,7 +12300,7 @@ Source: 3M</description>
 <library name="Cubesat">
 <description>&lt;b&gt;PCB Matrix Packages&lt;/b&gt;&lt;p&gt;</description>
 <packages>
-<package name="PC104_MOBO">
+<package name="PC104_NO_DIMENSION">
 <description>ELEVATED SOCKET, .100 inch(2.54mm) PITCH</description>
 <pad name="1" x="83.185" y="76.2" drill="1.016" diameter="1.524"/>
 <pad name="2" x="85.725" y="76.2" drill="1.016" diameter="1.524"/>
@@ -12428,18 +12428,6 @@ Source: 3M</description>
 <text x="92.329" y="75.692" size="1.27" layer="25">54</text>
 <text x="82.169" y="9.652" size="1.27" layer="25">51</text>
 <text x="84.836" y="9.652" size="1.27" layer="25">52</text>
-<wire x1="0" y1="85.09" x2="0" y2="5.08" width="0.127" layer="20"/>
-<wire x1="0" y1="5.08" x2="5.08" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="5.08" y1="0" x2="90.805" y2="0" width="0.127" layer="20"/>
-<wire x1="90.805" y1="0" x2="95.885" y2="5.08" width="0.127" layer="20" curve="90"/>
-<wire x1="95.885" y1="5.08" x2="95.885" y2="85.09" width="0.127" layer="20"/>
-<wire x1="95.885" y1="85.09" x2="90.678" y2="90.17" width="0.127" layer="20" curve="91.414625"/>
-<wire x1="0" y1="85.09" x2="10.16" y2="85.09" width="0.127" layer="20" curve="-180"/>
-<wire x1="10.16" y1="85.09" x2="15.24" y2="80.01" width="0.127" layer="20" curve="90"/>
-<wire x1="15.24" y1="80.01" x2="31.75" y2="80.01" width="0.127" layer="20"/>
-<wire x1="31.75" y1="80.01" x2="36.83" y2="85.09" width="0.127" layer="20" curve="90"/>
-<wire x1="36.83" y1="85.09" x2="41.91" y2="90.17" width="0.127" layer="20" curve="-90"/>
-<wire x1="41.91" y1="90.17" x2="90.678" y2="90.17" width="0.127" layer="20"/>
 </package>
 </packages>
 <symbols>
@@ -12561,12 +12549,12 @@ Source: 3M</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PC104_MOBO">
+<deviceset name="PC104_NO_DIMENSION">
 <gates>
 <gate name="A" symbol="CUBESAT_KIT_HEADER" x="-5.08" y="66.04"/>
 </gates>
 <devices>
-<device name="" package="PC104_MOBO">
+<device name="" package="PC104_NO_DIMENSION">
 <connects>
 <connect gate="A" pin="12VBUS1" pad="75"/>
 <connect gate="A" pin="12VBUS2" pad="76"/>
@@ -12743,7 +12731,7 @@ Source: 3M</description>
 <part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k"/>
 <part name="SUPPLY21" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
-<part name="U$1" library="Cubesat" deviceset="PC104_MOBO" device=""/>
+<part name="U$1" library="Cubesat" deviceset="PC104_NO_DIMENSION" device=""/>
 </parts>
 <sheets>
 <sheet>

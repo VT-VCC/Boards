@@ -195,7 +195,7 @@
 <pad name="THERM3" x="25.4" y="38.1" drill="3.81" thermals="no"/>
 <pad name="THERM4" x="7.62" y="38.1" drill="3.81" thermals="no"/>
 </package>
-<package name="PC104_RADIO">
+<package name="PC104_NO_DIMENSION">
 <description>ELEVATED SOCKET, .100 inch(2.54mm) PITCH</description>
 <pad name="1" x="83.185" y="76.2" drill="1.016" diameter="1.524"/>
 <pad name="2" x="85.725" y="76.2" drill="1.016" diameter="1.524"/>
@@ -323,18 +323,6 @@
 <text x="92.329" y="75.692" size="1.27" layer="25">54</text>
 <text x="82.169" y="9.652" size="1.27" layer="25">51</text>
 <text x="84.836" y="9.652" size="1.27" layer="25">52</text>
-<wire x1="0" y1="85.09" x2="0" y2="5.08" width="0.127" layer="20"/>
-<wire x1="0" y1="5.08" x2="5.08" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="5.08" y1="0" x2="90.805" y2="0" width="0.127" layer="20"/>
-<wire x1="90.805" y1="0" x2="95.885" y2="5.08" width="0.127" layer="20" curve="90"/>
-<wire x1="95.885" y1="5.08" x2="95.885" y2="85.09" width="0.127" layer="20"/>
-<wire x1="95.885" y1="85.09" x2="90.678" y2="90.17" width="0.127" layer="20" curve="91.414625"/>
-<wire x1="0" y1="85.09" x2="10.16" y2="85.09" width="0.127" layer="20" curve="-180"/>
-<wire x1="10.16" y1="85.09" x2="15.24" y2="80.01" width="0.127" layer="20" curve="90"/>
-<wire x1="15.24" y1="80.01" x2="31.75" y2="80.01" width="0.127" layer="20"/>
-<wire x1="31.75" y1="80.01" x2="36.83" y2="85.09" width="0.127" layer="20" curve="90"/>
-<wire x1="36.83" y1="85.09" x2="41.91" y2="90.17" width="0.127" layer="20" curve="-90"/>
-<wire x1="41.91" y1="90.17" x2="90.678" y2="90.17" width="0.127" layer="20"/>
 </package>
 </packages>
 <symbols>
@@ -497,12 +485,12 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="PC104_RADIO">
+<deviceset name="PC104_NO_DIMENSION">
 <gates>
 <gate name="A" symbol="CUBESAT_KIT_HEADER" x="-5.08" y="66.04"/>
 </gates>
 <devices>
-<device name="" package="PC104_RADIO">
+<device name="" package="PC104_NO_DIMENSION">
 <connects>
 <connect gate="A" pin="12VBUS1" pad="75"/>
 <connect gate="A" pin="12VBUS2" pad="76"/>
@@ -4755,7 +4743,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="47uF"/>
 <part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="0.1uF"/>
 <part name="LI-1" library="Cubesat" deviceset="LI-1" device=""/>
-<part name="U$2" library="Cubesat" deviceset="PC104_RADIO" device=""/>
+<part name="U$1" library="Cubesat" deviceset="PC104_NO_DIMENSION" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4765,7 +4753,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="C1" gate="G$1" x="55.88" y="81.28"/>
 <instance part="C2" gate="G$1" x="35.56" y="86.36"/>
 <instance part="LI-1" gate="G$1" x="76.2" y="78.74"/>
-<instance part="U$2" gate="A" x="22.86" y="66.04"/>
+<instance part="U$1" gate="A" x="22.86" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -4774,12 +4762,12 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="91.44" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
 <label x="86.36" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$2" gate="A" pin="GND1"/>
+<pinref part="U$1" gate="A" pin="GND1"/>
 </segment>
 <segment>
 <wire x1="132.08" y1="40.64" x2="147.32" y2="40.64" width="0.1524" layer="91"/>
 <label x="147.32" y="40.64" size="1.778" layer="95" xref="yes"/>
-<pinref part="U$2" gate="A" pin="GND5"/>
+<pinref part="U$1" gate="A" pin="GND5"/>
 </segment>
 <segment>
 <wire x1="71.12" y1="93.98" x2="60.96" y2="93.98" width="0.1524" layer="91"/>
@@ -4789,42 +4777,42 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="91.44" y1="40.64" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
 <label x="83.82" y="40.64" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$2" gate="A" pin="GND4"/>
+<pinref part="U$1" gate="A" pin="GND4"/>
 </segment>
 <segment>
 <wire x1="132.08" y1="50.8" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
 <label x="137.16" y="50.8" size="1.778" layer="95" xref="yes"/>
-<pinref part="U$2" gate="A" pin="GND2"/>
+<pinref part="U$1" gate="A" pin="GND2"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="45.72" x2="83.82" y2="45.72" width="0.1524" layer="91"/>
 <label x="83.82" y="45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$2" gate="A" pin="GND3"/>
+<pinref part="U$1" gate="A" pin="GND3"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="30.48" x2="83.82" y2="30.48" width="0.1524" layer="91"/>
 <label x="83.82" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$2" gate="A" pin="GND6"/>
+<pinref part="U$1" gate="A" pin="GND6"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="7.62" x2="83.82" y2="7.62" width="0.1524" layer="91"/>
 <label x="83.82" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$2" gate="A" pin="GND9"/>
+<pinref part="U$1" gate="A" pin="GND9"/>
 </segment>
 <segment>
 <wire x1="132.08" y1="30.48" x2="137.16" y2="30.48" width="0.1524" layer="91"/>
 <label x="137.16" y="30.48" size="1.778" layer="95" xref="yes"/>
-<pinref part="U$2" gate="A" pin="GND7"/>
+<pinref part="U$1" gate="A" pin="GND7"/>
 </segment>
 <segment>
 <wire x1="132.08" y1="27.94" x2="144.78" y2="27.94" width="0.1524" layer="91"/>
 <label x="144.78" y="27.94" size="1.778" layer="95" xref="yes"/>
-<pinref part="U$2" gate="A" pin="GND8"/>
+<pinref part="U$1" gate="A" pin="GND8"/>
 </segment>
 <segment>
 <wire x1="132.08" y1="7.62" x2="137.16" y2="7.62" width="0.1524" layer="91"/>
 <label x="137.16" y="7.62" size="1.778" layer="95" xref="yes"/>
-<pinref part="U$2" gate="A" pin="GND10"/>
+<pinref part="U$1" gate="A" pin="GND10"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -4843,7 +4831,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="91.44" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
 <label x="78.74" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$2" gate="A" pin="SW3_BAT"/>
+<pinref part="U$1" gate="A" pin="SW3_BAT"/>
 </segment>
 <segment>
 <wire x1="71.12" y1="86.36" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
@@ -4864,7 +4852,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="22.86" y1="27.94" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
 <label x="10.16" y="27.94" size="1.778" layer="95" rot="R180"/>
-<pinref part="U$2" gate="A" pin="LI_TX"/>
+<pinref part="U$1" gate="A" pin="LI_TX"/>
 </segment>
 </net>
 <net name="LITHIUM_RX" class="0">
@@ -4876,14 +4864,14 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="22.86" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
 <label x="10.16" y="30.48" size="1.778" layer="95" rot="R180"/>
-<pinref part="U$2" gate="A" pin="LI_RX"/>
+<pinref part="U$1" gate="A" pin="LI_RX"/>
 </segment>
 </net>
 <net name="3V3" class="0">
 <segment>
 <wire x1="91.44" y1="33.02" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
 <label x="76.2" y="33.02" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$2" gate="A" pin="3V3BUS1"/>
+<pinref part="U$1" gate="A" pin="3V3BUS1"/>
 </segment>
 <segment>
 <wire x1="71.12" y1="91.44" x2="35.56" y2="91.44" width="0.1524" layer="91"/>
@@ -4904,7 +4892,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="22.86" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="91"/>
 <label x="10.16" y="7.62" size="1.778" layer="95" rot="R180"/>
-<pinref part="U$2" gate="A" pin="LI_OA_RST"/>
+<pinref part="U$1" gate="A" pin="LI_OA_RST"/>
 </segment>
 </net>
 </nets>

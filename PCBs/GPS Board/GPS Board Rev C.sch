@@ -210,7 +210,7 @@
 <dimension x1="5.2424625" y1="5.2424625" x2="3.7575375" y2="3.7575375" x3="3.7575375" y3="3.7575375" textsize="1.27" layer="21" dtype="diameter"/>
 <dimension x1="35" y1="75" x2="30.48" y2="63.5" x3="38.1" y3="69.25" textsize="1.27" layer="21" dtype="vertical"/>
 </package>
-<package name="PC104_GPS">
+<package name="PC104_NO_DIMENSION">
 <description>ELEVATED SOCKET, .100 inch(2.54mm) PITCH</description>
 <pad name="1" x="83.185" y="76.2" drill="1.016" diameter="1.524"/>
 <pad name="2" x="85.725" y="76.2" drill="1.016" diameter="1.524"/>
@@ -338,14 +338,6 @@
 <text x="92.329" y="75.692" size="1.27" layer="25">54</text>
 <text x="82.169" y="9.652" size="1.27" layer="25">51</text>
 <text x="84.836" y="9.652" size="1.27" layer="25">52</text>
-<wire x1="0" y1="85.09" x2="0" y2="5.08" width="0.127" layer="20"/>
-<wire x1="0" y1="5.08" x2="5.08" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="5.08" y1="0" x2="90.805" y2="0" width="0.127" layer="20"/>
-<wire x1="90.805" y1="0" x2="95.885" y2="5.08" width="0.127" layer="20" curve="90"/>
-<wire x1="95.885" y1="5.08" x2="95.885" y2="85.09" width="0.127" layer="20"/>
-<wire x1="95.885" y1="85.09" x2="90.678" y2="90.17" width="0.127" layer="20" curve="91.414625"/>
-<wire x1="0" y1="85.09" x2="5.08" y2="90.17" width="0.127" layer="20" curve="-90"/>
-<wire x1="5.08" y1="90.17" x2="90.678" y2="90.17" width="0.127" layer="20"/>
 </package>
 </packages>
 <symbols>
@@ -503,12 +495,12 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="PC104_GPS">
+<deviceset name="PC104_NO_DIMENSION">
 <gates>
 <gate name="A" symbol="CUBESAT_KIT_HEADER" x="-5.08" y="66.04"/>
 </gates>
 <devices>
-<device name="" package="PC104_GPS">
+<device name="" package="PC104_NO_DIMENSION">
 <connects>
 <connect gate="A" pin="12VBUS1" pad="75"/>
 <connect gate="A" pin="12VBUS2" pad="76"/>
@@ -4527,7 +4519,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="1uF"/>
 <part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="0.1uF"/>
 <part name="U$1" library="Cubesat" deviceset="PINAV-L1" device=""/>
-<part name="U$2" library="Cubesat" deviceset="PC104_GPS" device=""/>
+<part name="U$2" library="Cubesat" deviceset="PC104_NO_DIMENSION" device=""/>
 </parts>
 <sheets>
 <sheet>
