@@ -5866,10 +5866,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SDA" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="SCL" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="ANT" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
-<part name="J1_1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
-<part name="J1_2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
-<part name="J1_3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
-<part name="J1_4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -5895,18 +5891,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="ANT" gate="G$1" x="86.36" y="48.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="89.154" y="48.006" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="85.09" y="49.53" size="1.778" layer="97" rot="R180"/>
-</instance>
-<instance part="J1_1" gate="G$1" x="157.48" y="99.06" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" x="158.75" y="97.79" size="1.778" layer="97"/>
-</instance>
-<instance part="J1_2" gate="G$1" x="152.4" y="96.52" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" x="153.67" y="95.25" size="1.778" layer="97"/>
-</instance>
-<instance part="J1_3" gate="G$1" x="147.32" y="93.98" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" x="148.59" y="92.71" size="1.778" layer="97"/>
-</instance>
-<instance part="J1_4" gate="G$1" x="142.24" y="91.44" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" x="143.51" y="90.17" size="1.778" layer="97"/>
 </instance>
 </instances>
 <busses>
@@ -5990,8 +5974,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="162.56" y1="88.9" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="88.9" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="88.9" x2="134.62" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="J1_4" gate="G$1" pin="TP"/>
-<junction x="142.24" y="88.9"/>
 </segment>
 </net>
 <net name="SW3" class="0">
@@ -6082,9 +6064,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="96.52" x2="157.48" y2="96.52" width="0.1524" layer="91"/>
 <label x="139.7" y="96.52" size="1.778" layer="95" rot="R180"/>
-<pinref part="J1_1" gate="G$1" pin="TP"/>
 <wire x1="157.48" y1="96.52" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
-<junction x="157.48" y="96.52"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="A" pin="SW5_5V"/>
@@ -6100,9 +6080,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="93.98" x2="152.4" y2="93.98" width="0.1524" layer="91"/>
 <label x="139.7" y="93.98" size="1.778" layer="95" rot="R180"/>
-<pinref part="J1_2" gate="G$1" pin="TP"/>
 <wire x1="152.4" y1="93.98" x2="139.7" y2="93.98" width="0.1524" layer="91"/>
-<junction x="152.4" y="93.98"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="A" pin="I2C_CLK"/>
@@ -6118,9 +6096,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="162.56" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
 <label x="139.7" y="91.44" size="1.778" layer="95" rot="R180"/>
-<pinref part="J1_3" gate="G$1" pin="TP"/>
 <wire x1="147.32" y1="91.44" x2="139.7" y2="91.44" width="0.1524" layer="91"/>
-<junction x="147.32" y="91.44"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="A" pin="I2C_DATA"/>
