@@ -197,8 +197,8 @@
 <symbols>
 <symbol name="REF3330_DBZ_3">
 <pin name="IN" x="2.54" y="0" length="middle" direction="in"/>
-<pin name="OUT" x="27.94" y="-2.54" length="middle" direction="out" rot="R180"/>
-<pin name="GND" x="27.94" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT" x="27.94" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="GND" x="27.94" y="-2.54" length="middle" direction="pwr" rot="R180"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="22.86" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="22.86" y1="-7.62" x2="22.86" y2="5.08" width="0.1524" layer="94"/>

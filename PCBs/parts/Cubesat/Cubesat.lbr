@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -206,65 +206,39 @@
 <wire x1="35" y1="75" x2="0" y2="75" width="0.127" layer="21"/>
 <wire x1="0" y1="75" x2="0" y2="0" width="0.127" layer="21"/>
 <wire x1="0" y1="0" x2="35" y2="0" width="0.127" layer="21"/>
-<wire x1="31" y1="60.5" x2="31" y2="66.5" width="0.127" layer="150"/>
-<wire x1="31" y1="66.5" x2="5" y2="66.5" width="0.127" layer="150"/>
-<wire x1="5" y1="66.5" x2="5" y2="60.5" width="0.127" layer="150"/>
-<wire x1="5" y1="60.5" x2="31" y2="60.5" width="0.127" layer="150"/>
-<smd name="1" x="29.456" y="61.53" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="2" x="29.456" y="66.47" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="3" x="26.916" y="61.53" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="4" x="26.916" y="66.47" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="5" x="24.376" y="61.53" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="6" x="24.376" y="66.47" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="7" x="21.836" y="61.53" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="8" x="21.836" y="66.47" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="9" x="19.296" y="61.53" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="10" x="19.296" y="66.47" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="11" x="16.756" y="61.53" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="12" x="16.756" y="66.47" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="13" x="14.216" y="61.53" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="14" x="14.216" y="66.47" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="15" x="11.676" y="61.53" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="16" x="11.676" y="66.47" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="17" x="9.136" y="61.53" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="18" x="9.136" y="66.47" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="19" x="6.596" y="61.53" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<smd name="20" x="6.596" y="66.47" dx="2.5" dy="0.6" layer="1" rot="R270"/>
-<text x="0" y="75.565" size="1.27" layer="150">&gt;NAME</text>
-<text x="31.5" y="60" size="1.27" layer="150">1</text>
-<text x="31.5" y="66" size="1.27" layer="150">2</text>
-<text x="2.5" y="60" size="1.27" layer="150">19</text>
-<text x="2.5" y="66" size="1.27" layer="150">20</text>
+<wire x1="31.474" y1="60.5" x2="31.474" y2="66.5" width="0.127" layer="150"/>
+<wire x1="31.474" y1="66.5" x2="5.474" y2="66.5" width="0.127" layer="150"/>
+<wire x1="5.474" y1="66.5" x2="5.474" y2="60.5" width="0.127" layer="150"/>
+<wire x1="5.474" y1="60.5" x2="31.474" y2="60.5" width="0.127" layer="150"/>
+<text x="0" y="75.565" size="1.27" layer="25">&gt;NAME</text>
+<text x="31.974" y="60" size="1.27" layer="150">1</text>
+<text x="31.974" y="66" size="1.27" layer="150">2</text>
+<text x="2.974" y="60" size="1.27" layer="150">19</text>
+<text x="2.974" y="66" size="1.27" layer="150">20</text>
 <hole x="30.5" y="4.5" drill="2.1"/>
 <hole x="30.5" y="70.5" drill="2.1"/>
 <hole x="4.5" y="4.5" drill="2.1"/>
 <hole x="4.5" y="70.5" drill="2.1"/>
-<dimension x1="35" y1="75" x2="0" y2="75" x3="17.5" y3="80.01" textsize="1.27" layer="21"/>
-<dimension x1="35" y1="0" x2="35" y2="75" x3="40.64" y3="37.5" textsize="1.27" layer="21" dtype="vertical"/>
-<dimension x1="4.5" y1="70.5" x2="4.5" y2="4.5" x3="-7.62" y3="37.5" textsize="1.27" layer="21" dtype="vertical"/>
-<dimension x1="4.5" y1="4.5" x2="30.5" y2="4.5" x3="17.5" y3="2.54" textsize="1.27" layer="21" dtype="horizontal"/>
-<dimension x1="5.2424625" y1="5.2424625" x2="3.7575375" y2="3.7575375" x3="3.7575375" y3="3.7575375" textsize="1.27" layer="21" dtype="diameter"/>
-<dimension x1="35" y1="75" x2="30.98" y2="63.5" x3="38.1" y3="69.25" textsize="1.27" layer="21" dtype="vertical"/>
-<hole x="6.596" y="64.77" drill="0.9652"/>
-<hole x="9.136" y="64.77" drill="0.9652"/>
-<hole x="11.676" y="64.77" drill="0.9652"/>
-<hole x="14.216" y="64.77" drill="0.9652"/>
-<hole x="16.756" y="64.77" drill="0.9652"/>
-<hole x="19.296" y="64.77" drill="0.9652"/>
-<hole x="21.836" y="64.77" drill="0.9652"/>
-<hole x="24.376" y="64.77" drill="0.9652"/>
-<hole x="26.916" y="64.77" drill="0.9652"/>
-<hole x="29.456" y="64.77" drill="0.9652"/>
-<hole x="29.456" y="62.23" drill="0.9652"/>
-<hole x="26.916" y="62.23" drill="0.9652"/>
-<hole x="24.376" y="62.23" drill="0.9652"/>
-<hole x="21.836" y="62.23" drill="0.9652"/>
-<hole x="19.296" y="62.23" drill="0.9652"/>
-<hole x="16.756" y="62.23" drill="0.9652"/>
-<hole x="14.216" y="62.23" drill="0.9652"/>
-<hole x="11.676" y="62.23" drill="0.9652"/>
-<hole x="9.136" y="62.23" drill="0.9652"/>
-<hole x="6.596" y="62.23" drill="0.9652"/>
+<hole x="7.07" y="64.77" drill="0.9652"/>
+<hole x="9.61" y="64.77" drill="0.9652"/>
+<hole x="12.15" y="64.77" drill="0.9652"/>
+<hole x="14.69" y="64.77" drill="0.9652"/>
+<hole x="17.23" y="64.77" drill="0.9652"/>
+<hole x="19.77" y="64.77" drill="0.9652"/>
+<hole x="22.31" y="64.77" drill="0.9652"/>
+<hole x="24.85" y="64.77" drill="0.9652"/>
+<hole x="27.39" y="64.77" drill="0.9652"/>
+<hole x="29.93" y="64.77" drill="0.9652"/>
+<hole x="29.93" y="62.23" drill="0.9652"/>
+<hole x="27.39" y="62.23" drill="0.9652"/>
+<hole x="24.85" y="62.23" drill="0.9652"/>
+<hole x="22.31" y="62.23" drill="0.9652"/>
+<hole x="19.77" y="62.23" drill="0.9652"/>
+<hole x="17.23" y="62.23" drill="0.9652"/>
+<hole x="14.69" y="62.23" drill="0.9652"/>
+<hole x="12.15" y="62.23" drill="0.9652"/>
+<hole x="9.61" y="62.23" drill="0.9652"/>
+<hole x="7.07" y="62.23" drill="0.9652"/>
 </package>
 <package name="_OLD_PC104">
 <wire x1="79.2" y1="0" x2="4.1" y2="0" width="0.127" layer="21"/>
@@ -413,11 +387,11 @@
 <smd name="TX_UART" x="32.6" y="3.63" dx="3" dy="2.15" layer="1"/>
 <smd name="V_AMP1" x="32.6" y="47.94" dx="3" dy="2.15" layer="1"/>
 <smd name="V_AMP2" x="32.6" y="51.21" dx="3" dy="2.15" layer="1"/>
-<text x="0" y="64.77" size="1.27" layer="21">&gt;NAME</text>
-<hole x="2" y="62.1" drill="1.25"/>
-<hole x="2" y="32.100059375" drill="1.25"/>
-<hole x="30.9" y="62.1" drill="1.25"/>
-<hole x="30.9" y="32.100059375" drill="1.25"/>
+<text x="0" y="64.77" size="1.27" layer="25">&gt;NAME</text>
+<hole x="2.9" y="60" drill="2.25"/>
+<hole x="2.9" y="30" drill="2.25"/>
+<hole x="30.9" y="60" drill="2.25"/>
+<hole x="30.9" y="30" drill="2.25"/>
 <pad name="THERM1" x="7.62" y="54.61" drill="3.81" thermals="no"/>
 <pad name="THERM2" x="25.4" y="54.61" drill="3.81" thermals="no"/>
 <pad name="THERM3" x="25.4" y="38.1" drill="3.81" thermals="no"/>
@@ -925,20 +899,9 @@
 </deviceset>
 <deviceset name="PINAV-L1">
 <gates>
-<gate name="G$1" symbol="PINAV-L1" x="2.54" y="-7.62"/>
 </gates>
 <devices>
 <device name="" package="PINAV-L1">
-<connects>
-<connect gate="G$1" pin="GND" pad="7 16"/>
-<connect gate="G$1" pin="GND2" pad="3 15"/>
-<connect gate="G$1" pin="PF" pad="6"/>
-<connect gate="G$1" pin="RX" pad="2"/>
-<connect gate="G$1" pin="TXD0" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="8"/>
-<connect gate="G$1" pin="VDD2" pad="14"/>
-<connect gate="G$1" pin="VPP" pad="5"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
