@@ -9,34 +9,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -45,8 +45,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -54,18 +54,18 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -5461,8 +5461,43 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="HLE-110-02-X-DV-BE-A">
+<library name="HLE-110-02-X-DV">
 <packages>
+<package name="HLE-110-02-X-DV-PE-BE">
+<description>.100" (2,54mm) Surface Mount, Double Row, Vertical Mount. manufacturer:SAMTEC</description>
+<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="2.54" width="0.254" layer="51"/>
+<wire x1="13.208" y1="3.81" x2="13.208" y2="-3.81" width="0.254" layer="21"/>
+<wire x1="13.208" y1="-3.81" x2="-13.208" y2="-3.81" width="0.254" layer="21"/>
+<wire x1="-13.208" y1="-3.81" x2="-13.208" y2="3.81" width="0.254" layer="21"/>
+<wire x1="-12.7" y1="2.54" x2="12.7" y2="2.54" width="0.254" layer="51"/>
+<wire x1="-13.208" y1="3.81" x2="13.208" y2="3.81" width="0.254" layer="21"/>
+<wire x1="12.7" y1="2.54" x2="12.7" y2="-2.54" width="0.254" layer="51"/>
+<wire x1="12.7" y1="-2.54" x2="-12.7" y2="-2.54" width="0.254" layer="51"/>
+<text x="10.795" y="5.08" size="1.27" layer="21">2</text>
+<text x="10.795" y="-6.35" size="1.27" layer="21">1</text>
+<text x="-12.7" y="4.699" size="1.27" layer="25">&gt;NAME</text>
+<text x="-12.7" y="-6.096" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="P$1" x="11.43" y="-3.81" drill="0.5842"/>
+<pad name="P$2" x="11.43" y="3.81" drill="0.5842"/>
+<pad name="P$3" x="8.89" y="-3.81" drill="0.5842"/>
+<pad name="P$4" x="8.89" y="3.81" drill="0.5842"/>
+<pad name="P$5" x="6.35" y="-3.81" drill="0.5842"/>
+<pad name="P$6" x="6.35" y="3.81" drill="0.5842"/>
+<pad name="P$7" x="3.81" y="-3.81" drill="0.5842"/>
+<pad name="P$8" x="3.81" y="3.81" drill="0.5842"/>
+<pad name="P$9" x="1.27" y="-3.81" drill="0.5842"/>
+<pad name="P$10" x="1.27" y="3.81" drill="0.5842"/>
+<pad name="P$11" x="-1.27" y="-3.81" drill="0.5842"/>
+<pad name="P$12" x="-1.27" y="3.81" drill="0.5842"/>
+<pad name="P$13" x="-3.81" y="-3.81" drill="0.5842"/>
+<pad name="P$14" x="-3.81" y="3.81" drill="0.5842"/>
+<pad name="P$15" x="-6.35" y="-3.81" drill="0.5842"/>
+<pad name="P$16" x="-6.35" y="3.81" drill="0.5842"/>
+<pad name="P$17" x="-8.89" y="-3.81" drill="0.5842"/>
+<pad name="P$18" x="-8.89" y="3.81" drill="0.5842"/>
+<pad name="P$19" x="-11.43" y="-3.81" drill="0.5842"/>
+<pad name="P$20" x="-11.43" y="3.81" drill="0.5842"/>
+</package>
 <package name="HLE-110-02-X-DV-BE-A">
 <description>.100" (2,54mm) Surface Mount, Double Row, Vertical Mount. manufacturer:SAMTEC</description>
 <wire x1="-12.7" y1="-2.7305" x2="-12.7" y2="2.7305" width="0.254" layer="51"/>
@@ -5531,7 +5566,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="HLE-110-02-X-DV-BE-A">
+<deviceset name="HLE-110-02-X-DV">
 <gates>
 <gate name="G$1" symbol="HLE-110-02-X-DV-BE-A" x="0" y="0"/>
 </gates>
@@ -5563,6 +5598,33 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
+<device name="HLE-110-X-DV-PE-BA" package="HLE-110-02-X-DV-PE-BE">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="10" pad="P$10"/>
+<connect gate="G$1" pin="11" pad="P$11"/>
+<connect gate="G$1" pin="12" pad="P$12"/>
+<connect gate="G$1" pin="13" pad="P$13"/>
+<connect gate="G$1" pin="14" pad="P$14"/>
+<connect gate="G$1" pin="15" pad="P$15"/>
+<connect gate="G$1" pin="16" pad="P$16"/>
+<connect gate="G$1" pin="17" pad="P$17"/>
+<connect gate="G$1" pin="18" pad="P$18"/>
+<connect gate="G$1" pin="19" pad="P$19"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="20" pad="P$20"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="7" pad="P$7"/>
+<connect gate="G$1" pin="8" pad="P$8"/>
+<connect gate="G$1" pin="9" pad="P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -5586,7 +5648,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="3V3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="VPP" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="PF" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
-<part name="PINAV-CONNECTOR" library="HLE-110-02-X-DV-BE-A" deviceset="HLE-110-02-X-DV-BE-A" device=""/>
+<part name="PINAV-CONNECTOR" library="HLE-110-02-X-DV" deviceset="HLE-110-02-X-DV" device="HLE-110-X-DV-PE-BA"/>
 </parts>
 <sheets>
 <sheet>
