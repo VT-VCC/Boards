@@ -14035,6 +14035,7 @@ Source: 3M</description>
 <part name="X1" library="con-3m" deviceset="2514-" device="5"/>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
 <part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
+<part name="SUPPLY36" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14056,7 +14057,6 @@ Source: 3M</description>
 <text x="129.54" y="27.94" size="5.08" layer="97">Voltage Reference</text>
 <text x="731.52" y="93.98" size="1.778" layer="91">Add external UART pins</text>
 <text x="231.14" y="-78.74" size="1.778" layer="91">Av=10</text>
-<text x="553.72" y="-38.1" size="1.778" layer="91">Need card detect</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="703.58" y="-63.5"/>
@@ -14151,6 +14151,7 @@ Source: 3M</description>
 <instance part="X1" gate="G$1" x="345.44" y="33.02"/>
 <instance part="R13" gate="G$1" x="365.76" y="30.48" rot="R90"/>
 <instance part="R14" gate="G$1" x="358.14" y="30.48" rot="R90"/>
+<instance part="SUPPLY36" gate="GND" x="568.96" y="-43.18"/>
 </instances>
 <busses>
 </busses>
@@ -14403,6 +14404,11 @@ Source: 3M</description>
 <pinref part="C19" gate="G$1" pin="2"/>
 <wire x1="401.32" y1="-50.8" x2="401.32" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="SUPPLY35" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$11" gate="G$1" pin="CARD_DETECT1"/>
+<wire x1="576.58" y1="-40.64" x2="568.96" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="SUPPLY36" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -15238,6 +15244,18 @@ Source: 3M</description>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="355.6" y1="40.64" x2="365.76" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="365.76" y1="40.64" x2="365.76" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SD_DETECT" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="CARD_DETECT"/>
+<wire x1="576.58" y1="-38.1" x2="563.88" y2="-38.1" width="0.1524" layer="91"/>
+<label x="563.88" y="-38.1" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="P7.2_UCB2CLK"/>
+<wire x1="525.78" y1="48.26" x2="508" y2="48.26" width="0.1524" layer="91"/>
+<label x="508" y="48.26" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
