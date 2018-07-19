@@ -185,11 +185,11 @@
 <smd name="TX_UART" x="32.6" y="3.63" dx="3" dy="2.15" layer="1"/>
 <smd name="V_AMP1" x="32.6" y="47.94" dx="3" dy="2.15" layer="1"/>
 <smd name="V_AMP2" x="32.6" y="51.21" dx="3" dy="2.15" layer="1"/>
-<text x="0" y="64.77" size="1.27" layer="21">&gt;NAME</text>
-<hole x="2" y="62.1" drill="1.25"/>
-<hole x="2" y="32.100059375" drill="1.25"/>
-<hole x="30.9" y="62.1" drill="1.25"/>
-<hole x="30.9" y="32.100059375" drill="1.25"/>
+<text x="0" y="64.77" size="1.27" layer="25">&gt;NAME</text>
+<hole x="2.9" y="60" drill="2.25"/>
+<hole x="2.9" y="30" drill="2.25"/>
+<hole x="30.9" y="60" drill="2.25"/>
+<hole x="30.9" y="30" drill="2.25"/>
 <pad name="THERM1" x="7.62" y="54.61" drill="3.81" thermals="no"/>
 <pad name="THERM2" x="25.4" y="54.61" drill="3.81" thermals="no"/>
 <pad name="THERM3" x="25.4" y="38.1" drill="3.81" thermals="no"/>
@@ -385,9 +385,9 @@
 <pin name="H1.34" x="40.64" y="-40.64" length="middle" rot="R180"/>
 <pin name="GPS_RX" x="0" y="-43.18" length="middle"/>
 <pin name="H1.36" x="40.64" y="-43.18" length="middle" rot="R180"/>
-<pin name="H1.37" x="0" y="-45.72" length="middle"/>
+<pin name="SDA_ANT" x="0" y="-45.72" length="middle"/>
 <pin name="H1.38" x="40.64" y="-45.72" length="middle" rot="R180"/>
-<pin name="H1.39" x="0" y="-48.26" length="middle"/>
+<pin name="SCL_ANT" x="0" y="-48.26" length="middle"/>
 <pin name="H1.40" x="40.64" y="-48.26" length="middle" rot="R180"/>
 <pin name="I2C_DATA" x="0" y="-50.8" length="middle"/>
 <pin name="H1.42" x="40.64" y="-50.8" length="middle" rot="R180"/>
@@ -548,9 +548,7 @@
 <connect gate="A" pin="H1.30" pad="30"/>
 <connect gate="A" pin="H1.34" pad="34"/>
 <connect gate="A" pin="H1.36" pad="36"/>
-<connect gate="A" pin="H1.37" pad="37"/>
 <connect gate="A" pin="H1.38" pad="38"/>
-<connect gate="A" pin="H1.39" pad="39"/>
 <connect gate="A" pin="H1.4" pad="4"/>
 <connect gate="A" pin="H1.40" pad="40"/>
 <connect gate="A" pin="H1.42" pad="42"/>
@@ -586,6 +584,8 @@
 <connect gate="A" pin="LI_TX" pad="31"/>
 <connect gate="A" pin="PCM_IN1" pad="87"/>
 <connect gate="A" pin="PCM_IN2" pad="88"/>
+<connect gate="A" pin="SCL_ANT" pad="39"/>
+<connect gate="A" pin="SDA_ANT" pad="37"/>
 <connect gate="A" pin="SW10_3V3" pad="72"/>
 <connect gate="A" pin="SW1_12V" pad="60"/>
 <connect gate="A" pin="SW2_12V" pad="62"/>
@@ -5883,10 +5883,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="PA" gate="G$1" x="76.2" y="55.88"/>
 <instance part="GND" gate="G$1" x="88.9" y="38.1" rot="R180"/>
 <instance part="J1" gate="G$1" x="170.18" y="91.44"/>
-<instance part="SDA" gate="G$1" x="17.78" y="17.78"/>
-<instance part="SCL" gate="G$1" x="17.78" y="10.16" smashed="yes" rot="R180">
-<attribute name="NAME" x="19.812" y="9.906" size="1.778" layer="95" rot="R180"/>
-<attribute name="TP_SIGNAL_NAME" x="16.51" y="11.43" size="1.778" layer="97" rot="R180"/>
+<instance part="SDA" gate="G$1" x="15.24" y="22.86"/>
+<instance part="SCL" gate="G$1" x="15.24" y="15.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="17.272" y="14.986" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="13.97" y="16.51" size="1.778" layer="97" rot="R180"/>
 </instance>
 <instance part="ANT" gate="G$1" x="86.36" y="48.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="89.154" y="48.006" size="1.778" layer="95" rot="R180"/>
@@ -6075,7 +6075,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="86.36" y="50.8"/>
 </segment>
 </net>
-<net name="SCL" class="0">
+<net name="SCL_ANT" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="93.98" x2="152.4" y2="93.98" width="0.1524" layer="91"/>
@@ -6083,15 +6083,15 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="152.4" y1="93.98" x2="139.7" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="A" pin="I2C_CLK"/>
-<wire x1="22.86" y1="12.7" x2="17.78" y2="12.7" width="0.1524" layer="91"/>
-<label x="15.24" y="12.7" size="1.778" layer="95" rot="R180"/>
+<label x="12.7" y="17.78" size="1.778" layer="95" rot="R180"/>
 <pinref part="SCL" gate="G$1" pin="TP"/>
-<wire x1="17.78" y1="12.7" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
-<junction x="17.78" y="12.7"/>
+<wire x1="15.24" y1="17.78" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="A" pin="SCL_ANT"/>
+<wire x1="15.24" y1="17.78" x2="22.86" y2="17.78" width="0.1524" layer="91"/>
+<junction x="15.24" y="17.78"/>
 </segment>
 </net>
-<net name="SDA" class="0">
+<net name="SDA_ANT" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="162.56" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
@@ -6099,12 +6099,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="147.32" y1="91.44" x2="139.7" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="A" pin="I2C_DATA"/>
-<wire x1="22.86" y1="15.24" x2="17.78" y2="15.24" width="0.1524" layer="91"/>
-<label x="15.24" y="15.24" size="1.778" layer="95" rot="R180"/>
+<label x="12.7" y="20.32" size="1.778" layer="95" rot="R180"/>
 <pinref part="SDA" gate="G$1" pin="TP"/>
-<wire x1="17.78" y1="15.24" x2="15.24" y2="15.24" width="0.1524" layer="91"/>
-<junction x="17.78" y="15.24"/>
+<wire x1="15.24" y1="20.32" x2="12.7" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="A" pin="SDA_ANT"/>
+<wire x1="15.24" y1="20.32" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
+<junction x="15.24" y="20.32"/>
 </segment>
 </net>
 </nets>
