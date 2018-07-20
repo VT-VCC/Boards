@@ -11536,82 +11536,6 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps709.pdf"&gt;http://www.t
 </deviceset>
 </devicesets>
 </library>
-<library name="Molex 504050-0491">
-<packages>
-<package name="MOLEX_5040500491">
-<wire x1="4.875" y1="3.05" x2="4.875" y2="-3.05" width="0.127" layer="51"/>
-<wire x1="4.875" y1="-3.05" x2="-4.875" y2="-3.05" width="0.127" layer="51"/>
-<wire x1="-4.875" y1="-3.05" x2="-4.875" y2="3.05" width="0.127" layer="51"/>
-<wire x1="-4.875" y1="3.05" x2="4.875" y2="3.05" width="0.127" layer="51"/>
-<wire x1="3.95" y1="-3.05" x2="-3.95" y2="-3.05" width="0.127" layer="21"/>
-<wire x1="-4.875" y1="-1.05" x2="-4.875" y2="3.05" width="0.127" layer="21"/>
-<wire x1="-4.875" y1="3.05" x2="-2.75" y2="3.05" width="0.127" layer="21"/>
-<wire x1="2.75" y1="3.05" x2="4.875" y2="3.05" width="0.127" layer="21"/>
-<wire x1="4.875" y1="3.05" x2="4.875" y2="-1.05" width="0.127" layer="21"/>
-<wire x1="5.125" y1="3.8" x2="5.125" y2="-1" width="0.05" layer="39"/>
-<wire x1="5.125" y1="-1" x2="5.73" y2="-1" width="0.05" layer="39"/>
-<wire x1="5.73" y1="-1" x2="5.73" y2="-3.3" width="0.05" layer="39"/>
-<wire x1="5.73" y1="-3.3" x2="-5.73" y2="-3.3" width="0.05" layer="39"/>
-<wire x1="-5.73" y1="-3.3" x2="-5.73" y2="-1" width="0.05" layer="39"/>
-<wire x1="-5.73" y1="-1" x2="-5.125" y2="-1" width="0.05" layer="39"/>
-<wire x1="-5.125" y1="-1" x2="-5.125" y2="3.8" width="0.05" layer="39"/>
-<wire x1="-5.125" y1="3.8" x2="5.125" y2="3.8" width="0.05" layer="39"/>
-<text x="-5.30985" y="4.588509375" size="1.272359375" layer="25">&gt;NAME</text>
-<text x="-5.304409375" y="-5.064209375" size="1.271059375" layer="27">&gt;VALUE</text>
-<circle x="-2.3" y="4.15" radius="0.1" width="0.2" layer="21"/>
-<circle x="-2.3" y="4.15" radius="0.1" width="0.2" layer="51"/>
-<smd name="4" x="2.25" y="3.04" dx="0.6" dy="1" layer="1" rot="R180"/>
-<smd name="3" x="0.75" y="3.04" dx="0.6" dy="1" layer="1" rot="R180"/>
-<smd name="2" x="-0.75" y="3.04" dx="0.6" dy="1" layer="1" rot="R180"/>
-<smd name="1" x="-2.25" y="3.04" dx="0.6" dy="1" layer="1" rot="R180"/>
-<smd name="SH2" x="-4.855" y="-2.15" dx="1.25" dy="1.8" layer="1" rot="R180"/>
-<smd name="SH1" x="4.855" y="-2.15" dx="1.25" dy="1.8" layer="1" rot="R180"/>
-</package>
-</packages>
-<symbols>
-<symbol name="5040500491">
-<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<text x="-5.09215" y="8.14621875" size="1.78225" layer="95">&gt;NAME</text>
-<text x="-5.095459375" y="-12.7387" size="1.783409375" layer="96">&gt;VALUE</text>
-<pin name="1" x="-7.62" y="5.08" length="short" direction="pas"/>
-<pin name="2" x="-7.62" y="2.54" length="short" direction="pas"/>
-<pin name="3" x="-7.62" y="0" length="short" direction="pas"/>
-<pin name="4" x="-7.62" y="-2.54" length="short" direction="pas"/>
-<pin name="SHIELD" x="-7.62" y="-7.62" length="short" direction="pwr"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MOLEX_504050-0491" prefix="J">
-<description>Conn Wire to Board HDR 4 POS 1.5mm Solder RA SMD Pico-Lock</description>
-<gates>
-<gate name="G$1" symbol="5040500491" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MOLEX_5040500491">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="SHIELD" pad="SH1 SH2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Good"/>
-<attribute name="DESCRIPTION" value=" Conn Wire to Board HDR 4 POS 1.5mm Solder RA SMD Pico-Lock"/>
-<attribute name="MF" value="Molex"/>
-<attribute name="MP" value="5040500491"/>
-<attribute name="PACKAGE" value="None"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="REF3330">
 <packages>
 <package name="DBZ3">
@@ -12649,6 +12573,85 @@ Source: 3M</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Molex 504050">
+<packages>
+<package name="MOLEX_5040500591">
+<wire x1="5.625" y1="3.05" x2="5.625" y2="-3.05" width="0.127" layer="51"/>
+<wire x1="5.625" y1="-3.05" x2="-5.625" y2="-3.05" width="0.127" layer="51"/>
+<wire x1="-5.625" y1="-3.05" x2="-5.625" y2="3.05" width="0.127" layer="51"/>
+<wire x1="-5.625" y1="3.05" x2="5.625" y2="3.05" width="0.127" layer="51"/>
+<wire x1="4.7" y1="-3.05" x2="-4.7" y2="-3.05" width="0.127" layer="21"/>
+<wire x1="-5.625" y1="-1.05" x2="-5.625" y2="3.05" width="0.127" layer="21"/>
+<wire x1="-5.625" y1="3.05" x2="-3.5" y2="3.05" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.05" x2="5.625" y2="3.05" width="0.127" layer="21"/>
+<wire x1="5.625" y1="3.05" x2="5.625" y2="-1.05" width="0.127" layer="21"/>
+<wire x1="5.875" y1="3.8" x2="5.875" y2="-1" width="0.05" layer="39"/>
+<wire x1="5.875" y1="-1" x2="6.48" y2="-1" width="0.05" layer="39"/>
+<wire x1="6.48" y1="-1" x2="6.48" y2="-3.3" width="0.05" layer="39"/>
+<wire x1="6.48" y1="-3.3" x2="-6.48" y2="-3.3" width="0.05" layer="39"/>
+<wire x1="-6.48" y1="-3.3" x2="-6.48" y2="-1" width="0.05" layer="39"/>
+<wire x1="-6.48" y1="-1" x2="-5.875" y2="-1" width="0.05" layer="39"/>
+<wire x1="-5.875" y1="-1" x2="-5.875" y2="3.8" width="0.05" layer="39"/>
+<wire x1="-5.875" y1="3.8" x2="5.875" y2="3.8" width="0.05" layer="39"/>
+<text x="-6.05985" y="4.588509375" size="1.272359375" layer="25">&gt;NAME</text>
+<text x="-6.054409375" y="-5.064209375" size="1.271059375" layer="27">&gt;VALUE</text>
+<circle x="-3.05" y="4.15" radius="0.1" width="0.2" layer="21"/>
+<circle x="-3.05" y="4.15" radius="0.1" width="0.2" layer="51"/>
+<smd name="4" x="1.5" y="3.04" dx="0.6" dy="1" layer="1" rot="R180"/>
+<smd name="3" x="0" y="3.04" dx="0.6" dy="1" layer="1" rot="R180"/>
+<smd name="2" x="-1.5" y="3.04" dx="0.6" dy="1" layer="1" rot="R180"/>
+<smd name="1" x="-3" y="3.04" dx="0.6" dy="1" layer="1" rot="R180"/>
+<smd name="SH2" x="-5.605" y="-2.15" dx="1.25" dy="1.8" layer="1" rot="R180"/>
+<smd name="SH1" x="5.605" y="-2.15" dx="1.25" dy="1.8" layer="1" rot="R180"/>
+<smd name="5" x="3" y="3.04" dx="0.6" dy="1" layer="1" rot="R180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="5040500591">
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<text x="-5.09215" y="8.14621875" size="1.78225" layer="95">&gt;NAME</text>
+<text x="-5.095459375" y="-15.2787" size="1.783409375" layer="96">&gt;VALUE</text>
+<pin name="1" x="-7.62" y="5.08" length="short" direction="pas"/>
+<pin name="2" x="-7.62" y="2.54" length="short" direction="pas"/>
+<pin name="3" x="-7.62" y="0" length="short" direction="pas"/>
+<pin name="4" x="-7.62" y="-2.54" length="short" direction="pas"/>
+<pin name="SHIELD" x="-7.62" y="-10.16" length="short" direction="pwr"/>
+<pin name="5" x="-7.62" y="-5.08" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MOLEX_504050-0591" prefix="J">
+<description>Conn Wire to Board HDR 4 POS 1.5mm Solder RA SMD Pico-Lock</description>
+<gates>
+<gate name="G$1" symbol="5040500591" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOLEX_5040500591">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="SHIELD" pad="SH1 SH2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Good"/>
+<attribute name="DESCRIPTION" value=" Conn Wire to Board HDR 4 POS 1.5mm Solder RA SMD Pico-Lock"/>
+<attribute name="MF" value="Molex"/>
+<attribute name="MP" value="5040500491"/>
+<attribute name="PACKAGE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12721,7 +12724,6 @@ Source: 3M</description>
 <part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="SUPPLY25" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="J2" library="Molex 504050-0491" deviceset="MOLEX_504050-0491" device=""/>
 <part name="REF3330" library="REF3330" deviceset="REF3330_DBZ_3" device=""/>
 <part name="SUPPLY28" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="TLV2461-1" library="TLV2461" deviceset="TLV2461A_D_8" device=""/>
@@ -12754,6 +12756,7 @@ Source: 3M</description>
 <part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
 <part name="R18" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
 <part name="R17" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
+<part name="J1" library="Molex 504050" deviceset="MOLEX_504050-0591" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12838,7 +12841,6 @@ Source: 3M</description>
 <instance part="R10" gate="G$1" x="205.74" y="-83.82" rot="R90"/>
 <instance part="R11" gate="G$1" x="205.74" y="-55.88" rot="R90"/>
 <instance part="SUPPLY25" gate="GND" x="198.12" y="-96.52"/>
-<instance part="J2" gate="G$1" x="121.92" y="-53.34"/>
 <instance part="REF3330" gate="A" x="139.7" y="17.78" smashed="yes">
 <attribute name="NAME" x="149.86" y="23.368" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
@@ -12873,6 +12875,7 @@ Source: 3M</description>
 <instance part="R16" gate="G$1" x="198.12" y="-68.58" rot="R180"/>
 <instance part="R18" gate="G$1" x="403.86" y="-43.18"/>
 <instance part="R17" gate="G$1" x="345.44" y="-30.48"/>
+<instance part="J1" gate="G$1" x="121.92" y="-53.34"/>
 </instances>
 <busses>
 </busses>
@@ -13637,26 +13640,25 @@ Source: 3M</description>
 </net>
 <net name="TEMP" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="-50.8" x2="101.6" y2="-50.8" width="0.1524" layer="91"/>
 <label x="111.76" y="-50.8" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="340.36" y1="-30.48" x2="337.82" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="337.82" y1="-30.48" x2="337.82" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="-30.48" x2="332.74" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="337.82" y="-30.48"/>
+<label x="332.74" y="-30.48" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="STRN" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="4"/>
-<wire x1="114.3" y1="-55.88" x2="101.6" y2="-55.88" width="0.1524" layer="91"/>
-<label x="111.76" y="-55.88" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<wire x1="335.28" y1="-30.48" x2="332.74" y2="-30.48" width="0.1524" layer="91"/>
-<label x="332.74" y="-30.48" size="1.778" layer="95" rot="R180"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="335.28" y1="-30.48" x2="337.82" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="-30.48" x2="337.82" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="337.82" y1="-30.48" x2="340.36" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="337.82" y="-30.48"/>
+<wire x1="114.3" y1="-58.42" x2="101.6" y2="-58.42" width="0.1524" layer="91"/>
+<label x="111.76" y="-58.42" size="1.778" layer="95" rot="MR0"/>
+<pinref part="J1" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
@@ -13681,15 +13683,15 @@ Source: 3M</description>
 </net>
 <net name="3V" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="-48.26" x2="96.52" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="3"/>
-<wire x1="114.3" y1="-53.34" x2="96.52" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="-53.34" x2="96.52" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="-55.88" x2="96.52" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="-55.88" x2="96.52" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="-48.26" x2="93.98" y2="-48.26" width="0.1524" layer="91"/>
 <junction x="96.52" y="-48.26"/>
 <label x="88.9" y="-48.26" size="1.778" layer="95"/>
 <wire x1="93.98" y1="-48.26" x2="88.9" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="J1" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
@@ -14000,6 +14002,13 @@ Source: 3M</description>
 <pinref part="R17" gate="G$1" pin="2"/>
 <pinref part="TLV2461-3" gate="A" pin="IN+"/>
 <wire x1="350.52" y1="-30.48" x2="360.68" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TEMP_RET" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="114.3" y1="-53.34" x2="101.6" y2="-53.34" width="0.1524" layer="91"/>
+<label x="101.6" y="-53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
