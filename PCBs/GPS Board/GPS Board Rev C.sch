@@ -5473,9 +5473,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-13.208" y1="3.81" x2="13.208" y2="3.81" width="0.254" layer="21"/>
 <wire x1="12.7" y1="2.54" x2="12.7" y2="-2.54" width="0.254" layer="51"/>
 <wire x1="12.7" y1="-2.54" x2="-12.7" y2="-2.54" width="0.254" layer="51"/>
-<text x="10.795" y="5.08" size="1.27" layer="21">2</text>
-<text x="10.795" y="-6.35" size="1.27" layer="21">1</text>
-<text x="-12.7" y="4.699" size="1.27" layer="25">&gt;NAME</text>
+<text x="13.97" y="3.81" size="1.27" layer="21" align="center-left">2</text>
+<text x="13.97" y="-3.81" size="1.27" layer="21" align="center-left">1</text>
+<text x="-11.43" y="4.699" size="1.27" layer="25">&gt;NAME</text>
 <text x="-12.7" y="-6.096" size="1.27" layer="27">&gt;VALUE</text>
 <pad name="P$1" x="11.43" y="-3.81" drill="0.5842"/>
 <pad name="P$2" x="11.43" y="3.81" drill="0.5842"/>
@@ -5497,6 +5497,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pad name="P$18" x="-8.89" y="3.81" drill="0.5842"/>
 <pad name="P$19" x="-11.43" y="-3.81" drill="0.5842"/>
 <pad name="P$20" x="-11.43" y="3.81" drill="0.5842"/>
+<text x="-13.97" y="3.81" size="1.27" layer="21" align="center-right">20</text>
+<text x="-13.97" y="-3.81" size="1.27" layer="21" align="center-right">19</text>
 </package>
 <package name="HLE-110-02-X-DV-BE-A">
 <description>.100" (2,54mm) Surface Mount, Double Row, Vertical Mount. manufacturer:SAMTEC</description>
@@ -5528,8 +5530,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <smd name="16" x="-6.35" y="2.8448" dx="1.9304" dy="1.27" layer="1" rot="R90"/>
 <smd name="19" x="-11.43" y="-2.8448" dx="1.9304" dy="1.27" layer="1" rot="R90"/>
 <smd name="20" x="-11.43" y="2.8448" dx="1.9304" dy="1.27" layer="1" rot="R90"/>
-<text x="10.795" y="5.08" size="1.27" layer="21">2</text>
-<text x="10.795" y="-6.35" size="1.27" layer="21">1</text>
+<text x="13.97" y="2.54" size="1.27" layer="21">2</text>
+<text x="13.97" y="-3.81" size="1.27" layer="21">1</text>
 <text x="-12.7" y="4.699" size="1.27" layer="25">&gt;NAME</text>
 <text x="-12.7" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
 <hole x="-10.16" y="0" drill="1.778"/>
