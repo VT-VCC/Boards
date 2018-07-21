@@ -213,7 +213,6 @@
 <text x="13.97" y="3.81" size="1.27" layer="21" align="center-left">2</text>
 <text x="13.97" y="-3.81" size="1.27" layer="21" align="center-left">1</text>
 <text x="-11.43" y="4.699" size="1.27" layer="25">&gt;NAME</text>
-<text x="-12.7" y="-6.096" size="1.27" layer="27">&gt;VALUE</text>
 <pad name="P$1" x="11.43" y="-3.81" drill="0.5842"/>
 <pad name="P$2" x="11.43" y="3.81" drill="0.5842"/>
 <pad name="P$3" x="8.89" y="-3.81" drill="0.5842"/>
