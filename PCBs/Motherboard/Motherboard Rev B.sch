@@ -12863,6 +12863,153 @@ Source: 3M</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="PJ-102A">
+<packages>
+<package name="CUI_PJ-102A">
+<wire x1="-4.5" y1="-3.7" x2="4.5" y2="-3.7" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="-3.7" x2="-4.5" y2="10.7" width="0.127" layer="51"/>
+<wire x1="4.5" y1="-3.7" x2="4.5" y2="10.7" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="10.7" x2="4.5" y2="10.7" width="0.127" layer="51"/>
+<text x="-5.83865" y="-5.87873125" size="1.273559375" layer="27">&gt;VALUE</text>
+<wire x1="-5.2" y1="0.8" x2="-4.2" y2="0.8" width="0" layer="46"/>
+<wire x1="-4.2" y1="0.8" x2="-4.2" y2="-0.8" width="0" layer="46"/>
+<wire x1="-4.2" y1="-0.8" x2="-5.2" y2="-0.8" width="0" layer="46"/>
+<wire x1="-5.2" y1="-0.8" x2="-5.2" y2="0.8" width="0" layer="46"/>
+<wire x1="-0.8" y1="2.5" x2="-0.8" y2="3.5" width="0" layer="46"/>
+<wire x1="-0.8" y1="3.5" x2="0.8" y2="3.5" width="0" layer="46"/>
+<wire x1="0.8" y1="3.5" x2="0.8" y2="2.5" width="0" layer="46"/>
+<wire x1="0.8" y1="2.5" x2="-0.8" y2="2.5" width="0" layer="46"/>
+<wire x1="-0.8" y1="-3.5" x2="-0.8" y2="-2.5" width="0" layer="46"/>
+<wire x1="-0.8" y1="-2.5" x2="0.8" y2="-2.5" width="0" layer="46"/>
+<wire x1="0.8" y1="-2.5" x2="0.8" y2="-3.5" width="0" layer="46"/>
+<wire x1="0.8" y1="-3.5" x2="-0.8" y2="-3.5" width="0" layer="46"/>
+<wire x1="-6" y1="11" x2="-6" y2="-4.5" width="0.05" layer="39"/>
+<wire x1="-6" y1="-4.5" x2="4.75" y2="-4.5" width="0.05" layer="39"/>
+<wire x1="4.75" y1="-4.5" x2="4.75" y2="11" width="0.05" layer="39"/>
+<wire x1="4.75" y1="11" x2="-6" y2="11" width="0.05" layer="39"/>
+<text x="-6.27003125" y="11.0352" size="1.274059375" layer="25">&gt;NAME</text>
+<wire x1="-4.5" y1="10.7" x2="4.5" y2="10.7" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="10.7" x2="-4.5" y2="1.7" width="0.127" layer="21"/>
+<wire x1="4.5" y1="10.7" x2="4.5" y2="-3.7" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-3.7" x2="1.75" y2="-3.7" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-1.75" x2="-4.5" y2="-3.7" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-3.7" x2="-1.75" y2="-3.7" width="0.127" layer="21"/>
+<pad name="2" x="0" y="3" drill="1" shape="long"/>
+<pad name="1" x="0" y="-3" drill="1" shape="long"/>
+<pad name="3" x="-4.7" y="0" drill="1" shape="long" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="3PIN_POWER_JACK">
+<wire x1="-5.842" y1="-0.635" x2="-5.842" y2="0.635" width="0.254" layer="94" curve="-180"/>
+<wire x1="-5.842" y1="0.635" x2="0.508" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-5.842" y1="-0.635" x2="0.508" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.27" x2="0.508" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-1.27" x2="1.143" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.143" y1="-1.27" x2="1.143" y2="0" width="0.254" layer="94"/>
+<wire x1="1.143" y1="0" x2="1.143" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.143" y1="1.27" x2="0.508" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.413" y1="-2.54" x2="-3.302" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="-2.54" x2="-3.302" y2="-4.445" width="0.254" layer="94"/>
+<wire x1="-3.048" y1="-4.445" x2="-3.556" y2="-4.445" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-4.445" x2="-3.302" y2="-4.699" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="-4.699" x2="-3.048" y2="-4.445" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-4.572" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-4.572" y1="-5.08" x2="-5.207" y2="-4.445" width="0.254" layer="94"/>
+<wire x1="-5.207" y1="-4.445" x2="-5.842" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="1.143" y1="0" x2="2.413" y2="0" width="0.254" layer="94"/>
+<text x="-7.645559375" y="3.05823125" size="1.783959375" layer="95">&gt;NAME</text>
+<text x="-7.6427" y="-10.1903" size="1.7833" layer="96">&gt;VALUE</text>
+<pin name="1" x="5.08" y="0" visible="pad" length="short" direction="pwr" rot="R180"/>
+<pin name="3" x="5.08" y="-2.54" visible="pad" length="short" direction="pwr" rot="R180"/>
+<pin name="2" x="5.08" y="-5.08" visible="pad" length="short" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PJ-102A" prefix="J">
+<description>2.0 mm Center Pin, 2.5 A, Right Angle, Through Hole, Tapered Pins, Dc Power Jack Connector</description>
+<gates>
+<gate name="G$1" symbol="3PIN_POWER_JACK" x="1.27" y="1.27"/>
+</gates>
+<devices>
+<device name="" package="CUI_PJ-102A">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Good"/>
+<attribute name="DESCRIPTION" value="2.0 mm Center Pin%2C 2.5 A%2C Right Angle%2C Through Hole%2C Tapered Pins%2C Dc Power Jack Connector"/>
+<attribute name="MANUFACTURER" value="CUI inc"/>
+<attribute name="MF" value="CUI"/>
+<attribute name="MP" value="PJ-102A"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="0.44 USD"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="Vishay 10BQ015HM3">
+<packages>
+<package name="SMB">
+<smd name="A" x="1.0033" y="0" dx="2.0066" dy="2.4892" layer="1"/>
+<smd name="C" x="5.0673" y="0" dx="2.0066" dy="2.4892" layer="1"/>
+<wire x1="0.889" y1="-1.8034" x2="0.889" y2="1.8034" width="0.127" layer="51"/>
+<wire x1="0.889" y1="1.8034" x2="5.207" y2="1.8034" width="0.127" layer="51"/>
+<wire x1="5.207" y1="1.8034" x2="5.207" y2="-1.8034" width="0.127" layer="51"/>
+<wire x1="5.207" y1="-1.8034" x2="0.889" y2="-1.8034" width="0.127" layer="51"/>
+<wire x1="0.889" y1="1.8034" x2="3.81" y2="1.8034" width="0.127" layer="21"/>
+<wire x1="3.81" y1="1.8034" x2="5.207" y2="1.8034" width="0.127" layer="21"/>
+<wire x1="5.207" y1="1.8034" x2="5.207" y2="1.397" width="0.127" layer="21"/>
+<wire x1="0.889" y1="1.8034" x2="0.889" y2="1.397" width="0.127" layer="21"/>
+<wire x1="0.889" y1="-1.397" x2="0.889" y2="-1.8034" width="0.127" layer="21"/>
+<wire x1="0.889" y1="-1.8034" x2="3.81" y2="-1.8034" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.8034" x2="5.207" y2="-1.8034" width="0.127" layer="21"/>
+<wire x1="5.207" y1="-1.8034" x2="5.207" y2="-1.397" width="0.127" layer="21"/>
+<text x="0" y="2.032" size="1.27" layer="25">&gt;Name</text>
+<wire x1="3.81" y1="1.8034" x2="3.81" y2="-1.8034" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SCHOTTKY">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="10BQ015HM3">
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMB">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12976,6 +13123,9 @@ Source: 3M</description>
 <part name="R22" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="R23" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="R24" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
+<part name="J3" library="PJ-102A" deviceset="PJ-102A" device=""/>
+<part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="VS-10BQ" library="Vishay 10BQ015HM3" deviceset="10BQ015HM3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12997,6 +13147,7 @@ Source: 3M</description>
 <text x="716.28" y="99.06" size="1.778" layer="91">Add external UART pins</text>
 <text x="231.14" y="-78.74" size="1.778" layer="97">Av=10</text>
 <text x="274.32" y="91.44" size="5.08" layer="97">Antenna</text>
+<text x="50.8" y="22.86" size="5.08" layer="120">DC Power</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="703.58" y="-63.5"/>
@@ -13104,6 +13255,9 @@ Source: 3M</description>
 <instance part="R22" gate="G$1" x="482.6" y="43.18" rot="R90"/>
 <instance part="R23" gate="G$1" x="756.92" y="93.98" rot="R90"/>
 <instance part="R24" gate="G$1" x="756.92" y="76.2" rot="R90"/>
+<instance part="J3" gate="G$1" x="63.5" y="12.7"/>
+<instance part="SUPPLY14" gate="GND" x="71.12" y="2.54" rot="MR0"/>
+<instance part="VS-10BQ" gate="G$1" x="73.66" y="12.7"/>
 </instances>
 <busses>
 </busses>
@@ -13354,6 +13508,16 @@ Source: 3M</description>
 <wire x1="292.1" y1="76.2" x2="279.4" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="76.2" x2="271.78" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="76.2" x2="271.78" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="7.62" x2="71.12" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="3"/>
+<wire x1="68.58" y1="10.16" x2="71.12" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="10.16" x2="71.12" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="7.62" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
+<junction x="71.12" y="7.62"/>
+<pinref part="SUPPLY14" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -14322,6 +14486,25 @@ Source: 3M</description>
 <wire x1="520.7" y1="17.78" x2="525.78" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="20.32" x2="505.46" y2="20.32" width="0.1524" layer="91"/>
 <junction x="497.84" y="20.32"/>
+</segment>
+</net>
+<net name="5V_CHG" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="5VUSB_CHG"/>
+<wire x1="142.24" y1="91.44" x2="144.78" y2="91.44" width="0.1524" layer="91"/>
+<label x="144.78" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="VS-10BQ" gate="G$1" pin="C"/>
+<wire x1="76.2" y1="12.7" x2="83.82" y2="12.7" width="0.1524" layer="91"/>
+<label x="83.82" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="1"/>
+<pinref part="VS-10BQ" gate="G$1" pin="A"/>
+<wire x1="68.58" y1="12.7" x2="71.12" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
