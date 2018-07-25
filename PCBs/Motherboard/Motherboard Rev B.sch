@@ -13010,6 +13010,60 @@ Source: 3M</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Molex 90121-0763">
+<packages>
+<package name="90121-0763">
+<wire x1="-1.27" y1="-4.25" x2="0" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="0" y1="-4.25" x2="2.5" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-4.25" x2="5.08" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-4.25" x2="6.35" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-4.25" x2="6.35" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-1.75" x2="-1.27" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.75" x2="-1.27" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="0" y1="-4.25" x2="0" y2="-11" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-4.25" x2="2.5" y2="-11" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-4.25" x2="5.08" y2="-11" width="0.127" layer="51"/>
+<pad name="1" x="0" y="0" drill="1" shape="square"/>
+<pad name="2" x="2.54" y="0" drill="1" shape="square"/>
+<pad name="3" x="5.08" y="0" drill="1" shape="square"/>
+<text x="-2.54" y="-2.54" size="1.27" layer="95">&gt;Name</text>
+<text x="-3.81" y="-3.81" size="1.27" layer="95">&gt;Name</text>
+<text x="-1.143" y="1.016" size="1.27" layer="25">&gt;Name</text>
+</package>
+</packages>
+<symbols>
+<symbol name="3-POS">
+<wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="1" x="10.16" y="2.54" length="short" rot="R180"/>
+<pin name="2" x="10.16" y="7.62" length="short" rot="R180"/>
+<pin name="3" x="10.16" y="12.7" length="short" rot="R180"/>
+<text x="0" y="16.51" size="1.27" layer="95">&gt;Name</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="90121-0763">
+<description>Molex 90121-0763 3-position 0.100" right-angle breakaway header</description>
+<gates>
+<gate name="G$1" symbol="3-POS" x="0" y="-15.24"/>
+</gates>
+<devices>
+<device name="" package="90121-0763">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13126,6 +13180,9 @@ Source: 3M</description>
 <part name="J3" library="PJ-102A" deviceset="PJ-102A" device=""/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="VS-10BQ" library="Vishay 10BQ015HM3" deviceset="10BQ015HM3" device=""/>
+<part name="EXT_UART" library="Molex 90121-0763" deviceset="90121-0763" device=""/>
+<part name="SUPPLY33" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY34" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13144,10 +13201,10 @@ Source: 3M</description>
 <text x="177.8" y="-38.1" size="5.08" layer="97">Strain Gauge</text>
 <text x="360.68" y="-30.48" size="5.08" layer="97">Temperature</text>
 <text x="124.46" y="30.48" size="5.08" layer="97">Voltage Reference</text>
-<text x="716.28" y="99.06" size="1.778" layer="91">Add external UART pins</text>
 <text x="231.14" y="-78.74" size="1.778" layer="97">Av=10</text>
 <text x="274.32" y="91.44" size="5.08" layer="97">Antenna</text>
 <text x="50.8" y="22.86" size="5.08" layer="120">DC Power</text>
+<text x="347.98" y="99.06" size="5.08" layer="97">External UART</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="703.58" y="-63.5"/>
@@ -13258,6 +13315,9 @@ Source: 3M</description>
 <instance part="J3" gate="G$1" x="63.5" y="12.7"/>
 <instance part="SUPPLY14" gate="GND" x="71.12" y="2.54" rot="MR0"/>
 <instance part="VS-10BQ" gate="G$1" x="73.66" y="12.7"/>
+<instance part="EXT_UART" gate="G$1" x="350.52" y="76.2"/>
+<instance part="SUPPLY33" gate="GND" x="365.76" y="73.66"/>
+<instance part="SUPPLY34" gate="GND" x="279.4" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -13502,12 +13562,10 @@ Source: 3M</description>
 <pinref part="SUPPLY32" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<wire x1="271.78" y1="71.12" x2="271.78" y2="68.58" width="0.1524" layer="91"/>
-<label x="271.78" y="68.58" size="1.778" layer="95" rot="R180"/>
 <pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="292.1" y1="76.2" x2="279.4" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="76.2" x2="271.78" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="76.2" x2="271.78" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="SUPPLY34" gate="GND" pin="GND"/>
+<wire x1="279.4" y1="76.2" x2="279.4" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="2"/>
@@ -13518,6 +13576,12 @@ Source: 3M</description>
 <wire x1="71.12" y1="7.62" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
 <junction x="71.12" y="7.62"/>
 <pinref part="SUPPLY14" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="EXT_UART" gate="G$1" pin="1"/>
+<wire x1="360.68" y1="78.74" x2="365.76" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="78.74" x2="365.76" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="SUPPLY33" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -14154,12 +14218,22 @@ Source: 3M</description>
 <wire x1="698.5" y1="96.52" x2="711.2" y2="96.52" width="0.1524" layer="91"/>
 <label x="711.2" y="96.52" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="EXT_UART" gate="G$1" pin="3"/>
+<wire x1="360.68" y1="88.9" x2="365.76" y2="88.9" width="0.1524" layer="91"/>
+<label x="365.76" y="88.9" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="EXT_TXD" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="P6.1_UCA3RXD_UCA3SOMI"/>
 <wire x1="698.5" y1="93.98" x2="711.2" y2="93.98" width="0.1524" layer="91"/>
 <label x="711.2" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="EXT_UART" gate="G$1" pin="2"/>
+<wire x1="360.68" y1="83.82" x2="365.76" y2="83.82" width="0.1524" layer="91"/>
+<label x="365.76" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="JTAG_TXD" class="0">
