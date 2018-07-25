@@ -4325,37 +4325,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <library name="Cubesat">
 <description>&lt;b&gt;PCB Matrix Packages&lt;/b&gt;&lt;p&gt;</description>
 <packages>
-<package name="LI-1">
-<description>This is the footprint for the Astrodev Lithium Li-1 radio</description>
-<wire x1="0" y1="0" x2="0" y2="64.1" width="0.127" layer="21"/>
-<wire x1="0" y1="64.1" x2="32.9" y2="64.1" width="0.127" layer="21"/>
-<wire x1="32.9" y1="64.1" x2="32.9" y2="0" width="0.127" layer="21"/>
-<wire x1="32.9" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<smd name="3.3V" x="32.6" y="16.71" dx="3" dy="2.15" layer="1"/>
-<smd name="CONFIG1" x="0.3" y="3.63" dx="3" dy="2.15" layer="1"/>
-<smd name="CONFIG2" x="0.3" y="6.9" dx="3" dy="2.15" layer="1"/>
-<smd name="EXT_EVT" x="0.3" y="10.17" dx="3" dy="2.15" layer="1"/>
-<smd name="GND1" x="0.3" y="13.44" dx="3" dy="2.15" layer="1"/>
-<smd name="GND2" x="32.6" y="13.44" dx="3" dy="2.15" layer="1"/>
-<smd name="NC" x="0.3" y="16.71" dx="3" dy="2.15" layer="1"/>
-<smd name="RESET" x="32.6" y="10.17" dx="3" dy="2.15" layer="1"/>
-<smd name="RF_GND1" x="32.6" y="54.48" dx="3" dy="2.15" layer="1"/>
-<smd name="RF_GND2" x="32.6" y="57.75" dx="3" dy="2.15" layer="1"/>
-<smd name="RF_GND3" x="16.3" y="46.1" dx="25.35" dy="25.35" layer="1" thermals="no"/>
-<smd name="RX_UART" x="32.6" y="6.9" dx="3" dy="2.15" layer="1"/>
-<smd name="TX_UART" x="32.6" y="3.63" dx="3" dy="2.15" layer="1"/>
-<smd name="V_AMP1" x="32.6" y="47.94" dx="3" dy="2.15" layer="1"/>
-<smd name="V_AMP2" x="32.6" y="51.21" dx="3" dy="2.15" layer="1"/>
-<text x="0" y="64.77" size="1.27" layer="25">&gt;NAME</text>
-<hole x="2.9" y="60" drill="2.25"/>
-<hole x="2.9" y="30" drill="2.25"/>
-<hole x="30.9" y="60" drill="2.25"/>
-<hole x="30.9" y="30" drill="2.25"/>
-<pad name="THERM1" x="7.62" y="54.61" drill="3.81" thermals="no"/>
-<pad name="THERM2" x="25.4" y="54.61" drill="3.81" thermals="no"/>
-<pad name="THERM3" x="25.4" y="38.1" drill="3.81" thermals="no"/>
-<pad name="THERM4" x="7.62" y="38.1" drill="3.81" thermals="no"/>
-</package>
 <package name="PC104_NO_DIMENSION">
 <description>ELEVATED SOCKET, .100 inch(2.54mm) PITCH</description>
 <pad name="1" x="83.185" y="76.2" drill="1.016" diameter="1.524"/>
@@ -4485,25 +4454,40 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="82.169" y="9.652" size="1.27" layer="25">51</text>
 <text x="84.836" y="9.652" size="1.27" layer="25">52</text>
 </package>
+<package name="LI-2">
+<description>This is the footprint for the Astrodev Lithium Li-1 radio</description>
+<wire x1="0" y1="0" x2="0" y2="62" width="0.127" layer="21"/>
+<wire x1="0" y1="62" x2="32" y2="62" width="0.127" layer="21"/>
+<wire x1="32" y1="62" x2="32" y2="0" width="0.127" layer="21"/>
+<wire x1="32" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<smd name="3.3V" x="32.6" y="15" dx="3" dy="2.15" layer="1"/>
+<smd name="CONFIG1" x="0.3" y="3" dx="3" dy="2.15" layer="1"/>
+<smd name="CONFIG2" x="0.3" y="6" dx="3" dy="2.15" layer="1"/>
+<smd name="EXT_EVT" x="0.3" y="9" dx="3" dy="2.15" layer="1"/>
+<smd name="GPIO_A" x="0.3" y="12" dx="3" dy="2.15" layer="1"/>
+<smd name="GND2" x="32.6" y="12" dx="3" dy="2.15" layer="1"/>
+<smd name="GPIO_B" x="0.3" y="15" dx="3" dy="2.15" layer="1"/>
+<smd name="RESET" x="32.6" y="9" dx="3" dy="2.15" layer="1"/>
+<smd name="RF_GND1" x="32.6" y="53.75" dx="3" dy="2.15" layer="1"/>
+<smd name="RF_GND2" x="32.6" y="57" dx="3" dy="2.15" layer="1"/>
+<smd name="RF_GND" x="15.08" y="46.66" dx="24.6" dy="21.98" layer="1" thermals="no"/>
+<smd name="RX_UART" x="32.6" y="6" dx="3" dy="2.15" layer="1"/>
+<smd name="TX_UART" x="32.6" y="3" dx="3" dy="2.15" layer="1"/>
+<smd name="V_AMP1" x="32.6" y="47.25" dx="3" dy="2.15" layer="1"/>
+<smd name="V_AMP2" x="32.6" y="50.5" dx="3" dy="2.15" layer="1"/>
+<text x="0" y="62.77" size="1.27" layer="25">&gt;NAME</text>
+<hole x="2" y="60" drill="2"/>
+<hole x="2" y="30" drill="2"/>
+<hole x="30" y="60" drill="2"/>
+<hole x="30" y="30" drill="2"/>
+<pad name="THERM1" x="6.62" y="54.61" drill="3.81" thermals="no"/>
+<pad name="THERM2" x="23.4" y="54.61" drill="3.81" thermals="no"/>
+<pad name="THERM3" x="23.4" y="39.1" drill="3.81" thermals="no"/>
+<pad name="THERM4" x="6.62" y="39.1" drill="3.81" thermals="no"/>
+<hole x="7.97" y="23.73" drill="5"/>
+</package>
 </packages>
 <symbols>
-<symbol name="LI-1">
-<wire x1="0" y1="25.4" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="20.32" y2="25.4" width="0.254" layer="94"/>
-<wire x1="20.32" y1="25.4" x2="0" y2="25.4" width="0.254" layer="94"/>
-<pin name="!RESET" x="-5.08" y="17.78" length="middle"/>
-<pin name="3.3V" x="-5.08" y="12.7" length="middle"/>
-<pin name="CONFIG1" x="25.4" y="17.78" length="middle" rot="R180"/>
-<pin name="CONFIG2" x="25.4" y="15.24" length="middle" rot="R180"/>
-<pin name="EXT_EVT" x="25.4" y="12.7" length="middle" rot="R180"/>
-<pin name="GND" x="-5.08" y="15.24" length="middle"/>
-<pin name="RF_GND" x="-5.08" y="2.54" length="middle"/>
-<pin name="RX_UART" x="-5.08" y="20.32" length="middle"/>
-<pin name="TX_UART" x="-5.08" y="22.86" length="middle"/>
-<pin name="V_AMP" x="-5.08" y="7.62" length="middle"/>
-<text x="0" y="25.4" size="1.778" layer="94">LITHIUM_LI-1</text>
-</symbol>
 <symbol name="CUBESAT_KIT_HEADER">
 <wire x1="5.08" y1="2.54" x2="35.56" y2="2.54" width="0.254" layer="94"/>
 <wire x1="35.56" y1="2.54" x2="35.56" y2="-66.04" width="0.254" layer="94"/>
@@ -4620,32 +4604,27 @@ In this library the device names are the same as the pin names of the symbols, t
 <pin name="H2.51" x="68.58" y="-63.5" length="middle"/>
 <pin name="H2.52" x="109.22" y="-63.5" length="middle" rot="R180"/>
 </symbol>
+<symbol name="LI-2">
+<wire x1="0" y1="25.4" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="25.4" width="0.254" layer="94"/>
+<wire x1="22.86" y1="25.4" x2="0" y2="25.4" width="0.254" layer="94"/>
+<pin name="!RESET" x="-5.08" y="17.78" length="middle" direction="in"/>
+<pin name="3.3V" x="-5.08" y="12.7" length="middle" direction="pwr"/>
+<pin name="CONFIG1" x="27.94" y="17.78" length="middle" rot="R180"/>
+<pin name="CONFIG2" x="27.94" y="15.24" length="middle" rot="R180"/>
+<pin name="EXT_EVT" x="27.94" y="12.7" length="middle" rot="R180"/>
+<pin name="GND" x="-5.08" y="15.24" length="middle" direction="pwr"/>
+<pin name="RF_GND" x="-5.08" y="2.54" length="middle" direction="pwr"/>
+<pin name="RX_UART" x="-5.08" y="20.32" length="middle" direction="in"/>
+<pin name="TX_UART" x="-5.08" y="22.86" length="middle" direction="out"/>
+<pin name="V_AMP" x="-5.08" y="7.62" length="middle" direction="pwr"/>
+<text x="0" y="26.162" size="1.778" layer="95">&gt;Name</text>
+<pin name="GPIO_A" x="27.94" y="7.62" length="middle" rot="R180"/>
+<pin name="GPIO_B" x="27.94" y="5.08" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="LI-1">
-<gates>
-<gate name="G$1" symbol="LI-1" x="-10.16" y="15.24"/>
-</gates>
-<devices>
-<device name="" package="LI-1">
-<connects>
-<connect gate="G$1" pin="!RESET" pad="RESET"/>
-<connect gate="G$1" pin="3.3V" pad="3.3V"/>
-<connect gate="G$1" pin="CONFIG1" pad="CONFIG1"/>
-<connect gate="G$1" pin="CONFIG2" pad="CONFIG2"/>
-<connect gate="G$1" pin="EXT_EVT" pad="EXT_EVT"/>
-<connect gate="G$1" pin="GND" pad="GND1 GND2"/>
-<connect gate="G$1" pin="RF_GND" pad="RF_GND1 RF_GND2 RF_GND3 THERM1 THERM2 THERM3 THERM4"/>
-<connect gate="G$1" pin="RX_UART" pad="RX_UART"/>
-<connect gate="G$1" pin="TX_UART" pad="TX_UART"/>
-<connect gate="G$1" pin="V_AMP" pad="V_AMP1 V_AMP2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="PC104_NO_DIMENSION">
 <gates>
 <gate name="A" symbol="CUBESAT_KIT_HEADER" x="-5.08" y="66.04"/>
@@ -4757,6 +4736,32 @@ In this library the device names are the same as the pin names of the symbols, t
 <connect gate="A" pin="SW7_5V" pad="68"/>
 <connect gate="A" pin="SW8_3V3" pad="70"/>
 <connect gate="A" pin="SW9_3V3" pad="71"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LI-2">
+<gates>
+<gate name="G$1" symbol="LI-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LI-2">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="RESET"/>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="CONFIG1" pad="CONFIG1"/>
+<connect gate="G$1" pin="CONFIG2" pad="CONFIG2"/>
+<connect gate="G$1" pin="EXT_EVT" pad="EXT_EVT"/>
+<connect gate="G$1" pin="GND" pad="GND2 THERM1 THERM2 THERM3 THERM4"/>
+<connect gate="G$1" pin="GPIO_A" pad="GPIO_A"/>
+<connect gate="G$1" pin="GPIO_B" pad="GPIO_B"/>
+<connect gate="G$1" pin="RF_GND" pad="RF_GND RF_GND1 RF_GND2"/>
+<connect gate="G$1" pin="RX_UART" pad="RX_UART"/>
+<connect gate="G$1" pin="TX_UART" pad="TX_UART"/>
+<connect gate="G$1" pin="V_AMP" pad="V_AMP1 V_AMP2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5991,7 +5996,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 <part name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF"/>
-<part name="LITHIUM" library="Cubesat" deviceset="LI-1" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U$1" library="Cubesat" deviceset="PC104_NO_DIMENSION" device=""/>
@@ -6007,6 +6011,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GPS_TX" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="GPS_VPP" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="GND" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="LITHIUM-2" library="Cubesat" deviceset="LI-2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6022,7 +6027,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="SUPPLY7" gate="GND" x="25.4" y="45.72"/>
 <instance part="C3" gate="G$1" x="180.34" y="55.88"/>
 <instance part="C4" gate="G$1" x="170.18" y="55.88"/>
-<instance part="LITHIUM" gate="G$1" x="53.34" y="53.34"/>
 <instance part="SUPPLY8" gate="GND" x="175.26" y="43.18"/>
 <instance part="SUPPLY9" gate="GND" x="132.08" y="43.18"/>
 <instance part="U$1" gate="A" x="22.86" y="30.48"/>
@@ -6038,6 +6042,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="GPS_TX" gate="G$1" x="134.62" y="78.74" rot="R180"/>
 <instance part="GPS_VPP" gate="G$1" x="119.38" y="73.66" rot="R180"/>
 <instance part="GND" gate="G$1" x="116.84" y="50.8" rot="R180"/>
+<instance part="LITHIUM-2" gate="G$1" x="53.34" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -6046,10 +6051,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <wire x1="48.26" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
 <label x="20.32" y="76.2" size="1.778" layer="95" rot="R180"/>
-<pinref part="LITHIUM" gate="G$1" pin="TX_UART"/>
 <pinref part="LI_TX" gate="G$1" pin="TP"/>
 <wire x1="38.1" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
 <junction x="38.1" y="76.2"/>
+<pinref part="LITHIUM-2" gate="G$1" pin="TX_UART"/>
 </segment>
 <segment>
 <wire x1="22.86" y1="-7.62" x2="20.32" y2="-7.62" width="0.1524" layer="91"/>
@@ -6061,10 +6066,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <wire x1="48.26" y1="73.66" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
 <label x="20.32" y="73.66" size="1.778" layer="95" rot="R180"/>
-<pinref part="LITHIUM" gate="G$1" pin="RX_UART"/>
 <pinref part="LI_RX" gate="G$1" pin="TP"/>
 <wire x1="25.4" y1="73.66" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
 <junction x="25.4" y="73.66"/>
+<pinref part="LITHIUM-2" gate="G$1" pin="RX_UART"/>
 </segment>
 <segment>
 <wire x1="22.86" y1="-5.08" x2="20.32" y2="-5.08" width="0.1524" layer="91"/>
@@ -6081,9 +6086,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="15.24" y1="60.96" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="58.42" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
 <junction x="25.4" y="60.96"/>
-<pinref part="LITHIUM" gate="G$1" pin="V_AMP"/>
 <pinref part="LI_AMP" gate="G$1" pin="TP"/>
 <junction x="15.24" y="60.96"/>
+<pinref part="LITHIUM-2" gate="G$1" pin="V_AMP"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="17.78" x2="86.36" y2="17.78" width="0.1524" layer="91"/>
@@ -6094,12 +6099,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="OA_RESET" class="0">
 <segment>
-<wire x1="78.74" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
 <label x="88.9" y="71.12" size="1.778" layer="95"/>
-<pinref part="LITHIUM" gate="G$1" pin="CONFIG1"/>
 <pinref part="OA_RST" gate="G$1" pin="TP"/>
+<wire x1="81.28" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
 <junction x="86.36" y="71.12"/>
+<pinref part="LITHIUM-2" gate="G$1" pin="CONFIG1"/>
+<junction x="81.28" y="71.12"/>
 </segment>
 <segment>
 <wire x1="22.86" y1="-27.94" x2="20.32" y2="-27.94" width="0.1524" layer="91"/>
@@ -6120,8 +6127,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="35.56" y1="55.88" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
 <junction x="35.56" y="55.88"/>
-<pinref part="LITHIUM" gate="G$1" pin="GND"/>
-<pinref part="LITHIUM" gate="G$1" pin="RF_GND"/>
+<pinref part="LITHIUM-2" gate="G$1" pin="GND"/>
+<pinref part="LITHIUM-2" gate="G$1" pin="RF_GND"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="20.32" x2="88.9" y2="20.32" width="0.1524" layer="91"/>
@@ -6293,9 +6300,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-5.08" y1="66.04" x2="-5.08" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-5.08" y="66.04"/>
 <label x="-10.16" y="66.04" size="1.778" layer="95" rot="R180"/>
-<pinref part="LITHIUM" gate="G$1" pin="3.3V"/>
 <pinref part="LI_3V3" gate="G$1" pin="TP"/>
 <junction x="-2.54" y="66.04"/>
+<pinref part="LITHIUM-2" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="-2.54" x2="86.36" y2="-2.54" width="0.1524" layer="91"/>
