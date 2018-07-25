@@ -12957,22 +12957,22 @@ Source: 3M</description>
 <library name="Vishay 10BQ015HM3">
 <packages>
 <package name="SMB">
-<smd name="A" x="1.0033" y="0" dx="2.0066" dy="2.4892" layer="1"/>
-<smd name="C" x="5.0673" y="0" dx="2.0066" dy="2.4892" layer="1"/>
-<wire x1="0.889" y1="-1.8034" x2="0.889" y2="1.8034" width="0.127" layer="51"/>
-<wire x1="0.889" y1="1.8034" x2="5.207" y2="1.8034" width="0.127" layer="51"/>
-<wire x1="5.207" y1="1.8034" x2="5.207" y2="-1.8034" width="0.127" layer="51"/>
-<wire x1="5.207" y1="-1.8034" x2="0.889" y2="-1.8034" width="0.127" layer="51"/>
-<wire x1="0.889" y1="1.8034" x2="3.81" y2="1.8034" width="0.127" layer="21"/>
-<wire x1="3.81" y1="1.8034" x2="5.207" y2="1.8034" width="0.127" layer="21"/>
-<wire x1="5.207" y1="1.8034" x2="5.207" y2="1.397" width="0.127" layer="21"/>
-<wire x1="0.889" y1="1.8034" x2="0.889" y2="1.397" width="0.127" layer="21"/>
-<wire x1="0.889" y1="-1.397" x2="0.889" y2="-1.8034" width="0.127" layer="21"/>
-<wire x1="0.889" y1="-1.8034" x2="3.81" y2="-1.8034" width="0.127" layer="21"/>
-<wire x1="3.81" y1="-1.8034" x2="5.207" y2="-1.8034" width="0.127" layer="21"/>
-<wire x1="5.207" y1="-1.8034" x2="5.207" y2="-1.397" width="0.127" layer="21"/>
-<text x="0" y="2.032" size="1.27" layer="25">&gt;Name</text>
-<wire x1="3.81" y1="1.8034" x2="3.81" y2="-1.8034" width="0.127" layer="21"/>
+<smd name="A" x="-2.0193" y="0" dx="2.0066" dy="2.4892" layer="1"/>
+<smd name="C" x="2.0447" y="0" dx="2.0066" dy="2.4892" layer="1"/>
+<wire x1="-2.1336" y1="-1.8034" x2="-2.1336" y2="1.8034" width="0.127" layer="51"/>
+<wire x1="-2.1336" y1="1.8034" x2="2.1844" y2="1.8034" width="0.127" layer="51"/>
+<wire x1="2.1844" y1="1.8034" x2="2.1844" y2="-1.8034" width="0.127" layer="51"/>
+<wire x1="2.1844" y1="-1.8034" x2="-2.1336" y2="-1.8034" width="0.127" layer="51"/>
+<wire x1="-2.1336" y1="1.8034" x2="0.7874" y2="1.8034" width="0.127" layer="21"/>
+<wire x1="0.7874" y1="1.8034" x2="2.1844" y2="1.8034" width="0.127" layer="21"/>
+<wire x1="2.1844" y1="1.8034" x2="2.1844" y2="1.397" width="0.127" layer="21"/>
+<wire x1="-2.1336" y1="1.8034" x2="-2.1336" y2="1.397" width="0.127" layer="21"/>
+<wire x1="-2.1336" y1="-1.397" x2="-2.1336" y2="-1.8034" width="0.127" layer="21"/>
+<wire x1="-2.1336" y1="-1.8034" x2="0.7874" y2="-1.8034" width="0.127" layer="21"/>
+<wire x1="0.7874" y1="-1.8034" x2="2.1844" y2="-1.8034" width="0.127" layer="21"/>
+<wire x1="2.1844" y1="-1.8034" x2="2.1844" y2="-1.397" width="0.127" layer="21"/>
+<text x="-3.0226" y="2.032" size="1.27" layer="25">&gt;Name</text>
+<wire x1="0.7874" y1="1.8034" x2="0.7874" y2="-1.8034" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -13670,9 +13670,9 @@ Source: 3M</description>
 <pinref part="U$1" gate="A" pin="GPS_RX"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P2.0_TB0.6_UCA0TXD_UCA0SIMO_TB0CLK_ACLK"/>
-<wire x1="698.5" y1="142.24" x2="734.06" y2="142.24" width="0.1524" layer="91"/>
-<label x="734.06" y="142.24" size="1.778" layer="95"/>
+<pinref part="U1" gate="A" pin="P2.5_TB0.0_UCA1TXD_UCA1SIMO"/>
+<wire x1="698.5" y1="129.54" x2="711.2" y2="129.54" width="0.1524" layer="91"/>
+<label x="711.2" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PINAVL1_TX" class="0">
@@ -13682,9 +13682,9 @@ Source: 3M</description>
 <pinref part="U$1" gate="A" pin="GPS_TX"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P2.1_TB0.0_UCA0RXD_UCA0SOMI"/>
-<wire x1="698.5" y1="139.7" x2="734.06" y2="139.7" width="0.1524" layer="91"/>
-<label x="734.06" y="139.7" size="1.778" layer="95"/>
+<pinref part="U1" gate="A" pin="P2.6_TB0.1_UCA1RXD_UCA1SOMI"/>
+<wire x1="698.5" y1="127" x2="711.2" y2="127" width="0.1524" layer="91"/>
+<label x="711.2" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LITHIUM_RX" class="0">
@@ -14046,15 +14046,15 @@ Source: 3M</description>
 </net>
 <net name="JTAG_RXD" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P2.5_TB0.0_UCA1TXD_UCA1SIMO"/>
-<wire x1="698.5" y1="129.54" x2="711.2" y2="129.54" width="0.1524" layer="91"/>
-<label x="711.2" y="129.54" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="383.54" y1="12.7" x2="383.54" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="383.54" y1="10.16" x2="391.16" y2="10.16" width="0.1524" layer="91"/>
 <label x="391.16" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="P2.0_TB0.6_UCA0TXD_UCA0SIMO_TB0CLK_ACLK"/>
+<wire x1="698.5" y1="142.24" x2="711.2" y2="142.24" width="0.1524" layer="91"/>
+<label x="711.2" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TEMP" class="0">
@@ -14164,15 +14164,15 @@ Source: 3M</description>
 </net>
 <net name="JTAG_TXD" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P2.6_TB0.1_UCA1RXD_UCA1SOMI"/>
-<wire x1="698.5" y1="127" x2="711.2" y2="127" width="0.1524" layer="91"/>
-<label x="711.2" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="375.92" y1="12.7" x2="375.92" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="375.92" y1="7.62" x2="391.16" y2="7.62" width="0.1524" layer="91"/>
 <label x="391.16" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="P2.1_TB0.0_UCA0RXD_UCA0SOMI"/>
+<wire x1="698.5" y1="139.7" x2="711.2" y2="139.7" width="0.1524" layer="91"/>
+<label x="711.2" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI_SD" class="0">
@@ -14290,11 +14290,6 @@ Source: 3M</description>
 <junction x="756.92" y="86.36"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="A" pin="SDA_ANT"/>
-<wire x1="101.6" y1="83.82" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
-<label x="96.52" y="83.82" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
 <pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="292.1" y1="78.74" x2="276.86" y2="78.74" width="0.1524" layer="91"/>
 <label x="276.86" y="78.74" size="1.778" layer="95" rot="R180"/>
@@ -14309,11 +14304,6 @@ Source: 3M</description>
 <wire x1="756.92" y1="83.82" x2="759.46" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="756.92" y1="83.82" x2="756.92" y2="81.28" width="0.1524" layer="91"/>
 <junction x="756.92" y="83.82"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="A" pin="SCL_ANT"/>
-<wire x1="101.6" y1="81.28" x2="81.28" y2="81.28" width="0.1524" layer="91"/>
-<label x="81.28" y="81.28" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>
