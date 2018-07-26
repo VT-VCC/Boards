@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -620,6 +620,40 @@
 <pad name="THERM4" x="6.62" y="39.1" drill="3.81" thermals="no"/>
 <hole x="7.97" y="23.73" drill="5"/>
 </package>
+<package name="RBF_MOUNT">
+<wire x1="14.79051875" y1="26.5699" x2="13.4939" y2="28.89475" width="0.001" layer="22" curve="121.7"/>
+<wire x1="13.4939" y1="28.89475" x2="8.1599" y2="28.89475" width="0.001" layer="22"/>
+<wire x1="8.1599" y1="28.89475" x2="6.86328125" y2="26.5699" width="0.001" layer="22" curve="121.7"/>
+<wire x1="6.86328125" y1="26.5699" x2="9.53028125" y2="22.2519" width="0.001" layer="22"/>
+<wire x1="9.53028125" y1="22.2519" x2="12.12351875" y2="22.2519" width="0.001" layer="22" curve="116.6"/>
+<wire x1="12.12351875" y1="22.2519" x2="14.79051875" y2="26.5699" width="0.001" layer="22"/>
+<wire x1="0" y1="0" x2="0" y2="33.5876" width="0.001" layer="22"/>
+<wire x1="0" y1="33.5876" x2="-1.524" y2="33.5876" width="0.001" layer="51"/>
+<wire x1="0" y1="33.5876" x2="2.76396875" y2="33.5876" width="0.001" layer="22"/>
+<wire x1="2.76396875" y1="33.5876" x2="4.0276" y2="32.444603125" width="0.001" layer="22" curve="84.260817"/>
+<wire x1="30.6976" y1="15.1131" x2="33.8726" y2="18.2881" width="0.001" layer="22" curve="90"/>
+<wire x1="33.8726" y1="31.5556" x2="33.8726" y2="18.2881" width="0.001" layer="22"/>
+<wire x1="17.22286875" y1="34.7306" x2="30.6976" y2="34.7306" width="0.001" layer="22"/>
+<wire x1="30.6976" y1="15.1131" x2="10.4411" y2="15.1131" width="0.001" layer="22"/>
+<wire x1="33.8726" y1="31.5556" x2="30.6976" y2="34.7306" width="0.001" layer="22" curve="90"/>
+<wire x1="17.22286875" y1="34.7306" x2="15.959234375" y2="33.5876" width="0.001" layer="22" curve="84.260831"/>
+<wire x1="14.6956" y1="32.4446" x2="4.0276" y2="32.4446" width="0.001" layer="22"/>
+<wire x1="10.4411" y1="15.1131" x2="4.0911" y2="8.7631" width="0.001" layer="22" curve="90"/>
+<wire x1="11.1506" y1="18.5929" x2="11.1506" y2="11.4809" width="0.001" layer="21"/>
+<wire x1="0" y1="18.5929" x2="11.1506" y2="18.5929" width="0.001" layer="21"/>
+<wire x1="11.1506" y1="11.4809" x2="0" y2="11.4809" width="0.001" layer="21"/>
+<wire x1="14.6956" y1="32.4446" x2="15.959234375" y2="33.5876" width="0.001" layer="22" curve="84.260831"/>
+<wire x1="4.0911" y1="8.7631" x2="4.0911" y2="2.3496" width="0.001" layer="22"/>
+<wire x1="1.972559375" y1="0" x2="4.0911" y2="2.3496" width="0.001" layer="22" curve="84.079448"/>
+<wire x1="1.972559375" y1="0" x2="0" y2="0" width="0.001" layer="22"/>
+<wire x1="0" y1="0" x2="-1.524" y2="0" width="0.001" layer="51"/>
+<hole x="28.7926" y="29.7181" drill="1.778"/>
+<hole x="28.7926" y="20.1931" drill="1.778"/>
+<wire x1="0" y1="18.5929" x2="0" y2="11.4809" width="0.001" layer="21"/>
+<wire x1="-1.524" y1="33.5876" x2="-1.524" y2="0" width="0.001" layer="51"/>
+<rectangle x1="0" y1="11.4809" x2="11.1506" y2="18.5929" layer="39"/>
+<wire x1="0" y1="31.9914" x2="0" y2="22.9998" width="0.001" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CUBESAT_KIT_HEADER">
@@ -934,6 +968,16 @@
 <text x="0" y="26.162" size="1.778" layer="95">&gt;Name</text>
 <pin name="GPIO_A" x="27.94" y="7.62" length="middle" rot="R180"/>
 <pin name="GPIO_B" x="27.94" y="5.08" length="middle" rot="R180"/>
+</symbol>
+<symbol name="RBF">
+<wire x1="0" y1="2.54" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<pin name="C" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="NO" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="NC" x="12.7" y="5.08" length="middle" rot="R180"/>
+<text x="0" y="13.462" size="1.778" layer="95">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1285,6 +1329,28 @@
 <connect gate="G$1" pin="TX_UART" pad="TX_UART"/>
 <connect gate="G$1" pin="V_AMP" pad="V_AMP1 V_AMP2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RBF_AND_SWITCH">
+<gates>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RBF_MOUNT">
+<gates>
+</gates>
+<devices>
+<device name="" package="RBF_MOUNT">
 <technologies>
 <technology name=""/>
 </technologies>
