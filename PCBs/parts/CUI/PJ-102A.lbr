@@ -76,10 +76,6 @@
 <wire x1="-0.8" y1="-2.5" x2="0.8" y2="-2.5" width="0" layer="46"/>
 <wire x1="0.8" y1="-2.5" x2="0.8" y2="-3.5" width="0" layer="46"/>
 <wire x1="0.8" y1="-3.5" x2="-0.8" y2="-3.5" width="0" layer="46"/>
-<wire x1="-6" y1="11" x2="-6" y2="-4.5" width="0.05" layer="39"/>
-<wire x1="-6" y1="-4.5" x2="4.75" y2="-4.5" width="0.05" layer="39"/>
-<wire x1="4.75" y1="-4.5" x2="4.75" y2="11" width="0.05" layer="39"/>
-<wire x1="4.75" y1="11" x2="-6" y2="11" width="0.05" layer="39"/>
 <text x="-6.27003125" y="11.0352" size="1.274059375" layer="25">&gt;NAME</text>
 <wire x1="-4.5" y1="10.7" x2="4.5" y2="10.7" width="0.127" layer="21"/>
 <wire x1="-4.5" y1="10.7" x2="-4.5" y2="1.7" width="0.127" layer="21"/>
@@ -90,6 +86,7 @@
 <pad name="2" x="0" y="3" drill="1"/>
 <pad name="1" x="0" y="-3" drill="1"/>
 <pad name="3" x="-4.7" y="0" drill="1" rot="R90"/>
+<rectangle x1="-6" y1="-4.5" x2="4.75" y2="11" layer="39"/>
 </package>
 </packages>
 <symbols>
