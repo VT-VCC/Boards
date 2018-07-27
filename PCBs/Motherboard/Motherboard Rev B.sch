@@ -12831,7 +12831,7 @@ Source: 3M</description>
 <part name="C4" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="U1" library="VT_Parts_Eagle" deviceset="MSP430FR5994IPNR" device="" value="Value"/>
+<part name="MSP430" library="VT_Parts_Eagle" deviceset="MSP430FR5994IPNR" device="" value="Value"/>
 <part name="C1" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="C5" library="adafruit" deviceset="C-US" device="C0805" value="1uF"/>
 <part name="C6" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
@@ -12888,7 +12888,7 @@ Source: 3M</description>
 <part name="SUPPLY27" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C22" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 <part name="SUPPLY30" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="X1" library="con-3m" deviceset="2514-" device="5"/>
+<part name="JTAG" library="con-3m" deviceset="2514-" device="5"/>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
 <part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
 <part name="SD_CONN" library="Molex SD - 502702" deviceset="502702-0891" device=""/>
@@ -12949,7 +12949,7 @@ Source: 3M</description>
 <instance part="C4" gate="G$1" x="76.2" y="-40.64"/>
 <instance part="SUPPLY5" gate="GND" x="76.2" y="-53.34"/>
 <instance part="SUPPLY2" gate="GND" x="165.1" y="-22.86"/>
-<instance part="U1" gate="A" x="612.14" y="78.74"/>
+<instance part="MSP430" gate="A" x="612.14" y="78.74"/>
 <instance part="C1" gate="G$1" x="411.48" y="137.16"/>
 <instance part="C5" gate="G$1" x="421.64" y="137.16"/>
 <instance part="C6" gate="G$1" x="436.88" y="132.08"/>
@@ -13008,12 +13008,12 @@ Source: 3M</description>
 <instance part="SUPPLY27" gate="GND" x="322.58" y="-76.2" rot="MR0"/>
 <instance part="C22" gate="G$1" x="200.66" y="-76.2"/>
 <instance part="SUPPLY30" gate="GND" x="200.66" y="-86.36" rot="MR0"/>
-<instance part="X1" gate="G$1" x="363.22" y="20.32"/>
+<instance part="JTAG" gate="G$1" x="363.22" y="20.32"/>
 <instance part="R13" gate="G$1" x="383.54" y="17.78" rot="R90"/>
 <instance part="R14" gate="G$1" x="375.92" y="17.78" rot="R90"/>
 <instance part="SD_CONN" gate="G$1" x="599.44" y="-60.96"/>
 <instance part="SUPPLY37" gate="GND" x="627.38" y="-63.5"/>
-<instance part="Q1" gate="G$1" x="510.54" y="10.16" rot="R90"/>
+<instance part="Q1" gate="G$1" x="502.92" y="10.16" rot="R90"/>
 <instance part="TLV2461" gate="A" x="279.4" y="-60.96"/>
 <instance part="TLV2452" gate="G$1" x="271.78" y="0"/>
 <instance part="C24" gate="G$1" x="307.34" y="10.16"/>
@@ -13072,15 +13072,15 @@ Source: 3M</description>
 <junction x="165.1" y="-17.78"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="DVSS1"/>
+<pinref part="MSP430" gate="A" pin="DVSS1"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <wire x1="698.5" y1="22.86" x2="716.28" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="716.28" y1="22.86" x2="716.28" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="DVSS2"/>
+<pinref part="MSP430" gate="A" pin="DVSS2"/>
 <wire x1="716.28" y1="17.78" x2="716.28" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="716.28" y1="12.7" x2="716.28" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="698.5" y1="17.78" x2="716.28" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="DVSS3"/>
+<pinref part="MSP430" gate="A" pin="DVSS3"/>
 <wire x1="698.5" y1="12.7" x2="716.28" y2="12.7" width="0.1524" layer="91"/>
 <junction x="716.28" y="17.78"/>
 <junction x="716.28" y="12.7"/>
@@ -13164,7 +13164,7 @@ Source: 3M</description>
 <wire x1="358.14" y1="30.48" x2="340.36" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="30.48" x2="340.36" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
-<pinref part="X1" gate="G$1" pin="9"/>
+<pinref part="JTAG" gate="G$1" pin="9"/>
 </segment>
 <segment>
 <pinref part="TPS22942" gate="A" pin="GND"/>
@@ -13367,14 +13367,14 @@ Source: 3M</description>
 <label x="99.06" y="-30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P8.1"/>
+<pinref part="MSP430" gate="A" pin="P8.1"/>
 <wire x1="698.5" y1="71.12" x2="711.2" y2="71.12" width="0.1524" layer="91"/>
 <label x="711.2" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AGND" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="AVSS3"/>
+<pinref part="MSP430" gate="A" pin="AVSS3"/>
 <wire x1="698.5" y1="27.94" x2="711.2" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="711.2" y1="27.94" x2="711.2" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="AGND"/>
@@ -13382,9 +13382,9 @@ Source: 3M</description>
 <wire x1="711.2" y1="38.1" x2="711.2" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="711.2" y1="40.64" x2="716.28" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="716.28" y1="40.64" x2="716.28" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="AVSS1"/>
+<pinref part="MSP430" gate="A" pin="AVSS1"/>
 <wire x1="698.5" y1="38.1" x2="711.2" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="AVSS2"/>
+<pinref part="MSP430" gate="A" pin="AVSS2"/>
 <wire x1="698.5" y1="33.02" x2="711.2" y2="33.02" width="0.1524" layer="91"/>
 <junction x="711.2" y="38.1"/>
 <junction x="711.2" y="33.02"/>
@@ -13427,7 +13427,7 @@ Source: 3M</description>
 <label x="165.1" y="-7.62" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P8.0"/>
+<pinref part="MSP430" gate="A" pin="P8.0"/>
 <wire x1="698.5" y1="73.66" x2="711.2" y2="73.66" width="0.1524" layer="91"/>
 <label x="711.2" y="73.66" size="1.778" layer="95"/>
 </segment>
@@ -13439,7 +13439,7 @@ Source: 3M</description>
 <pinref part="U$1" gate="A" pin="GPS_RX"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P2.5_TB0.0_UCA1TXD_UCA1SIMO"/>
+<pinref part="MSP430" gate="A" pin="P2.5_TB0.0_UCA1TXD_UCA1SIMO"/>
 <wire x1="698.5" y1="129.54" x2="711.2" y2="129.54" width="0.1524" layer="91"/>
 <label x="711.2" y="129.54" size="1.778" layer="95"/>
 </segment>
@@ -13451,7 +13451,7 @@ Source: 3M</description>
 <pinref part="U$1" gate="A" pin="GPS_TX"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P2.6_TB0.1_UCA1RXD_UCA1SOMI"/>
+<pinref part="MSP430" gate="A" pin="P2.6_TB0.1_UCA1RXD_UCA1SOMI"/>
 <wire x1="698.5" y1="127" x2="711.2" y2="127" width="0.1524" layer="91"/>
 <label x="711.2" y="127" size="1.778" layer="95"/>
 </segment>
@@ -13463,7 +13463,7 @@ Source: 3M</description>
 <pinref part="U$1" gate="A" pin="LI_RX"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P5.4_UCA2TXD_UCA2SIMO_TB0OUTH"/>
+<pinref part="MSP430" gate="A" pin="P5.4_UCA2TXD_UCA2SIMO_TB0OUTH"/>
 <wire x1="525.78" y1="66.04" x2="508" y2="66.04" width="0.1524" layer="91"/>
 <label x="508" y="66.04" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -13475,7 +13475,7 @@ Source: 3M</description>
 <pinref part="U$1" gate="A" pin="LI_TX"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P5.5_UCA2RXD_UCA2SOMI_ACLK"/>
+<pinref part="MSP430" gate="A" pin="P5.5_UCA2RXD_UCA2SOMI_ACLK"/>
 <wire x1="525.78" y1="63.5" x2="508" y2="63.5" width="0.1524" layer="91"/>
 <label x="508" y="63.5" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -13554,14 +13554,14 @@ Source: 3M</description>
 <junction x="581.66" y="-43.18"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P4.0_A8"/>
+<pinref part="MSP430" gate="A" pin="P4.0_A8"/>
 <wire x1="698.5" y1="119.38" x2="711.2" y2="119.38" width="0.1524" layer="91"/>
 <label x="711.2" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DNU_TEMP_ADC" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P3.0_A12_C12"/>
+<pinref part="MSP430" gate="A" pin="P3.0_A12_C12"/>
 <wire x1="525.78" y1="99.06" x2="518.16" y2="99.06" width="0.1524" layer="91"/>
 <label x="518.16" y="99.06" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -13594,7 +13594,7 @@ Source: 3M</description>
 </net>
 <net name="3V3_UC" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="AVCC1"/>
+<pinref part="MSP430" gate="A" pin="AVCC1"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="411.48" y1="142.24" x2="421.64" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="421.64" y1="142.24" x2="436.88" y2="142.24" width="0.1524" layer="91"/>
@@ -13641,7 +13641,7 @@ Source: 3M</description>
 <label x="739.14" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="DVCC1"/>
+<pinref part="MSP430" gate="A" pin="DVCC1"/>
 <wire x1="462.28" y1="137.16" x2="525.78" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="447.04" y1="137.16" x2="462.28" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
@@ -13653,7 +13653,7 @@ Source: 3M</description>
 <label x="452.12" y="137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="DVCC2"/>
+<pinref part="MSP430" gate="A" pin="DVCC2"/>
 <wire x1="472.44" y1="132.08" x2="525.78" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="472.44" y1="129.54" x2="472.44" y2="132.08" width="0.1524" layer="91"/>
@@ -13664,7 +13664,7 @@ Source: 3M</description>
 <label x="477.52" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="DVCC3"/>
+<pinref part="MSP430" gate="A" pin="DVCC3"/>
 <wire x1="520.7" y1="127" x2="525.78" y2="127" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="127" x2="520.7" y2="127" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="1"/>
@@ -13709,7 +13709,7 @@ Source: 3M</description>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="731.52" y1="50.8" x2="731.52" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="RST_NMI_SBWTDIO_N"/>
+<pinref part="MSP430" gate="A" pin="RST_NMI_SBWTDIO_N"/>
 <wire x1="698.5" y1="48.26" x2="731.52" y2="48.26" width="0.1524" layer="91"/>
 <junction x="731.52" y="48.26"/>
 <wire x1="731.52" y1="48.26" x2="731.52" y2="45.72" width="0.1524" layer="91"/>
@@ -13720,20 +13720,20 @@ Source: 3M</description>
 <wire x1="353.06" y1="40.64" x2="345.44" y2="40.64" width="0.1524" layer="91"/>
 <label x="340.36" y="40.64" size="1.778" layer="95"/>
 <wire x1="345.44" y1="40.64" x2="340.36" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="1"/>
+<pinref part="JTAG" gate="G$1" pin="1"/>
 <wire x1="358.14" y1="40.64" x2="353.06" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SBWTCK" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="TEST_SBWTCK"/>
+<pinref part="MSP430" gate="A" pin="TEST_SBWTCK"/>
 <wire x1="718.82" y1="55.88" x2="698.5" y2="55.88" width="0.1524" layer="91"/>
 <label x="708.66" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="358.14" y1="33.02" x2="340.36" y2="33.02" width="0.1524" layer="91"/>
 <label x="340.36" y="33.02" size="1.778" layer="95"/>
-<pinref part="X1" gate="G$1" pin="7"/>
+<pinref part="JTAG" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -13788,7 +13788,7 @@ Source: 3M</description>
 <pinref part="JTAG_PWR" gate="G$1" pin="1"/>
 <wire x1="403.86" y1="40.64" x2="378.46" y2="40.64" width="0.1524" layer="91"/>
 <label x="398.78" y="40.64" size="1.778" layer="95" rot="MR0"/>
-<pinref part="X1" gate="G$1" pin="2"/>
+<pinref part="JTAG" gate="G$1" pin="2"/>
 <wire x1="378.46" y1="40.64" x2="373.38" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13798,13 +13798,13 @@ Source: 3M</description>
 <wire x1="403.86" y1="35.56" x2="378.46" y2="35.56" width="0.1524" layer="91"/>
 <label x="401.32" y="35.56" size="1.778" layer="95" rot="MR0"/>
 <wire x1="378.46" y1="35.56" x2="378.46" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="4"/>
+<pinref part="JTAG" gate="G$1" pin="4"/>
 <wire x1="378.46" y1="38.1" x2="373.38" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TMP1_OUT" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P3.1_A13_C13"/>
+<pinref part="MSP430" gate="A" pin="P3.1_A13_C13"/>
 <wire x1="525.78" y1="96.52" x2="518.16" y2="96.52" width="0.1524" layer="91"/>
 <label x="518.16" y="96.52" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -13827,7 +13827,7 @@ Source: 3M</description>
 <label x="391.16" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P2.0_TB0.6_UCA0TXD_UCA0SIMO_TB0CLK_ACLK"/>
+<pinref part="MSP430" gate="A" pin="P2.0_TB0.6_UCA0TXD_UCA0SIMO_TB0CLK_ACLK"/>
 <wire x1="698.5" y1="142.24" x2="711.2" y2="142.24" width="0.1524" layer="91"/>
 <label x="711.2" y="142.24" size="1.778" layer="95"/>
 </segment>
@@ -13882,7 +13882,7 @@ Source: 3M</description>
 </net>
 <net name="EXT_RXD" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P6.0_UCA3TXD_UCA3SIMO"/>
+<pinref part="MSP430" gate="A" pin="P6.0_UCA3TXD_UCA3SIMO"/>
 <wire x1="698.5" y1="96.52" x2="711.2" y2="96.52" width="0.1524" layer="91"/>
 <label x="711.2" y="96.52" size="1.778" layer="95"/>
 </segment>
@@ -13894,7 +13894,7 @@ Source: 3M</description>
 </net>
 <net name="EXT_TXD" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P6.1_UCA3RXD_UCA3SOMI"/>
+<pinref part="MSP430" gate="A" pin="P6.1_UCA3RXD_UCA3SOMI"/>
 <wire x1="698.5" y1="93.98" x2="711.2" y2="93.98" width="0.1524" layer="91"/>
 <label x="711.2" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -13912,14 +13912,14 @@ Source: 3M</description>
 <label x="391.16" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P2.1_TB0.0_UCA0RXD_UCA0SOMI"/>
+<pinref part="MSP430" gate="A" pin="P2.1_TB0.0_UCA0RXD_UCA0SOMI"/>
 <wire x1="698.5" y1="139.7" x2="711.2" y2="139.7" width="0.1524" layer="91"/>
 <label x="711.2" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI_SD" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P1.6_TB0.3_UCB0SIMO_UCB0SDA_TA0.0"/>
+<pinref part="MSP430" gate="A" pin="P1.6_TB0.3_UCB0SIMO_UCB0SDA_TA0.0"/>
 <wire x1="525.78" y1="106.68" x2="518.16" y2="106.68" width="0.1524" layer="91"/>
 <label x="518.16" y="106.68" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -13931,7 +13931,7 @@ Source: 3M</description>
 </net>
 <net name="MISO_SD" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P1.7_TB0.4_UCB0SOMI_UCB0SCL_TA1.0"/>
+<pinref part="MSP430" gate="A" pin="P1.7_TB0.4_UCB0SOMI_UCB0SCL_TA1.0"/>
 <wire x1="525.78" y1="104.14" x2="518.16" y2="104.14" width="0.1524" layer="91"/>
 <label x="518.16" y="104.14" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -13943,7 +13943,7 @@ Source: 3M</description>
 </net>
 <net name="CLK_SD" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P2.2_TB0.2_UCB0CLK"/>
+<pinref part="MSP430" gate="A" pin="P2.2_TB0.2_UCB0CLK"/>
 <wire x1="698.5" y1="137.16" x2="734.06" y2="137.16" width="0.1524" layer="91"/>
 <label x="734.06" y="137.16" size="1.778" layer="95"/>
 </segment>
@@ -13955,7 +13955,7 @@ Source: 3M</description>
 </net>
 <net name="MOSI_IMU" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P5.0_UCB1SIMO_UCB1SDA"/>
+<pinref part="MSP430" gate="A" pin="P5.0_UCB1SIMO_UCB1SDA"/>
 <wire x1="525.78" y1="76.2" x2="508" y2="76.2" width="0.1524" layer="91"/>
 <label x="508" y="76.2" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -13967,7 +13967,7 @@ Source: 3M</description>
 </net>
 <net name="MISO_IMU" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P5.1_UCB1SOMI_UCB1SCL"/>
+<pinref part="MSP430" gate="A" pin="P5.1_UCB1SOMI_UCB1SCL"/>
 <wire x1="525.78" y1="73.66" x2="508" y2="73.66" width="0.1524" layer="91"/>
 <label x="508" y="73.66" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -13979,7 +13979,7 @@ Source: 3M</description>
 </net>
 <net name="CLK_IMU" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P5.2_UCB1CLK_TA4CLK"/>
+<pinref part="MSP430" gate="A" pin="P5.2_UCB1CLK_TA4CLK"/>
 <wire x1="525.78" y1="71.12" x2="508" y2="71.12" width="0.1524" layer="91"/>
 <label x="508" y="71.12" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -13991,7 +13991,7 @@ Source: 3M</description>
 </net>
 <net name="SDA_EPS" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P7.0_UCB2SIMO_UCB2SDA"/>
+<pinref part="MSP430" gate="A" pin="P7.0_UCB2SIMO_UCB2SDA"/>
 <wire x1="525.78" y1="53.34" x2="482.6" y2="53.34" width="0.1524" layer="91"/>
 <label x="477.52" y="53.34" size="1.778" layer="95" rot="R180"/>
 <pinref part="R21" gate="G$1" pin="1"/>
@@ -14007,7 +14007,7 @@ Source: 3M</description>
 </net>
 <net name="SCL_EPS" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P7.1_UCB2SOMI_UCB2SCL"/>
+<pinref part="MSP430" gate="A" pin="P7.1_UCB2SOMI_UCB2SCL"/>
 <wire x1="477.52" y1="50.8" x2="482.6" y2="50.8" width="0.1524" layer="91"/>
 <label x="477.52" y="50.8" size="1.778" layer="95" rot="R180"/>
 <pinref part="R22" gate="G$1" pin="2"/>
@@ -14023,7 +14023,7 @@ Source: 3M</description>
 </net>
 <net name="SDA_ANT" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P6.4_UCB3SIMO_UCB3SDA"/>
+<pinref part="MSP430" gate="A" pin="P6.4_UCB3SIMO_UCB3SDA"/>
 <wire x1="698.5" y1="86.36" x2="734.06" y2="86.36" width="0.1524" layer="91"/>
 <label x="736.6" y="86.36" size="1.778" layer="95"/>
 <pinref part="R23" gate="G$1" pin="1"/>
@@ -14039,7 +14039,7 @@ Source: 3M</description>
 </net>
 <net name="SCL_ANT" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="P6.5_UCB3SOMI_UCB3SCL"/>
+<pinref part="MSP430" gate="A" pin="P6.5_UCB3SOMI_UCB3SCL"/>
 <wire x1="698.5" y1="83.82" x2="734.06" y2="83.82" width="0.1524" layer="91"/>
 <label x="736.6" y="83.82" size="1.778" layer="95"/>
 <pinref part="R24" gate="G$1" pin="2"/>
@@ -14055,7 +14055,7 @@ Source: 3M</description>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="14"/>
+<pinref part="JTAG" gate="G$1" pin="14"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="373.38" y1="25.4" x2="375.92" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="375.92" y1="25.4" x2="375.92" y2="22.86" width="0.1524" layer="91"/>
@@ -14063,7 +14063,7 @@ Source: 3M</description>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="12"/>
+<pinref part="JTAG" gate="G$1" pin="12"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="373.38" y1="27.94" x2="383.54" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="383.54" y1="27.94" x2="383.54" y2="22.86" width="0.1524" layer="91"/>
@@ -14076,20 +14076,20 @@ Source: 3M</description>
 <pinref part="SD_CONN" gate="G$1" pin="DETECT"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P7.2_UCB2CLK"/>
+<pinref part="MSP430" gate="A" pin="P7.2_UCB2CLK"/>
 <wire x1="525.78" y1="48.26" x2="520.7" y2="48.26" width="0.1524" layer="91"/>
 <label x="520.7" y="48.26" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="HFXIN" class="0">
 <segment>
 <pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="502.92" y1="15.24" x2="495.3" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="2"/>
-<wire x1="502.92" y1="15.24" x2="510.54" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="PJ.6_HFXIN"/>
-<wire x1="510.54" y1="15.24" x2="525.78" y2="15.24" width="0.1524" layer="91"/>
-<junction x="510.54" y="15.24"/>
+<pinref part="MSP430" gate="A" pin="PJ.6_HFXIN"/>
+<wire x1="502.92" y1="15.24" x2="525.78" y2="15.24" width="0.1524" layer="91"/>
+<junction x="502.92" y="15.24"/>
+<label x="510.54" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TMP1_RET" class="0">
@@ -14106,11 +14106,11 @@ Source: 3M</description>
 <wire x1="213.36" y1="2.54" x2="205.74" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="LFXIN" class="0">
 <segment>
 <wire x1="505.46" y1="30.48" x2="520.7" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="520.7" y1="30.48" x2="523.24" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="PJ.4_LFXIN"/>
+<pinref part="MSP430" gate="A" pin="PJ.4_LFXIN"/>
 <wire x1="525.78" y1="20.32" x2="523.24" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="523.24" y1="20.32" x2="523.24" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="1"/>
@@ -14120,21 +14120,23 @@ Source: 3M</description>
 <wire x1="485.14" y1="30.48" x2="477.52" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="30.48" x2="492.76" y2="30.48" width="0.1524" layer="91"/>
 <junction x="497.84" y="30.48"/>
+<label x="510.54" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="HFXOUT" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PJ.7_HFXOUT"/>
+<pinref part="MSP430" gate="A" pin="PJ.7_HFXOUT"/>
 <wire x1="523.24" y1="12.7" x2="525.78" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="523.24" y1="12.7" x2="523.24" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="1"/>
 <pinref part="Q1" gate="G$1" pin="1"/>
-<wire x1="495.3" y1="5.08" x2="510.54" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="523.24" y1="5.08" x2="510.54" y2="5.08" width="0.1524" layer="91"/>
-<junction x="510.54" y="5.08"/>
+<wire x1="495.3" y1="5.08" x2="502.92" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="523.24" y1="5.08" x2="502.92" y2="5.08" width="0.1524" layer="91"/>
+<junction x="502.92" y="5.08"/>
+<label x="510.54" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="LFXOUT" class="0">
 <segment>
 <pinref part="C19" gate="G$1" pin="1"/>
 <wire x1="477.52" y1="20.32" x2="492.76" y2="20.32" width="0.1524" layer="91"/>
@@ -14142,10 +14144,11 @@ Source: 3M</description>
 <wire x1="492.76" y1="20.32" x2="497.84" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="505.46" y1="20.32" x2="520.7" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="520.7" y1="20.32" x2="520.7" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="PJ.5_LFXOUT"/>
+<pinref part="MSP430" gate="A" pin="PJ.5_LFXOUT"/>
 <wire x1="520.7" y1="17.78" x2="525.78" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="20.32" x2="505.46" y2="20.32" width="0.1524" layer="91"/>
 <junction x="497.84" y="20.32"/>
+<label x="510.54" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V_CHG" class="0">
@@ -14204,7 +14207,7 @@ Source: 3M</description>
 <label x="304.8" y="-7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P3.2_A14_C14"/>
+<pinref part="MSP430" gate="A" pin="P3.2_A14_C14"/>
 <wire x1="525.78" y1="93.98" x2="518.16" y2="93.98" width="0.1524" layer="91"/>
 <label x="518.16" y="93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -14225,15 +14228,15 @@ Source: 3M</description>
 <approved hash="104,1,525.78,142.24,U1,AVCC1,3V3_UC,,,"/>
 <approved hash="104,1,381,142.24,TPS22942,VOUT,3V3_UC,,,"/>
 <approved hash="104,1,350.52,142.24,TPS22942,VIN,3V3,,,"/>
-<approved hash="104,1,480.06,-60.96,U$3,VIN,3V3,,,"/>
-<approved hash="104,1,510.54,-60.96,U$3,VOUT,3V3_SD,,,"/>
-<approved hash="104,1,566.42,-60.96,SD_CONN,VDD,3V3_SD,,,"/>
-<approved hash="104,1,566.42,-66.04,SD_CONN,VSS,GND,,,"/>
-<approved hash="104,1,238.76,20.32,TLV2461,VDD+,SW10,,,"/>
-<approved hash="104,1,281.94,-50.8,TLV2452,VDD,SW10,,,"/>
-<approved hash="104,1,68.58,12.7,5V_DC,1,N$14,,,"/>
-<approved hash="104,1,68.58,10.16,5V_DC,3,GND,,,"/>
-<approved hash="104,1,68.58,7.62,5V_DC,2,GND,,,"/>
+<approved hash="104,1,469.9,-48.26,U$3,VIN,3V3,,,"/>
+<approved hash="104,1,500.38,-48.26,U$3,VOUT,3V3_SD,,,"/>
+<approved hash="104,1,594.36,-48.26,SD_CONN,VDD,3V3_SD,,,"/>
+<approved hash="104,1,594.36,-53.34,SD_CONN,VSS,GND,,,"/>
+<approved hash="104,1,304.8,-68.58,TLV2461,VDD+,SW10,,,"/>
+<approved hash="104,1,297.18,-5.08,TLV2452,VDD,SW10,,,"/>
+<approved hash="104,1,695.96,-48.26,5V_DC,1,N$14,,,"/>
+<approved hash="104,1,695.96,-50.8,5V_DC,3,GND,,,"/>
+<approved hash="104,1,695.96,-53.34,5V_DC,2,GND,,,"/>
 <approved hash="106,1,525.78,99.06,DNU_TEMP_ADC,,,,,"/>
 </errors>
 </schematic>
