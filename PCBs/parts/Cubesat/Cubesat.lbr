@@ -583,7 +583,7 @@
 <pad name="MNT4" x="90.805" y="7.62" drill="3.175" diameter="6.35"/>
 <text x="82.55" y="77.978" size="1.27" layer="25">1</text>
 <text x="85.09" y="77.978" size="1.27" layer="25">2</text>
-<text x="86.868" y="77.978" size="1.27" layer="25">53</text>
+<text x="92.329" y="12.065" size="1.27" layer="25">104</text>
 <text x="92.329" y="75.692" size="1.27" layer="25">54</text>
 <text x="82.169" y="9.652" size="1.27" layer="25">51</text>
 <text x="84.836" y="9.652" size="1.27" layer="25">52</text>
