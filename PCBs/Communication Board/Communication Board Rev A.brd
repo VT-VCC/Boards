@@ -179,7 +179,7 @@
 <wire x1="27.305" y1="78.74" x2="27.305" y2="85.09" width="0.2032" layer="20"/>
 <wire x1="27.305" y1="85.09" x2="32.385" y2="90.17" width="0.2032" layer="20" curve="-90"/>
 <wire x1="32.385" y1="90.17" x2="90.805" y2="90.17" width="0.2032" layer="20"/>
-<text x="80.645" y="88.9" size="1.778" layer="48" rot="R180">VT VCC Communication Board
+<text x="79.375" y="89.535" size="1.778" layer="48" rot="R180">VT VCC Communication Board
 Rev A - 8/02/18</text>
 <rectangle x1="33.569275" y1="80.686275" x2="33.581975" y2="80.692625" layer="200"/>
 <rectangle x1="33.569275" y1="80.692625" x2="33.581975" y2="80.698975" layer="200"/>
@@ -5761,11 +5761,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="LITHIUM-2" pad="GND"/>
 <contactref element="LITHIUM-2" pad="RF_GND1"/>
 <contactref element="LITHIUM-2" pad="RF_GND2"/>
-<wire x1="39.585" y1="70.97" x2="39.7096" y2="71.0946" width="1.524" layer="1"/>
-<wire x1="39.7096" y1="71.0946" x2="42.0878" y2="71.0946" width="1.524" layer="1"/>
 <via x="42.0878" y="71.0946" extent="1-16" drill="1.016"/>
-<wire x1="39.585" y1="25.97" x2="39.52" y2="26.035" width="0.762" layer="1"/>
-<wire x1="40.037" y1="67.72" x2="39.585" y2="67.72" width="1.524" layer="1"/>
 <via x="44.4246" y="67.3608" extent="1-16" drill="0.9398"/>
 <wire x1="42.545" y1="26.482" x2="40.097" y2="26.482" width="0.762" layer="1"/>
 <wire x1="40.097" y1="26.482" x2="39.585" y2="25.97" width="0.762" layer="1"/>
@@ -5775,6 +5771,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="39.585" y1="67.371" x2="42.418" y2="67.371" width="1.397" layer="1"/>
 <wire x1="42.418" y1="67.371" x2="44.4144" y2="67.371" width="1.397" layer="1"/>
 <wire x1="44.4144" y1="67.371" x2="44.4246" y2="67.3608" width="1.397" layer="1"/>
+<wire x1="42.0878" y1="71.0946" x2="39.7096" y2="71.0946" width="1.524" layer="1"/>
+<wire x1="39.7096" y1="71.0946" x2="39.585" y2="70.97" width="1.524" layer="1"/>
 </signal>
 <signal name="GPS_TX">
 <contactref element="U$1" pad="33"/>
@@ -5876,7 +5874,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="LI_3V3" pad="TP"/>
 <wire x1="86.995" y1="44.45" x2="88.265" y2="43.18" width="0.3048" layer="1"/>
 <contactref element="LITHIUM-2" pad="3.3V"/>
-<wire x1="40.018" y1="29.403" x2="39.585" y2="28.97" width="0.762" layer="1"/>
 <wire x1="39.585" y1="28.97" x2="36.59" y2="28.97" width="0.2032" layer="1"/>
 <wire x1="42.545" y1="28.382" x2="40.173" y2="28.382" width="0.762" layer="1"/>
 <wire x1="44.257" y1="28.382" x2="42.545" y2="28.382" width="0.3048" layer="1"/>
@@ -5938,6 +5935,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="23,1,2ec1b2b1b35e2f2e"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
