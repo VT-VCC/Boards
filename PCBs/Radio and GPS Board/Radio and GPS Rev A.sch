@@ -7630,6 +7630,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="92.329" y="75.692" size="1.27" layer="25">54</text>
 <text x="82.169" y="9.652" size="1.27" layer="25">51</text>
 <text x="84.836" y="9.652" size="1.27" layer="25">52</text>
+<text x="83.566" y="77.978" size="1.27" layer="26" rot="MR0">1</text>
+<text x="86.106" y="77.978" size="1.27" layer="26" rot="MR0">2</text>
+<text x="94.361" y="75.692" size="1.27" layer="26" rot="MR0">54</text>
+<text x="95.377" y="12.065" size="1.27" layer="26" rot="MR0">104</text>
+<text x="86.741" y="9.652" size="1.27" layer="26" rot="MR0">52</text>
+<text x="84.074" y="9.652" size="1.27" layer="26" rot="MR0">51</text>
 </package>
 <package name="LI-2">
 <description>This is the footprint for the Astrodev Lithium Li-1 radio</description>
@@ -9280,14 +9286,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="OA_RESET" class="0">
 <segment>
-<wire x1="78.74" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
 <label x="88.9" y="71.12" size="1.778" layer="95"/>
 <pinref part="OA_RST" gate="G$1" pin="TP"/>
 <wire x1="81.28" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
 <junction x="86.36" y="71.12"/>
 <pinref part="LITHIUM-2" gate="G$1" pin="CONFIG1"/>
-<junction x="81.28" y="71.12"/>
 </segment>
 <segment>
 <wire x1="22.86" y1="-27.94" x2="20.32" y2="-27.94" width="0.1524" layer="91"/>
@@ -9520,6 +9524,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,48.26,66.04,LITHIUM-2,3.3V,3V3,,,"/>
+<approved hash="104,1,48.26,55.88,LITHIUM-2,RF_GND,GND,,,"/>
+<approved hash="104,1,48.26,60.96,LITHIUM-2,V_AMP,SW3,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
