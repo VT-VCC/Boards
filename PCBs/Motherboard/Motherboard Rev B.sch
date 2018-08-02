@@ -10800,6 +10800,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <text x="92.329" y="75.692" size="1.27" layer="25">54</text>
 <text x="82.169" y="9.652" size="1.27" layer="25">51</text>
 <text x="84.836" y="9.652" size="1.27" layer="25">52</text>
+<text x="83.566" y="77.978" size="1.27" layer="26" rot="MR0">1</text>
+<text x="86.106" y="77.978" size="1.27" layer="26" rot="MR0">2</text>
+<text x="94.361" y="75.692" size="1.27" layer="26" rot="MR0">54</text>
+<text x="95.377" y="12.065" size="1.27" layer="26" rot="MR0">104</text>
+<text x="86.741" y="9.652" size="1.27" layer="26" rot="MR0">52</text>
+<text x="84.074" y="9.652" size="1.27" layer="26" rot="MR0">51</text>
 </package>
 </packages>
 <symbols>
@@ -14160,6 +14166,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="7.6" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="7.7" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="LI_RST" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="GPS_PF" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="GPS_VPP" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -14180,7 +14188,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="678.18" y="-38.1" size="5.08" layer="120">DC Power</text>
 <text x="347.98" y="99.06" size="5.08" layer="97">External UART</text>
 <text x="269.24" y="96.52" size="5.08" layer="97">RBF</text>
-<text x="40.64" y="109.22" size="1.778" layer="91">Need GPS VPP and VF (33/34), and LITHIUM_RESET</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="127" y="-17.78"/>
@@ -14299,11 +14306,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="EPS_SCL" gate="G$1" x="68.58" y="71.12" rot="R180"/>
 <instance part="OA_RST" gate="G$1" x="93.98" y="60.96"/>
 <instance part="5V_CHG" gate="G$1" x="149.86" y="91.44" rot="R180"/>
-<instance part="SW5" gate="G$1" x="152.4" y="116.84" rot="R180"/>
+<instance part="SW5" gate="G$1" x="154.94" y="116.84" rot="R180"/>
 <instance part="SW10" gate="G$1" x="228.6" y="104.14"/>
 <instance part="3V3" gate="G$1" x="218.44" y="139.7" rot="R180"/>
 <instance part="3V3_UC" gate="G$1" x="391.16" y="144.78" rot="R180"/>
-<instance part="SW6" gate="G$1" x="152.4" y="109.22"/>
+<instance part="SW6" gate="G$1" x="154.94" y="109.22"/>
 <instance part="SW8" gate="G$1" x="228.6" y="111.76" rot="R180"/>
 <instance part="3V3_ALT" gate="G$1" x="228.6" y="93.98"/>
 <instance part="3VREF" gate="G$1" x="251.46" y="-73.66"/>
@@ -14323,7 +14330,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="7.5" gate="G$1" x="497.84" y="43.18" rot="R180"/>
 <instance part="7.6" gate="G$1" x="492.76" y="40.64" rot="R180"/>
 <instance part="7.7" gate="G$1" x="487.68" y="38.1" rot="R180"/>
-<instance part="LI_RST" gate="G$1" x="96.52" y="99.06" rot="R180"/>
+<instance part="LI_RST" gate="G$1" x="91.44" y="99.06" rot="R180"/>
+<instance part="GPS_PF" gate="G$1" x="149.86" y="104.14" rot="R180"/>
+<instance part="GPS_VPP" gate="G$1" x="88.9" y="109.22" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14584,7 +14593,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <wire x1="210.82" y1="114.3" x2="215.9" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="114.3" x2="213.36" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="114.3" x2="215.9" y2="114.3" width="0.1524" layer="91"/>
 <label x="215.9" y="114.3" size="1.778" layer="95"/>
 <pinref part="U$1" gate="A" pin="GND2"/>
 </segment>
@@ -14611,16 +14619,15 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="3V3" class="0">
 <segment>
-<wire x1="170.18" y1="96.52" x2="165.1" y2="96.52" width="0.1524" layer="91"/>
 <label x="231.14" y="137.16" size="1.778" layer="95"/>
-<wire x1="165.1" y1="96.52" x2="157.48" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="96.52" x2="157.48" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="137.16" x2="218.44" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="96.52" x2="167.64" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="137.16" x2="218.44" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="137.16" x2="226.06" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="137.16" x2="231.14" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="3V3BUS1"/>
 <pinref part="3V3" gate="G$1" pin="TP"/>
 <junction x="218.44" y="137.16"/>
+<pinref part="U$1" gate="A" pin="3V3BUS1"/>
+<wire x1="170.18" y1="96.52" x2="167.64" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="TPS22942" gate="A" pin="VIN"/>
@@ -15022,11 +15029,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="SW5" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="SW5_5V"/>
-<wire x1="170.18" y1="114.3" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
-<label x="149.86" y="114.3" size="1.778" layer="95" rot="R180"/>
+<wire x1="170.18" y1="114.3" x2="154.94" y2="114.3" width="0.1524" layer="91"/>
+<label x="152.4" y="114.3" size="1.778" layer="95" rot="R180"/>
 <pinref part="SW5" gate="G$1" pin="TP"/>
-<wire x1="152.4" y1="114.3" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
-<junction x="152.4" y="114.3"/>
+<wire x1="154.94" y1="114.3" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
+<junction x="154.94" y="114.3"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
@@ -15626,13 +15633,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="274.32" y="86.36" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="SW6" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="SW6_5V"/>
-<wire x1="170.18" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="111.76" x2="154.94" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="SW6" gate="G$1" pin="TP"/>
-<wire x1="152.4" y1="111.76" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
-<junction x="152.4" y="111.76"/>
+<wire x1="154.94" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
+<junction x="154.94" y="111.76"/>
+<label x="152.4" y="111.76" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="SW8" class="0">
@@ -15706,11 +15714,43 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </segment>
 <segment>
 <pinref part="U$1" gate="A" pin="LI_RESET"/>
-<wire x1="101.6" y1="96.52" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="LI_RST" gate="G$1" pin="TP"/>
-<wire x1="96.52" y1="96.52" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
-<junction x="96.52" y="96.52"/>
-<label x="93.98" y="96.52" size="1.778" layer="95" rot="R180"/>
+<wire x1="91.44" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
+<junction x="91.44" y="96.52"/>
+<label x="88.9" y="96.52" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="GPS_PF" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="GPS_PF"/>
+<wire x1="142.24" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
+<label x="149.86" y="101.6" size="1.778" layer="95"/>
+<pinref part="GPS_PF" gate="G$1" pin="TP"/>
+<junction x="149.86" y="101.6"/>
+</segment>
+<segment>
+<pinref part="MSP430" gate="A" pin="P4.2_A10"/>
+<wire x1="698.5" y1="114.3" x2="711.2" y2="114.3" width="0.1524" layer="91"/>
+<label x="711.2" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPS_VPP" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="GPS_VPP"/>
+<wire x1="101.6" y1="101.6" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="101.6" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="104.14" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="106.68" x2="88.9" y2="106.68" width="0.1524" layer="91"/>
+<label x="86.36" y="106.68" size="1.778" layer="95" rot="R180"/>
+<pinref part="GPS_VPP" gate="G$1" pin="TP"/>
+<wire x1="88.9" y1="106.68" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
+<junction x="88.9" y="106.68"/>
+</segment>
+<segment>
+<pinref part="MSP430" gate="A" pin="P4.3_A11"/>
+<wire x1="698.5" y1="111.76" x2="711.2" y2="111.76" width="0.1524" layer="91"/>
+<label x="711.2" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -15739,6 +15779,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <approved hash="104,1,695.96,-50.8,5V_DC,3,GND,,,"/>
 <approved hash="104,1,695.96,-53.34,5V_DC,2,GND,,,"/>
 <approved hash="106,1,525.78,99.06,DNU_TEMP_ADC,,,,,"/>
+<approved hash="106,1,279.4,88.9,RBF_C,,,,,"/>
+<approved hash="106,1,279.4,83.82,RBF_NC,,,,,"/>
+<approved hash="106,1,279.4,86.36,RBF_NO,,,,,"/>
 </errors>
 </schematic>
 </drawing>
