@@ -10835,7 +10835,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pin name="GPS_PF" x="40.64" y="-27.94" length="middle" rot="R180"/>
 <pin name="H1.25" x="0" y="-30.48" length="middle"/>
 <pin name="H1.26" x="40.64" y="-30.48" length="middle" rot="R180"/>
-<pin name="H1.27" x="0" y="-33.02" length="middle"/>
+<pin name="LI_RESET" x="0" y="-33.02" length="middle"/>
 <pin name="H1.28" x="40.64" y="-33.02" length="middle" rot="R180"/>
 <pin name="LI_RX" x="0" y="-35.56" length="middle"/>
 <pin name="H1.30" x="40.64" y="-35.56" length="middle" rot="R180"/>
@@ -10978,7 +10978,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="A" pin="H1.22" pad="22"/>
 <connect gate="A" pin="H1.25" pad="25"/>
 <connect gate="A" pin="H1.26" pad="26"/>
-<connect gate="A" pin="H1.27" pad="27"/>
 <connect gate="A" pin="H1.28" pad="28"/>
 <connect gate="A" pin="H1.3" pad="3"/>
 <connect gate="A" pin="H1.30" pad="30"/>
@@ -11016,6 +11015,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="A" pin="I2C_CLK" pad="43"/>
 <connect gate="A" pin="I2C_DATA" pad="41"/>
 <connect gate="A" pin="LI_OA_RST" pad="47"/>
+<connect gate="A" pin="LI_RESET" pad="27"/>
 <connect gate="A" pin="LI_RX" pad="29"/>
 <connect gate="A" pin="LI_TX" pad="31"/>
 <connect gate="A" pin="PCM_IN1" pad="87"/>
@@ -14146,8 +14146,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="3V" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="ANT_SCL" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="ANT_SDA" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
-<part name="TMP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
-<part name="TMP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TEMP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="TEMP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="TDIO" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="TCK" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="JTAG_RX" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
@@ -14159,6 +14159,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="7.5" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="7.6" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="7.7" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
+<part name="LI_RST" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -14179,6 +14180,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="678.18" y="-38.1" size="5.08" layer="120">DC Power</text>
 <text x="347.98" y="99.06" size="5.08" layer="97">External UART</text>
 <text x="269.24" y="96.52" size="5.08" layer="97">RBF</text>
+<text x="40.64" y="109.22" size="1.778" layer="91">Need GPS VPP and VF (33/34), and LITHIUM_RESET</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="127" y="-17.78"/>
@@ -14289,8 +14291,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="RBF" gate="G$1" x="284.48" y="86.36"/>
 <instance part="3V3_SD" gate="G$1" x="508" y="-50.8"/>
 <instance part="SD_DET" gate="G$1" x="632.46" y="-48.26"/>
-<instance part="LI_RX" gate="G$1" x="96.52" y="96.52" rot="R180"/>
-<instance part="LI_TX" gate="G$1" x="71.12" y="93.98" rot="R180"/>
+<instance part="LI_RX" gate="G$1" x="71.12" y="96.52" rot="R180"/>
+<instance part="LI_TX" gate="G$1" x="45.72" y="93.98" rot="R180"/>
 <instance part="GPS_TX" gate="G$1" x="93.98" y="86.36" rot="R180"/>
 <instance part="GPS_RX" gate="G$1" x="71.12" y="83.82" rot="R180"/>
 <instance part="EPS_SDA" gate="G$1" x="88.9" y="76.2" rot="R180"/>
@@ -14308,8 +14310,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="3V" gate="G$1" x="309.88" y="-73.66"/>
 <instance part="ANT_SCL" gate="G$1" x="261.62" y="55.88" rot="R180"/>
 <instance part="ANT_SDA" gate="G$1" x="261.62" y="48.26"/>
-<instance part="TMP1" gate="G$1" x="261.62" y="-2.54" rot="R180"/>
-<instance part="TMP2" gate="G$1" x="317.5" y="-5.08" rot="R180"/>
+<instance part="TEMP1" gate="G$1" x="261.62" y="-2.54" rot="R180"/>
+<instance part="TEMP2" gate="G$1" x="317.5" y="-5.08" rot="R180"/>
 <instance part="TDIO" gate="G$1" x="355.6" y="43.18" rot="R180"/>
 <instance part="TCK" gate="G$1" x="355.6" y="35.56" rot="R180"/>
 <instance part="JTAG_RX" gate="G$1" x="396.24" y="12.7" rot="R180"/>
@@ -14321,6 +14323,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="7.5" gate="G$1" x="497.84" y="43.18" rot="R180"/>
 <instance part="7.6" gate="G$1" x="492.76" y="40.64" rot="R180"/>
 <instance part="7.7" gate="G$1" x="487.68" y="38.1" rot="R180"/>
+<instance part="LI_RST" gate="G$1" x="96.52" y="99.06" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14765,12 +14768,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="LITHIUM_RX" class="0">
 <segment>
-<wire x1="101.6" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
-<label x="91.44" y="93.98" size="1.778" layer="95" rot="R180"/>
+<wire x1="101.6" y1="93.98" x2="71.12" y2="93.98" width="0.1524" layer="91"/>
+<label x="66.04" y="93.98" size="1.778" layer="95" rot="R180"/>
 <pinref part="U$1" gate="A" pin="LI_RX"/>
 <pinref part="LI_RX" gate="G$1" pin="TP"/>
-<wire x1="96.52" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
-<junction x="96.52" y="93.98"/>
+<wire x1="71.12" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
+<junction x="71.12" y="93.98"/>
 </segment>
 <segment>
 <pinref part="MSP430" gate="A" pin="P5.4_UCA2TXD_UCA2SIMO_TB0OUTH"/>
@@ -14780,12 +14783,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="LITHIUM_TX" class="0">
 <segment>
-<wire x1="101.6" y1="91.44" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
-<label x="66.04" y="91.44" size="1.778" layer="95" rot="R180"/>
+<wire x1="101.6" y1="91.44" x2="45.72" y2="91.44" width="0.1524" layer="91"/>
+<label x="40.64" y="91.44" size="1.778" layer="95" rot="R180"/>
 <pinref part="U$1" gate="A" pin="LI_TX"/>
 <pinref part="LI_TX" gate="G$1" pin="TP"/>
-<wire x1="71.12" y1="91.44" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
-<junction x="71.12" y="91.44"/>
+<wire x1="45.72" y1="91.44" x2="40.64" y2="91.44" width="0.1524" layer="91"/>
+<junction x="45.72" y="91.44"/>
 </segment>
 <segment>
 <pinref part="MSP430" gate="A" pin="P5.5_UCA2RXD_UCA2SOMI_ACLK"/>
@@ -15153,7 +15156,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="264.16" y1="-5.08" x2="261.62" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="264.16" y="-5.08"/>
 <label x="259.08" y="-5.08" size="1.778" layer="95" rot="R180"/>
-<pinref part="TMP1" gate="G$1" pin="TP"/>
+<pinref part="TEMP1" gate="G$1" pin="TP"/>
 <wire x1="261.62" y1="-5.08" x2="259.08" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="261.62" y="-5.08"/>
 </segment>
@@ -15600,7 +15603,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="TLV2452" gate="G$1" pin="IN-2"/>
 <wire x1="299.72" y1="-10.16" x2="297.18" y2="-10.16" width="0.1524" layer="91"/>
 <label x="322.58" y="-7.62" size="1.778" layer="95"/>
-<pinref part="TMP2" gate="G$1" pin="TP"/>
+<pinref part="TEMP2" gate="G$1" pin="TP"/>
 <junction x="317.5" y="-7.62"/>
 </segment>
 <segment>
@@ -15693,6 +15696,21 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="RBF" gate="G$1" pin="3"/>
 <wire x1="279.4" y1="83.82" x2="274.32" y2="83.82" width="0.1524" layer="91"/>
 <label x="274.32" y="83.82" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="LITHIUM_RST" class="0">
+<segment>
+<pinref part="MSP430" gate="A" pin="P5.6_UCA2CLK_TA4.0_SMCLK"/>
+<wire x1="525.78" y1="60.96" x2="523.24" y2="60.96" width="0.1524" layer="91"/>
+<label x="523.24" y="60.96" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="A" pin="LI_RESET"/>
+<wire x1="101.6" y1="96.52" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="LI_RST" gate="G$1" pin="TP"/>
+<wire x1="96.52" y1="96.52" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
+<junction x="96.52" y="96.52"/>
+<label x="93.98" y="96.52" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>

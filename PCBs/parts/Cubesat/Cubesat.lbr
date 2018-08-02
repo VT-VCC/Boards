@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -690,7 +690,7 @@
 <pin name="GPS_PF" x="40.64" y="-27.94" length="middle" rot="R180"/>
 <pin name="H1.25" x="0" y="-30.48" length="middle"/>
 <pin name="H1.26" x="40.64" y="-30.48" length="middle" rot="R180"/>
-<pin name="H1.27" x="0" y="-33.02" length="middle"/>
+<pin name="LI_RESET" x="0" y="-33.02" length="middle"/>
 <pin name="H1.28" x="40.64" y="-33.02" length="middle" rot="R180"/>
 <pin name="LI_RX" x="0" y="-35.56" length="middle"/>
 <pin name="H1.30" x="40.64" y="-35.56" length="middle" rot="R180"/>
@@ -1250,7 +1250,6 @@
 <connect gate="A" pin="H1.22" pad="22"/>
 <connect gate="A" pin="H1.25" pad="25"/>
 <connect gate="A" pin="H1.26" pad="26"/>
-<connect gate="A" pin="H1.27" pad="27"/>
 <connect gate="A" pin="H1.28" pad="28"/>
 <connect gate="A" pin="H1.3" pad="3"/>
 <connect gate="A" pin="H1.30" pad="30"/>
@@ -1288,6 +1287,7 @@
 <connect gate="A" pin="I2C_CLK" pad="43"/>
 <connect gate="A" pin="I2C_DATA" pad="41"/>
 <connect gate="A" pin="LI_OA_RST" pad="47"/>
+<connect gate="A" pin="LI_RESET" pad="27"/>
 <connect gate="A" pin="LI_RX" pad="29"/>
 <connect gate="A" pin="LI_TX" pad="31"/>
 <connect gate="A" pin="PCM_IN1" pad="87"/>

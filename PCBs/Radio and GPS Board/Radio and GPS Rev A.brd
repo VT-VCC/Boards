@@ -5078,12 +5078,34 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
 </package>
+<package name="R0805" urn="urn:adsk.eagle:footprint:23045/1" library_version="2">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="C0805" urn="urn:adsk.eagle:package:23617/2" type="model" library_version="2">
 <description>CAPACITOR</description>
 <packageinstances>
 <packageinstance name="C0805"/>
+</packageinstances>
+</package3d>
+<package3d name="R0805" urn="urn:adsk.eagle:package:23553/2" type="model" library_version="2">
+<description>RESISTOR</description>
+<packageinstances>
+<packageinstance name="R0805"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -5254,7 +5276,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <pad name="MNT4" x="90.805" y="7.62" drill="3.175" diameter="6.35"/>
 <text x="82.55" y="77.978" size="1.27" layer="25">1</text>
 <text x="85.09" y="77.978" size="1.27" layer="25">2</text>
-<text x="86.868" y="77.978" size="1.27" layer="25">53</text>
+<text x="92.329" y="12.065" size="1.27" layer="25">104</text>
 <text x="92.329" y="75.692" size="1.27" layer="25">54</text>
 <text x="82.169" y="9.652" size="1.27" layer="25">51</text>
 <text x="84.836" y="9.652" size="1.27" layer="25">52</text>
@@ -5544,98 +5566,104 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </autorouter>
 <elements>
 <element name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF" x="42.545" y="27.432" smashed="yes" rot="R270">
-<attribute name="NAME" x="41.656" y="21.463" size="1.27" layer="25"/>
-<attribute name="VALUE" x="40.513" y="23.241" size="1.27" layer="27"/>
+<attribute name="NAME" x="41.91" y="31.115" size="1.016" layer="25"/>
+<attribute name="VALUE" x="41.275" y="29.845" size="1.016" layer="27"/>
 </element>
 <element name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="47uF" x="42.418" y="64.389" smashed="yes" rot="R90">
-<attribute name="NAME" x="43.2562" y="60.706" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="44.323" y="62.23" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="43.9166" y="68.834" size="1.016" layer="25" rot="R180"/>
+<attribute name="VALUE" x="44.7548" y="67.564" size="1.016" layer="27" rot="R180"/>
 </element>
 <element name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF" x="60.613" y="6.531" smashed="yes" rot="R180">
-<attribute name="NAME" x="57.438" y="7.166" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="67.1154" y="7.1914" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="55.7698" y="6.0166" size="1.016" layer="25"/>
+<attribute name="VALUE" x="62.7802" y="6.169" size="1.016" layer="27"/>
 </element>
 <element name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF" x="60.613" y="4.191" smashed="yes" rot="R180">
-<attribute name="NAME" x="57.438" y="4.826" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="65.947" y="4.826" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="55.7952" y="3.6322" size="1.016" layer="25"/>
+<attribute name="VALUE" x="62.8564" y="3.6068" size="1.016" layer="27"/>
 </element>
 <element name="PINAV" library="Cubesat" package="PINAV-L1" value="" x="80" y="84" smashed="yes" rot="R180">
-<attribute name="NAME" x="74.6606" y="84.1734" size="1.27" layer="25"/>
+<attribute name="NAME" x="74.6606" y="84.1734" size="1.016" layer="25"/>
 </element>
 <element name="U$1" library="Cubesat" package="PC104_NO_DIMENSION" value="PC104_NO_DIMENSION" x="0" y="0"/>
 <element name="PINAV-CONNECTOR" library="HLE-110-02-X-DV" package="HLE-110-02-X-DV-PE-BE" value="HLE-110-02-X-DVHLE-110-X-DV-PE-BA" x="61.5" y="20.5" rot="R180"/>
-<element name="OA_RST" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="14.605" y="3.175" smashed="yes" rot="R90">
-<attribute name="NAME" x="14.0551" y="0.7699" size="1.27" layer="25" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="16.51" y="3.175" size="1" layer="37" rot="R90"/>
+<element name="OA_RST" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="12.065" y="3.175" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.5151" y="0.7699" size="1.27" layer="25" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="13.97" y="3.175" size="1" layer="37" rot="R90"/>
 </element>
-<element name="LI_TX" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="29.845" y="3.175" smashed="yes" rot="R90">
-<attribute name="NAME" x="29.2951" y="0.7699" size="1.27" layer="25" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="31.75" y="3.175" size="1" layer="37" rot="R90"/>
+<element name="LI_TX" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="31.115" y="3.175" smashed="yes" rot="R90">
+<attribute name="NAME" x="30.5651" y="0.7699" size="1.27" layer="25" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="33.02" y="3.175" size="1" layer="37" rot="R90"/>
 </element>
-<element name="LI_RX" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="26.035" y="3.175" smashed="yes" rot="R90">
-<attribute name="NAME" x="25.4851" y="0.7699" size="1.27" layer="25" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="27.94" y="3.175" size="1" layer="37" rot="R90"/>
+<element name="LI_RX" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="27.305" y="3.175" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.7551" y="0.7699" size="1.27" layer="25" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="29.21" y="3.175" size="1" layer="37" rot="R90"/>
 </element>
-<element name="LI_3V3" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="22.225" y="3.175" smashed="yes" rot="R90">
-<attribute name="NAME" x="21.6751" y="0.7699" size="1.27" layer="25" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="24.13" y="3.175" size="1" layer="37" rot="R90"/>
+<element name="LI_3V3" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="19.685" y="3.175" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.1351" y="0.7699" size="1.27" layer="25" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="21.59" y="3.175" size="1" layer="37" rot="R90"/>
 </element>
-<element name="LI_AMP" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="18.415" y="3.175" smashed="yes" rot="R90">
-<attribute name="NAME" x="17.8651" y="0.7699" size="1.27" layer="25" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="20.32" y="3.175" size="1" layer="37" rot="R90"/>
+<element name="LI_AMP" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="15.875" y="3.175" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.3251" y="0.7699" size="1.27" layer="25" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="17.78" y="3.175" size="1" layer="37" rot="R90"/>
 </element>
-<element name="GPS_3V3" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="48.895" y="3.175" smashed="yes" rot="R90">
-<attribute name="NAME" x="48.3451" y="0.7699" size="1.27" layer="25" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="50.8" y="3.175" size="1" layer="37" rot="R90"/>
+<element name="GPS_3V3" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="50.165" y="3.175" smashed="yes" rot="R90">
+<attribute name="NAME" x="49.6151" y="0.7699" size="1.27" layer="25" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="52.07" y="3.175" size="1" layer="37" rot="R90"/>
 </element>
-<element name="GPS_RX" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="33.655" y="3.175" smashed="yes" rot="R90">
-<attribute name="NAME" x="33.1051" y="0.7699" size="1.27" layer="25" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="35.56" y="3.175" size="1" layer="37" rot="R90"/>
+<element name="GPS_RX" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="34.925" y="3.175" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.3751" y="0.7699" size="1.27" layer="25" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="36.83" y="3.175" size="1" layer="37" rot="R90"/>
 </element>
-<element name="GPS_PF" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="45.085" y="3.175" smashed="yes" rot="R90">
-<attribute name="NAME" x="44.5351" y="0.7699" size="1.27" layer="25" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="46.99" y="3.175" size="1" layer="37" rot="R90"/>
+<element name="GPS_PF" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="46.355" y="3.175" smashed="yes" rot="R90">
+<attribute name="NAME" x="45.8051" y="0.7699" size="1.27" layer="25" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="48.26" y="3.175" size="1" layer="37" rot="R90"/>
 </element>
-<element name="GPS_TX" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="37.465" y="3.175" smashed="yes" rot="R90">
-<attribute name="NAME" x="36.9151" y="0.7699" size="1.27" layer="25" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="39.37" y="3.175" size="1" layer="37" rot="R90"/>
+<element name="GPS_TX" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="38.735" y="3.175" smashed="yes" rot="R90">
+<attribute name="NAME" x="38.1851" y="0.7699" size="1.27" layer="25" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="40.64" y="3.175" size="1" layer="37" rot="R90"/>
 </element>
-<element name="GPS_VPP" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="41.275" y="3.175" smashed="yes" rot="R90">
-<attribute name="NAME" x="40.7251" y="0.7699" size="1.27" layer="25" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="43.18" y="3.175" size="1" layer="37" rot="R90"/>
+<element name="GPS_VPP" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="42.545" y="3.175" smashed="yes" rot="R90">
+<attribute name="NAME" x="41.9951" y="0.7699" size="1.27" layer="25" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="44.45" y="3.175" size="1" layer="37" rot="R90"/>
 </element>
-<element name="GND" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="52.705" y="3.175" smashed="yes" rot="R90">
-<attribute name="NAME" x="52.1551" y="0.7699" size="1.27" layer="25" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="54.61" y="3.175" size="1" layer="37" rot="R90"/>
+<element name="GND" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="53.975" y="3.175" smashed="yes" rot="R90">
+<attribute name="NAME" x="53.4251" y="0.7699" size="1.27" layer="25" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="55.88" y="3.175" size="1" layer="37" rot="R90"/>
 </element>
-<element name="LITHIUM-2" library="Cubesat" package="LI-2" value="LI-2" x="6.35" y="13.97" smashed="yes">
-<attribute name="NAME" x="29.845" y="76.105" size="1.27" layer="25"/>
+<element name="LITHIUM-2" library="Cubesat" package="LI-2" value="LI-2" x="6.985" y="13.97" smashed="yes">
+<attribute name="NAME" x="30.48" y="76.105" size="1.016" layer="25"/>
 </element>
+<element name="LI_RST" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPSQTP10SQ" x="23.495" y="3.175" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.9451" y="0.7699" size="1.27" layer="25" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="25.4" y="3.175" size="1" layer="37" rot="R90"/>
+<attribute name="VALUE" x="24.13" y="2.667" size="0.0254" layer="27" rot="R90"/>
+</element>
+<element name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="47k" x="22.225" y="10.795"/>
 </elements>
 <signals>
 <signal name="LI_TX">
-<wire x1="83.185" y1="38.1" x2="59.69" y2="38.1" width="0.2032" layer="1"/>
+<wire x1="83.185" y1="38.1" x2="60.0456" y2="38.1" width="0.2032" layer="1"/>
 <contactref element="U$1" pad="31"/>
 <contactref element="LI_TX" pad="TP"/>
-<wire x1="29.845" y1="5.955" x2="29.845" y2="3.175" width="0.1524" layer="1"/>
+<wire x1="31.115" y1="5.955" x2="31.115" y2="3.175" width="0.1524" layer="1"/>
 <contactref element="LITHIUM-2" pad="TX_UART"/>
-<wire x1="41.91" y1="20.32" x2="41.91" y2="17.78" width="0.2032" layer="1"/>
-<wire x1="41.91" y1="17.78" x2="41.1" y2="16.97" width="0.2032" layer="1"/>
-<wire x1="41.1" y1="16.97" x2="38.95" y2="16.97" width="0.2032" layer="1"/>
-<wire x1="59.69" y1="38.1" x2="41.91" y2="20.32" width="0.2032" layer="1"/>
-<wire x1="38.95" y1="16.97" x2="29.845" y2="7.865" width="0.1524" layer="1"/>
-<wire x1="29.845" y1="7.865" x2="29.845" y2="5.955" width="0.2032" layer="1"/>
+<wire x1="43.18" y1="21.2344" x2="43.18" y2="19.05" width="0.2032" layer="1"/>
+<wire x1="43.18" y1="19.05" x2="41.1" y2="16.97" width="0.2032" layer="1"/>
+<wire x1="41.1" y1="16.97" x2="39.585" y2="16.97" width="0.2032" layer="1"/>
+<wire x1="60.0456" y1="38.1" x2="43.18" y2="21.2344" width="0.2032" layer="1"/>
+<wire x1="39.585" y1="16.97" x2="31.115" y2="8.5" width="0.1524" layer="1"/>
+<wire x1="31.115" y1="8.5" x2="31.115" y2="5.955" width="0.2032" layer="1"/>
 </signal>
 <signal name="LI_RX">
-<wire x1="83.185" y1="40.64" x2="60.325" y2="40.64" width="0.2032" layer="1"/>
+<wire x1="83.185" y1="40.64" x2="60.96" y2="40.64" width="0.2032" layer="1"/>
 <contactref element="U$1" pad="29"/>
 <contactref element="LI_RX" pad="TP"/>
-<wire x1="26.035" y1="6.685" x2="26.035" y2="3.175" width="0.1524" layer="1"/>
 <contactref element="LITHIUM-2" pad="RX_UART"/>
-<wire x1="39.655" y1="19.97" x2="38.95" y2="19.97" width="0.2032" layer="1"/>
-<wire x1="60.325" y1="40.64" x2="39.655" y2="19.97" width="0.2032" layer="1"/>
-<wire x1="38.95" y1="19.97" x2="26.035" y2="7.055" width="0.1524" layer="1"/>
-<wire x1="26.035" y1="7.055" x2="26.035" y2="6.685" width="0.2032" layer="1"/>
+<wire x1="40.29" y1="19.97" x2="39.585" y2="19.97" width="0.2032" layer="1"/>
+<wire x1="60.96" y1="40.64" x2="40.29" y2="19.97" width="0.2032" layer="1"/>
+<wire x1="38.315" y1="19.97" x2="27.305" y2="8.96" width="0.1524" layer="1"/>
+<wire x1="27.305" y1="8.96" x2="27.305" y2="3.175" width="0.1524" layer="1"/>
+<wire x1="39.585" y1="19.97" x2="38.315" y2="19.97" width="0.1524" layer="1"/>
 </signal>
 <signal name="SW3">
 <contactref element="C2" pad="1"/>
@@ -5649,20 +5677,20 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="86.995" y1="62.23" x2="88.265" y2="63.5" width="0.5588" layer="1"/>
 <contactref element="LI_AMP" pad="TP"/>
 <wire x1="60.96" y1="63.5" x2="60.96" y2="59.055" width="0.1524" layer="1"/>
-<wire x1="18.415" y1="16.51" x2="18.415" y2="3.175" width="0.1524" layer="1"/>
-<wire x1="60.96" y1="59.055" x2="18.415" y2="16.51" width="0.1524" layer="1"/>
+<wire x1="15.875" y1="13.97" x2="15.875" y2="3.175" width="0.1524" layer="1"/>
+<wire x1="60.96" y1="59.055" x2="15.875" y2="13.97" width="0.1524" layer="1"/>
 <wire x1="45.151" y1="63.5" x2="60.96" y2="63.5" width="1.524" layer="1"/>
 <contactref element="LITHIUM-2" pad="V_AMP2"/>
 <contactref element="LITHIUM-2" pad="V_AMP1"/>
-<wire x1="39.149" y1="61.021" x2="38.95" y2="61.22" width="1.524" layer="1"/>
+<wire x1="39.784" y1="61.021" x2="39.585" y2="61.22" width="1.524" layer="1"/>
 <wire x1="45.151" y1="63.5" x2="45.151" y2="63.5" width="1.524" layer="1"/>
-<wire x1="40.494" y1="62.926" x2="38.95" y2="64.47" width="1.524" layer="1"/>
-<wire x1="38.95" y1="61.22" x2="40.494" y2="62.764" width="1.524" layer="1"/>
-<wire x1="40.494" y1="62.764" x2="40.494" y2="62.926" width="1.524" layer="1"/>
-<wire x1="42.418" y1="63.439" x2="41.743" y2="62.764" width="1.524" layer="1"/>
-<wire x1="41.743" y1="62.764" x2="40.494" y2="62.764" width="1.524" layer="1"/>
 <wire x1="42.418" y1="63.439" x2="42.479" y2="63.5" width="1.524" layer="1"/>
 <wire x1="42.479" y1="63.5" x2="45.151" y2="63.5" width="1.524" layer="1"/>
+<wire x1="39.585" y1="64.47" x2="39.585" y2="62.865" width="1.524" layer="1"/>
+<wire x1="39.585" y1="62.865" x2="39.585" y2="61.22" width="1.524" layer="1"/>
+<wire x1="39.585" y1="61.22" x2="39.784" y2="61.021" width="1.524" layer="1"/>
+<wire x1="39.585" y1="62.865" x2="41.844" y2="62.865" width="1.524" layer="1"/>
+<wire x1="41.844" y1="62.865" x2="42.418" y2="63.439" width="1.524" layer="1"/>
 </signal>
 <signal name="OA_RESET">
 <wire x1="81.28" y1="10.16" x2="72.517" y2="1.397" width="0.2032" layer="1"/>
@@ -5670,11 +5698,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U$1" pad="47"/>
 <wire x1="81.28" y1="15.875" x2="83.185" y2="17.78" width="0.2032" layer="1"/>
 <contactref element="OA_RST" pad="TP"/>
-<wire x1="16.383" y1="1.397" x2="14.605" y2="3.175" width="0.2032" layer="1"/>
-<wire x1="72.517" y1="1.397" x2="16.383" y2="1.397" width="0.2032" layer="1"/>
+<wire x1="13.843" y1="1.397" x2="12.065" y2="3.175" width="0.2032" layer="1"/>
+<wire x1="72.517" y1="1.397" x2="13.843" y2="1.397" width="0.2032" layer="1"/>
 <contactref element="LITHIUM-2" pad="CONFIG1"/>
-<wire x1="6.65" y1="16.97" x2="14.605" y2="9.015" width="0.2032" layer="1"/>
-<wire x1="14.605" y1="9.015" x2="14.605" y2="3.175" width="0.2032" layer="1"/>
+<wire x1="7.285" y1="16.97" x2="12.065" y2="12.19" width="0.2032" layer="1"/>
+<wire x1="12.065" y1="12.19" x2="12.065" y2="3.175" width="0.2032" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="C1" pad="2"/>
@@ -5712,8 +5740,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="59.69" y1="4.164" x2="59.69" y2="2.667" width="0.762" layer="1"/>
 <via x="59.69" y="2.667" extent="1-16" drill="0.508"/>
 <contactref element="GND" pad="TP"/>
-<wire x1="52.705" y1="3.175" x2="53.975" y2="3.175" width="0.2032" layer="1"/>
-<via x="53.975" y="3.175" extent="1-16" drill="0.254"/>
+<wire x1="53.975" y1="3.175" x2="55.245" y2="3.175" width="0.2032" layer="1"/>
+<via x="55.245" y="3.175" extent="1-16" drill="0.254"/>
 <contactref element="LITHIUM-2" pad="THERM3"/>
 <contactref element="LITHIUM-2" pad="THERM1"/>
 <contactref element="LITHIUM-2" pad="THERM2"/>
@@ -5722,20 +5750,22 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="LITHIUM-2" pad="RF_GND1"/>
 <contactref element="LITHIUM-2" pad="RF_GND2"/>
 <contactref element="LITHIUM-2" pad="RF_GND"/>
-<wire x1="38.95" y1="70.97" x2="39.1" y2="71.12" width="1.524" layer="1"/>
-<wire x1="39.1" y1="71.12" x2="41.91" y2="71.12" width="1.524" layer="1"/>
-<via x="41.91" y="71.12" extent="1-16" drill="1.016"/>
-<wire x1="38.95" y1="25.97" x2="38.885" y2="26.035" width="0.762" layer="1"/>
-<wire x1="42.418" y1="65.339" x2="40.037" y2="67.72" width="1.524" layer="1"/>
-<wire x1="40.037" y1="67.72" x2="38.95" y2="67.72" width="1.524" layer="1"/>
-<wire x1="42.418" y1="65.339" x2="42.484" y2="65.405" width="1.524" layer="1"/>
-<wire x1="42.484" y1="65.405" x2="44.45" y2="65.405" width="1.524" layer="1"/>
-<via x="44.45" y="65.405" extent="1-16" drill="1.016"/>
-<wire x1="42.545" y1="26.482" x2="39.462" y2="26.482" width="0.762" layer="1"/>
-<wire x1="39.462" y1="26.482" x2="38.95" y2="25.97" width="0.762" layer="1"/>
+<wire x1="39.585" y1="70.97" x2="39.7096" y2="71.0946" width="1.524" layer="1"/>
+<wire x1="39.7096" y1="71.0946" x2="42.0878" y2="71.0946" width="1.524" layer="1"/>
+<via x="42.0878" y="71.0946" extent="1-16" drill="1.016"/>
+<wire x1="39.585" y1="25.97" x2="39.52" y2="26.035" width="0.762" layer="1"/>
+<wire x1="40.037" y1="67.72" x2="39.585" y2="67.72" width="1.524" layer="1"/>
+<wire x1="42.484" y1="65.405" x2="43.18" y2="65.405" width="1.524" layer="1"/>
+<via x="44.3738" y="65.405" extent="1-16" drill="1.016"/>
+<wire x1="43.18" y1="65.405" x2="44.3738" y2="65.405" width="1.524" layer="1"/>
+<wire x1="42.545" y1="26.482" x2="40.097" y2="26.482" width="0.762" layer="1"/>
+<wire x1="40.097" y1="26.482" x2="39.585" y2="25.97" width="0.762" layer="1"/>
 <wire x1="42.545" y1="26.482" x2="42.545" y2="25.1714" width="0.762" layer="1"/>
 <via x="42.545" y="25.1714" extent="1-16" drill="0.508"/>
-<wire x1="29.75" y1="53.07" x2="21.43" y2="60.63" width="0" layer="19" extent="1-1"/>
+<wire x1="39.585" y1="67.72" x2="40.865" y2="67.72" width="1.524" layer="1"/>
+<wire x1="40.865" y1="67.72" x2="43.18" y2="65.405" width="1.524" layer="1"/>
+<wire x1="42.484" y1="65.405" x2="42.418" y2="65.339" width="0" layer="19" extent="1-1"/>
+<wire x1="22.065" y1="60.63" x2="30.385" y2="53.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPS_TX">
 <contactref element="U$1" pad="33"/>
@@ -5746,8 +5776,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="50.07" y1="24.31" x2="51.3842" y2="22.9958" width="0.1524" layer="1"/>
 <wire x1="51.3842" y1="15.2908" x2="52.07" y2="14.605" width="0.1524" layer="1"/>
 <wire x1="52.07" y1="14.605" x2="52.07" y2="12.573" width="0.1524" layer="1"/>
-<wire x1="43.6118" y1="11.2268" x2="37.465" y2="5.08" width="0.1524" layer="1"/>
-<wire x1="37.465" y1="5.08" x2="37.465" y2="3.175" width="0.1524" layer="1"/>
+<wire x1="43.6118" y1="11.2268" x2="38.735" y2="6.35" width="0.1524" layer="1"/>
+<wire x1="38.735" y1="6.35" x2="38.735" y2="3.175" width="0.1524" layer="1"/>
 <wire x1="51.3842" y1="22.9958" x2="51.3842" y2="15.2908" width="0.1524" layer="1"/>
 <wire x1="52.07" y1="12.573" x2="50.7238" y2="11.2268" width="0.1524" layer="1"/>
 <wire x1="50.7238" y1="11.2268" x2="43.6118" y2="11.2268" width="0.1524" layer="1"/>
@@ -5764,8 +5794,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="47.786" y1="19.05" x2="50.07" y2="16.766" width="0.2032" layer="1"/>
 <wire x1="50.07" y1="16.766" x2="50.07" y2="16.69" width="0.2032" layer="1"/>
 <contactref element="GPS_RX" pad="TP"/>
-<wire x1="47.786" y1="19.05" x2="33.655" y2="4.919" width="0.1524" layer="1"/>
-<wire x1="33.655" y1="4.919" x2="33.655" y2="3.175" width="0.1524" layer="1"/>
+<wire x1="47.786" y1="19.05" x2="34.925" y2="6.189" width="0.1524" layer="1"/>
+<wire x1="34.925" y1="6.189" x2="34.925" y2="3.175" width="0.1524" layer="1"/>
 </signal>
 <signal name="SW9">
 <contactref element="C4" pad="1"/>
@@ -5790,8 +5820,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="61.5" y1="10.16" x2="61.5" y2="6.594" width="0.762" layer="1"/>
 <wire x1="61.563" y1="6.531" x2="61.563" y2="4.191" width="0.762" layer="1"/>
 <contactref element="GPS_3V3" pad="TP"/>
-<wire x1="55.88" y1="10.16" x2="48.895" y2="3.175" width="0.1524" layer="1"/>
-<wire x1="61.5" y1="10.16" x2="55.88" y2="10.16" width="0.1524" layer="1"/>
+<wire x1="57.15" y1="10.16" x2="50.165" y2="3.175" width="0.1524" layer="1"/>
+<wire x1="61.5" y1="10.16" x2="57.15" y2="10.16" width="0.1524" layer="1"/>
 </signal>
 <signal name="GPS_VPP">
 <wire x1="88.9" y1="31.75" x2="89.535" y2="32.385" width="0.2032" layer="1"/>
@@ -5807,8 +5837,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="55.15" y1="24.31" x2="53.8988" y2="23.0588" width="0.1524" layer="1"/>
 <wire x1="53.8988" y1="12.6238" x2="51.435" y2="10.16" width="0.1524" layer="1"/>
 <wire x1="51.435" y1="10.16" x2="46.355" y2="10.16" width="0.1524" layer="1"/>
-<wire x1="46.355" y1="10.16" x2="41.275" y2="5.08" width="0.1524" layer="1"/>
-<wire x1="41.275" y1="5.08" x2="41.275" y2="3.175" width="0.1524" layer="1"/>
+<wire x1="46.355" y1="10.16" x2="42.545" y2="6.35" width="0.1524" layer="1"/>
+<wire x1="42.545" y1="6.35" x2="42.545" y2="3.175" width="0.1524" layer="1"/>
 <wire x1="53.8988" y1="23.0588" x2="53.8988" y2="12.6238" width="0.1524" layer="1"/>
 </signal>
 <signal name="GPS_PF">
@@ -5825,10 +5855,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="92.075" y1="21.59" x2="78.105" y2="21.59" width="0.2032" layer="1"/>
 <contactref element="GPS_PF" pad="TP"/>
 <wire x1="55.15" y1="16.69" x2="55.15" y2="11.97" width="0.1524" layer="1"/>
-<wire x1="45.085" y1="5.08" x2="45.085" y2="3.175" width="0.1524" layer="1"/>
+<wire x1="46.355" y1="6.35" x2="46.355" y2="3.175" width="0.1524" layer="1"/>
 <wire x1="55.15" y1="11.97" x2="52.07" y2="8.89" width="0.1524" layer="1"/>
 <wire x1="52.07" y1="8.89" x2="48.895" y2="8.89" width="0.1524" layer="1"/>
-<wire x1="48.895" y1="8.89" x2="45.085" y2="5.08" width="0.1524" layer="1"/>
+<wire x1="48.895" y1="8.89" x2="46.355" y2="6.35" width="0.1524" layer="1"/>
 </signal>
 <signal name="3V3">
 <contactref element="C1" pad="1"/>
@@ -5837,14 +5867,33 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="LI_3V3" pad="TP"/>
 <wire x1="86.995" y1="44.45" x2="88.265" y2="43.18" width="0.3048" layer="1"/>
 <contactref element="LITHIUM-2" pad="3.3V"/>
-<wire x1="39.383" y1="29.403" x2="38.95" y2="28.97" width="0.762" layer="1"/>
-<wire x1="38.95" y1="28.97" x2="36.59" y2="28.97" width="0.1524" layer="1"/>
-<wire x1="36.59" y1="28.97" x2="22.225" y2="14.605" width="0.1524" layer="1"/>
-<wire x1="22.225" y1="14.605" x2="22.225" y2="3.175" width="0.1524" layer="1"/>
-<wire x1="42.545" y1="28.382" x2="39.538" y2="28.382" width="0.762" layer="1"/>
+<wire x1="40.018" y1="29.403" x2="39.585" y2="28.97" width="0.762" layer="1"/>
+<wire x1="39.585" y1="28.97" x2="36.59" y2="28.97" width="0.2032" layer="1"/>
+<wire x1="42.545" y1="28.382" x2="40.173" y2="28.382" width="0.762" layer="1"/>
 <wire x1="44.257" y1="28.382" x2="42.545" y2="28.382" width="0.3048" layer="1"/>
 <wire x1="60.325" y1="44.45" x2="44.257" y2="28.382" width="0.3048" layer="1"/>
-<wire x1="39.538" y1="28.382" x2="38.95" y2="28.97" width="0.762" layer="1"/>
+<wire x1="40.173" y1="28.382" x2="39.585" y2="28.97" width="0.762" layer="1"/>
+<contactref element="R1" pad="1"/>
+<wire x1="36.59" y1="28.97" x2="21.275" y2="13.655" width="0.2032" layer="1"/>
+<wire x1="21.275" y1="13.655" x2="21.275" y2="10.795" width="0.2032" layer="1"/>
+<wire x1="21.275" y1="7.62" x2="19.685" y2="6.03" width="0.1524" layer="1"/>
+<wire x1="19.685" y1="6.03" x2="19.685" y2="3.175" width="0.1524" layer="1"/>
+<wire x1="21.275" y1="10.795" x2="21.275" y2="7.62" width="0.1524" layer="1"/>
+</signal>
+<signal name="LI_RST">
+<contactref element="U$1" pad="27"/>
+<contactref element="LITHIUM-2" pad="RESET"/>
+<contactref element="LI_RST" pad="TP"/>
+<contactref element="R1" pad="2"/>
+<wire x1="39.585" y1="22.97" x2="39.37" y2="22.97" width="0.1524" layer="1"/>
+<wire x1="35.35" y1="22.97" x2="23.175" y2="10.795" width="0.2032" layer="1"/>
+<wire x1="62.23" y1="43.18" x2="41.91" y2="22.86" width="0.2032" layer="1"/>
+<wire x1="41.91" y1="22.86" x2="39.48" y2="22.86" width="0.2032" layer="1"/>
+<wire x1="39.48" y1="22.86" x2="39.37" y2="22.97" width="0.2032" layer="1"/>
+<wire x1="83.185" y1="43.18" x2="62.23" y2="43.18" width="0.2032" layer="1"/>
+<wire x1="23.495" y1="10.475" x2="23.495" y2="3.175" width="0.1524" layer="1"/>
+<wire x1="23.175" y1="10.795" x2="23.495" y2="10.475" width="0.1524" layer="1"/>
+<wire x1="39.37" y1="22.97" x2="35.35" y2="22.97" width="0.2032" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
