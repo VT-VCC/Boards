@@ -33,7 +33,7 @@
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
@@ -172,15 +172,15 @@
 <wire x1="95.885" y1="5.08" x2="95.885" y2="85.09" width="0.2032" layer="20"/>
 <wire x1="0" y1="85.09" x2="0" y2="5.08" width="0.2032" layer="20"/>
 <wire x1="5.08" y1="90.17" x2="10.16" y2="85.09" width="0.2032" layer="20" curve="-90"/>
-<wire x1="10.16" y1="85.09" x2="10.16" y2="79.375" width="0.2032" layer="20"/>
-<wire x1="10.16" y1="79.375" x2="12.065" y2="77.47" width="0.2032" layer="20" curve="90"/>
-<wire x1="12.065" y1="77.47" x2="25.4" y2="77.47" width="0.2032" layer="20"/>
-<wire x1="25.4" y1="77.47" x2="27.305" y2="79.375" width="0.2032" layer="20" curve="90"/>
-<wire x1="27.305" y1="79.375" x2="27.305" y2="85.09" width="0.2032" layer="20"/>
+<wire x1="10.16" y1="85.09" x2="10.16" y2="78.74" width="0.2032" layer="20"/>
+<wire x1="10.16" y1="78.74" x2="12.065" y2="76.835" width="0.2032" layer="20" curve="90"/>
+<wire x1="12.065" y1="76.835" x2="25.4" y2="76.835" width="0.2032" layer="20"/>
+<wire x1="25.4" y1="76.835" x2="27.305" y2="78.74" width="0.2032" layer="20" curve="90"/>
+<wire x1="27.305" y1="78.74" x2="27.305" y2="85.09" width="0.2032" layer="20"/>
 <wire x1="27.305" y1="85.09" x2="32.385" y2="90.17" width="0.2032" layer="20" curve="-90"/>
 <wire x1="32.385" y1="90.17" x2="90.805" y2="90.17" width="0.2032" layer="20"/>
 <text x="80.645" y="88.9" size="1.778" layer="48" rot="R180">VT VCC Communications Board
-Rev A - 8/01/18</text>
+Rev A - 8/02/18</text>
 <rectangle x1="33.569275" y1="80.686275" x2="33.581975" y2="80.692625" layer="200"/>
 <rectangle x1="33.569275" y1="80.692625" x2="33.581975" y2="80.698975" layer="200"/>
 <rectangle x1="33.562925" y1="80.698975" x2="33.588325" y2="80.705325" layer="200"/>
