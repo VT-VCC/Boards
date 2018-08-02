@@ -163,44 +163,6 @@
 <library>
 <description>&lt;b&gt;PCB Matrix Packages&lt;/b&gt;&lt;p&gt;</description>
 <packages>
-<package name="PC104_ONLY_DIMENSION">
-<description>ELEVATED SOCKET, .100 inch(2.54mm) PITCH</description>
-<wire x1="81.979" y1="77.724" x2="86.931" y2="77.724" width="0.254" layer="51"/>
-<wire x1="86.931" y1="77.724" x2="86.931" y2="11.176" width="0.254" layer="51"/>
-<wire x1="86.931" y1="11.176" x2="81.979" y2="11.176" width="0.254" layer="51"/>
-<wire x1="81.979" y1="11.176" x2="81.979" y2="77.724" width="0.254" layer="51"/>
-<wire x1="0" y1="0" x2="95.885" y2="0" width="0.127" layer="21"/>
-<wire x1="95.885" y1="0" x2="95.885" y2="90.17" width="0.127" layer="21"/>
-<wire x1="95.885" y1="90.17" x2="0" y2="90.17" width="0.127" layer="21"/>
-<wire x1="0" y1="90.17" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="87.059" y1="77.724" x2="92.011" y2="77.724" width="0.254" layer="51"/>
-<wire x1="92.011" y1="77.724" x2="92.011" y2="11.176" width="0.254" layer="51"/>
-<wire x1="92.011" y1="11.176" x2="87.059" y2="11.176" width="0.254" layer="51"/>
-<wire x1="87.059" y1="11.176" x2="87.059" y2="77.724" width="0.254" layer="51"/>
-<circle x="90.805" y="81.28" radius="3.175" width="0.127" layer="21"/>
-<circle x="90.805" y="81.28" radius="1.5875" width="0.127" layer="21"/>
-<circle x="90.805" y="7.62" radius="3.175" width="0.127" layer="21"/>
-<circle x="90.805" y="7.62" radius="1.5875" width="0.127" layer="21"/>
-<circle x="5.08" y="5.08" radius="3.175" width="0.127" layer="21"/>
-<circle x="5.08" y="5.08" radius="1.5875" width="0.127" layer="21"/>
-<circle x="5.08" y="85.09" radius="3.175" width="0.127" layer="21"/>
-<circle x="5.08" y="85.09" radius="1.5875" width="0.127" layer="21"/>
-<wire x1="95.885" y1="7.62" x2="95.885" y2="81.28" width="0.127" layer="20"/>
-<wire x1="5.08" y1="90.17" x2="0" y2="85.09" width="0.127" layer="20" curve="90"/>
-<wire x1="5.08" y1="0" x2="90.805" y2="0" width="0.127" layer="20"/>
-<wire x1="90.805" y1="0" x2="95.885" y2="5.08" width="0.127" layer="20" curve="90"/>
-<wire x1="95.885" y1="5.08" x2="95.885" y2="7.62" width="0.127" layer="20"/>
-<wire x1="95.885" y1="81.28" x2="95.885" y2="85.09" width="0.127" layer="20"/>
-<wire x1="95.885" y1="85.09" x2="90.805" y2="90.17" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="85.09" x2="0" y2="5.08" width="0.127" layer="20"/>
-<wire x1="0" y1="5.08" x2="5.08" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="5.08" y1="90.17" x2="10.16" y2="85.09" width="0.127" layer="20" curve="-90"/>
-<wire x1="10.16" y1="85.09" x2="15.24" y2="80.01" width="0.127" layer="20" curve="90"/>
-<wire x1="15.24" y1="80.01" x2="35.56" y2="80.01" width="0.127" layer="20"/>
-<wire x1="35.56" y1="80.01" x2="40.64" y2="85.09" width="0.127" layer="20" curve="90"/>
-<wire x1="40.64" y1="85.09" x2="45.72" y2="90.17" width="0.127" layer="20" curve="-90"/>
-<wire x1="45.72" y1="90.17" x2="90.805" y2="90.17" width="0.127" layer="20"/>
-</package>
 <package name="PINAV-L1">
 <wire x1="35" y1="0" x2="35" y2="75" width="0.127" layer="21"/>
 <wire x1="35" y1="75" x2="0" y2="75" width="0.127" layer="21"/>
@@ -605,7 +567,7 @@
 <smd name="CONFIG2" x="0.3" y="6" dx="3" dy="2.15" layer="1"/>
 <smd name="EXT_EVT" x="0.3" y="9" dx="3" dy="2.15" layer="1"/>
 <smd name="GPIO_A" x="0.3" y="12" dx="3" dy="2.15" layer="1"/>
-<smd name="GND2" x="32.6" y="12" dx="3" dy="2.15" layer="1"/>
+<smd name="GND" x="32.6" y="12" dx="3" dy="2.15" layer="1"/>
 <smd name="GPIO_B" x="0.3" y="15" dx="3" dy="2.15" layer="1"/>
 <smd name="RESET" x="32.6" y="9" dx="3" dy="2.15" layer="1"/>
 <smd name="RF_GND1" x="32.6" y="53.75" dx="3" dy="2.15" layer="1"/>
@@ -779,6 +741,15 @@
 <pin name="H2.50" x="109.22" y="-60.96" length="middle" rot="R180"/>
 <pin name="H2.51" x="68.58" y="-63.5" length="middle"/>
 <pin name="H2.52" x="109.22" y="-63.5" length="middle" rot="R180"/>
+<wire x1="45.72" y1="-71.12" x2="55.88" y2="-71.12" width="0.254" layer="94"/>
+<wire x1="55.88" y1="-71.12" x2="55.88" y2="-83.82" width="0.254" layer="94"/>
+<wire x1="55.88" y1="-83.82" x2="45.72" y2="-83.82" width="0.254" layer="94"/>
+<wire x1="45.72" y1="-83.82" x2="45.72" y2="-71.12" width="0.254" layer="94"/>
+<pin name="MNT1" x="60.96" y="-73.66" length="middle" direction="pas" rot="R180"/>
+<pin name="MNT2" x="60.96" y="-76.2" length="middle" direction="pas" rot="R180"/>
+<pin name="MNT3" x="60.96" y="-78.74" length="middle" direction="pas" rot="R180"/>
+<pin name="MNT4" x="60.96" y="-81.28" length="middle" direction="pas" rot="R180"/>
+<text x="45.72" y="-70.358" size="1.27" layer="95">Mounts</text>
 </symbol>
 <symbol name="PINAV-L1">
 <wire x1="-10.16" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
@@ -969,13 +940,14 @@
 <pin name="CONFIG2" x="27.94" y="15.24" length="middle" rot="R180"/>
 <pin name="EXT_EVT" x="27.94" y="12.7" length="middle" rot="R180"/>
 <pin name="GND" x="-5.08" y="15.24" length="middle" direction="pwr"/>
-<pin name="RF_GND" x="-5.08" y="2.54" length="middle" direction="pwr"/>
+<pin name="RF_GND" x="-5.08" y="5.08" length="middle" direction="pwr"/>
 <pin name="RX_UART" x="-5.08" y="20.32" length="middle" direction="in"/>
 <pin name="TX_UART" x="-5.08" y="22.86" length="middle" direction="out"/>
 <pin name="V_AMP" x="-5.08" y="7.62" length="middle" direction="pwr"/>
 <text x="0" y="26.162" size="1.778" layer="95">&gt;Name</text>
 <pin name="GPIO_A" x="27.94" y="7.62" length="middle" rot="R180"/>
 <pin name="GPIO_B" x="27.94" y="5.08" length="middle" rot="R180"/>
+<pin name="THERM" x="-5.08" y="2.54" length="middle" direction="pas"/>
 </symbol>
 <symbol name="RBF">
 <wire x1="0" y1="2.54" x2="0" y2="12.7" width="0.254" layer="94"/>
@@ -989,17 +961,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PC104_OUTLINE">
-<gates>
-</gates>
-<devices>
-<device name="" package="PC104_ONLY_DIMENSION">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="PINAV-L1">
 <gates>
 </gates>
@@ -1296,6 +1257,10 @@
 <connect gate="A" pin="LI_RESET" pad="27"/>
 <connect gate="A" pin="LI_RX" pad="29"/>
 <connect gate="A" pin="LI_TX" pad="31"/>
+<connect gate="A" pin="MNT1" pad="MNT1"/>
+<connect gate="A" pin="MNT2" pad="MNT2"/>
+<connect gate="A" pin="MNT3" pad="MNT3"/>
+<connect gate="A" pin="MNT4" pad="MNT4"/>
 <connect gate="A" pin="PCM_IN1" pad="87"/>
 <connect gate="A" pin="PCM_IN2" pad="88"/>
 <connect gate="A" pin="SCL_ANT" pad="39"/>
@@ -1329,11 +1294,12 @@
 <connect gate="G$1" pin="CONFIG1" pad="CONFIG1"/>
 <connect gate="G$1" pin="CONFIG2" pad="CONFIG2"/>
 <connect gate="G$1" pin="EXT_EVT" pad="EXT_EVT"/>
-<connect gate="G$1" pin="GND" pad="GND2 THERM1 THERM2 THERM3 THERM4"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="GPIO_A" pad="GPIO_A"/>
 <connect gate="G$1" pin="GPIO_B" pad="GPIO_B"/>
-<connect gate="G$1" pin="RF_GND" pad="RF_GND RF_GND1 RF_GND2"/>
+<connect gate="G$1" pin="RF_GND" pad="RF_GND1 RF_GND2"/>
 <connect gate="G$1" pin="RX_UART" pad="RX_UART"/>
+<connect gate="G$1" pin="THERM" pad="RF_GND THERM1 THERM2 THERM3 THERM4"/>
 <connect gate="G$1" pin="TX_UART" pad="TX_UART"/>
 <connect gate="G$1" pin="V_AMP" pad="V_AMP1 V_AMP2"/>
 </connects>
