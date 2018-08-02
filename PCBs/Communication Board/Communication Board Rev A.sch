@@ -7648,7 +7648,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <smd name="CONFIG2" x="0.3" y="6" dx="3" dy="2.15" layer="1"/>
 <smd name="EXT_EVT" x="0.3" y="9" dx="3" dy="2.15" layer="1"/>
 <smd name="GPIO_A" x="0.3" y="12" dx="3" dy="2.15" layer="1"/>
-<smd name="GND2" x="32.6" y="12" dx="3" dy="2.15" layer="1"/>
+<smd name="GND" x="32.6" y="12" dx="3" dy="2.15" layer="1"/>
 <smd name="GPIO_B" x="0.3" y="15" dx="3" dy="2.15" layer="1"/>
 <smd name="RESET" x="32.6" y="9" dx="3" dy="2.15" layer="1"/>
 <smd name="RF_GND1" x="32.6" y="53.75" dx="3" dy="2.15" layer="1"/>
@@ -7786,6 +7786,15 @@ In this library the device names are the same as the pin names of the symbols, t
 <pin name="H2.50" x="109.22" y="-60.96" length="middle" rot="R180"/>
 <pin name="H2.51" x="68.58" y="-63.5" length="middle"/>
 <pin name="H2.52" x="109.22" y="-63.5" length="middle" rot="R180"/>
+<wire x1="45.72" y1="-71.12" x2="55.88" y2="-71.12" width="0.254" layer="94"/>
+<wire x1="55.88" y1="-71.12" x2="55.88" y2="-83.82" width="0.254" layer="94"/>
+<wire x1="55.88" y1="-83.82" x2="45.72" y2="-83.82" width="0.254" layer="94"/>
+<wire x1="45.72" y1="-83.82" x2="45.72" y2="-71.12" width="0.254" layer="94"/>
+<pin name="MNT1" x="60.96" y="-73.66" length="middle" direction="pas" rot="R180"/>
+<pin name="MNT2" x="60.96" y="-76.2" length="middle" direction="pas" rot="R180"/>
+<pin name="MNT3" x="60.96" y="-78.74" length="middle" direction="pas" rot="R180"/>
+<pin name="MNT4" x="60.96" y="-81.28" length="middle" direction="pas" rot="R180"/>
+<text x="45.72" y="-70.358" size="1.27" layer="95">Mounts</text>
 </symbol>
 <symbol name="LI-2">
 <wire x1="0" y1="25.4" x2="0" y2="0" width="0.254" layer="94"/>
@@ -7798,13 +7807,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <pin name="CONFIG2" x="27.94" y="15.24" length="middle" rot="R180"/>
 <pin name="EXT_EVT" x="27.94" y="12.7" length="middle" rot="R180"/>
 <pin name="GND" x="-5.08" y="15.24" length="middle" direction="pwr"/>
-<pin name="RF_GND" x="-5.08" y="2.54" length="middle" direction="pwr"/>
+<pin name="RF_GND" x="-5.08" y="5.08" length="middle" direction="pwr"/>
 <pin name="RX_UART" x="-5.08" y="20.32" length="middle" direction="in"/>
 <pin name="TX_UART" x="-5.08" y="22.86" length="middle" direction="out"/>
 <pin name="V_AMP" x="-5.08" y="7.62" length="middle" direction="pwr"/>
 <text x="0" y="26.162" size="1.778" layer="95">&gt;Name</text>
 <pin name="GPIO_A" x="27.94" y="7.62" length="middle" rot="R180"/>
 <pin name="GPIO_B" x="27.94" y="5.08" length="middle" rot="R180"/>
+<pin name="THERM" x="-5.08" y="2.54" length="middle" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -7905,6 +7915,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <connect gate="A" pin="LI_RESET" pad="27"/>
 <connect gate="A" pin="LI_RX" pad="29"/>
 <connect gate="A" pin="LI_TX" pad="31"/>
+<connect gate="A" pin="MNT1" pad="MNT1"/>
+<connect gate="A" pin="MNT2" pad="MNT2"/>
+<connect gate="A" pin="MNT3" pad="MNT3"/>
+<connect gate="A" pin="MNT4" pad="MNT4"/>
 <connect gate="A" pin="PCM_IN1" pad="87"/>
 <connect gate="A" pin="PCM_IN2" pad="88"/>
 <connect gate="A" pin="SCL_ANT" pad="39"/>
@@ -7938,11 +7952,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <connect gate="G$1" pin="CONFIG1" pad="CONFIG1"/>
 <connect gate="G$1" pin="CONFIG2" pad="CONFIG2"/>
 <connect gate="G$1" pin="EXT_EVT" pad="EXT_EVT"/>
-<connect gate="G$1" pin="GND" pad="GND2 THERM1 THERM2 THERM3 THERM4"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="GPIO_A" pad="GPIO_A"/>
 <connect gate="G$1" pin="GPIO_B" pad="GPIO_B"/>
-<connect gate="G$1" pin="RF_GND" pad="RF_GND RF_GND1 RF_GND2"/>
+<connect gate="G$1" pin="RF_GND" pad="RF_GND1 RF_GND2"/>
 <connect gate="G$1" pin="RX_UART" pad="RX_UART"/>
+<connect gate="G$1" pin="THERM" pad="RF_GND THERM1 THERM2 THERM3 THERM4"/>
 <connect gate="G$1" pin="TX_UART" pad="TX_UART"/>
 <connect gate="G$1" pin="V_AMP" pad="V_AMP1 V_AMP2"/>
 </connects>
@@ -9197,6 +9212,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="LITHIUM-2" library="Cubesat" deviceset="LI-2" device=""/>
 <part name="LI_RST" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="47k"/>
+<part name="THERM" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -9206,8 +9222,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="C1" gate="G$1" x="-5.08" y="58.42"/>
 <instance part="SUPPLY1" gate="GND" x="-5.08" y="48.26"/>
 <instance part="SUPPLY2" gate="GND" x="35.56" y="50.8"/>
-<instance part="SUPPLY5" gate="GND" x="88.9" y="-40.64"/>
-<instance part="SUPPLY6" gate="GND" x="134.62" y="-40.64"/>
+<instance part="SUPPLY5" gate="GND" x="88.9" y="-35.56"/>
+<instance part="SUPPLY6" gate="GND" x="134.62" y="-35.56"/>
 <instance part="C2" gate="G$1" x="25.4" y="55.88"/>
 <instance part="SUPPLY7" gate="GND" x="25.4" y="45.72"/>
 <instance part="C3" gate="G$1" x="180.34" y="55.88"/>
@@ -9230,6 +9246,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="LITHIUM-2" gate="G$1" x="53.34" y="53.34"/>
 <instance part="LI_RST" gate="G$1" x="7.62" y="81.28" rot="R180"/>
 <instance part="R1" gate="G$1" x="7.62" y="71.12" rot="R90"/>
+<instance part="THERM" gate="G$1" x="48.26" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -9306,12 +9323,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<wire x1="48.26" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="58.42" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="68.58" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="68.58" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="68.58" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<wire x1="35.56" y1="55.88" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
-<junction x="35.56" y="55.88"/>
+<wire x1="35.56" y1="58.42" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
+<junction x="35.56" y="58.42"/>
 <pinref part="LITHIUM-2" gate="G$1" pin="GND"/>
 <pinref part="LITHIUM-2" gate="G$1" pin="RF_GND"/>
 </segment>
@@ -9328,7 +9345,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="91.44" y1="-27.94" x2="88.9" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="-5.08" x2="88.9" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="88.9" y="-5.08"/>
-<wire x1="88.9" y1="-27.94" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-27.94" x2="88.9" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="88.9" y="-27.94"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <pinref part="U$1" gate="A" pin="GND1"/>
@@ -9348,7 +9365,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="132.08" y1="-27.94" x2="134.62" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="-7.62" x2="134.62" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="134.62" y="-7.62"/>
-<wire x1="134.62" y1="-27.94" x2="134.62" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-27.94" x2="134.62" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="134.62" y="-27.94"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 <wire x1="132.08" y1="5.08" x2="134.62" y2="5.08" width="0.1524" layer="91"/>
@@ -9521,12 +9538,29 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="7.62" y1="76.2" x2="7.62" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="MNT1" class="0">
+<segment>
+<pinref part="LITHIUM-2" gate="G$1" pin="THERM"/>
+<wire x1="48.26" y1="55.88" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="55.88" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
+<label x="53.34" y="50.8" size="1.778" layer="95"/>
+<wire x1="43.18" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="THERM" gate="G$1" pin="TP"/>
+<wire x1="48.26" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
+<junction x="48.26" y="50.8"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="A" pin="MNT1"/>
+<wire x1="83.82" y1="-43.18" x2="91.44" y2="-43.18" width="0.1524" layer="91"/>
+<label x="91.44" y="-43.18" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
 <approved hash="104,1,48.26,66.04,LITHIUM-2,3.3V,3V3,,,"/>
-<approved hash="104,1,48.26,55.88,LITHIUM-2,RF_GND,GND,,,"/>
+<approved hash="104,1,48.26,58.42,LITHIUM-2,RF_GND,GND,,,"/>
 <approved hash="104,1,48.26,60.96,LITHIUM-2,V_AMP,SW3,,,"/>
 </errors>
 </schematic>

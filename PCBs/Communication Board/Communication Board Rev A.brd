@@ -179,7 +179,7 @@
 <wire x1="27.305" y1="78.74" x2="27.305" y2="85.09" width="0.2032" layer="20"/>
 <wire x1="27.305" y1="85.09" x2="32.385" y2="90.17" width="0.2032" layer="20" curve="-90"/>
 <wire x1="32.385" y1="90.17" x2="90.805" y2="90.17" width="0.2032" layer="20"/>
-<text x="80.645" y="88.9" size="1.778" layer="48" rot="R180">VT VCC Communications Board
+<text x="80.645" y="88.9" size="1.778" layer="48" rot="R180">VT VCC Communication Board
 Rev A - 8/02/18</text>
 <rectangle x1="33.569275" y1="80.686275" x2="33.581975" y2="80.692625" layer="200"/>
 <rectangle x1="33.569275" y1="80.692625" x2="33.581975" y2="80.698975" layer="200"/>
@@ -5298,7 +5298,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <smd name="CONFIG2" x="0.3" y="6" dx="3" dy="2.15" layer="1"/>
 <smd name="EXT_EVT" x="0.3" y="9" dx="3" dy="2.15" layer="1"/>
 <smd name="GPIO_A" x="0.3" y="12" dx="3" dy="2.15" layer="1"/>
-<smd name="GND2" x="32.6" y="12" dx="3" dy="2.15" layer="1"/>
+<smd name="GND" x="32.6" y="12" dx="3" dy="2.15" layer="1"/>
 <smd name="GPIO_B" x="0.3" y="15" dx="3" dy="2.15" layer="1"/>
 <smd name="RESET" x="32.6" y="9" dx="3" dy="2.15" layer="1"/>
 <smd name="RF_GND1" x="32.6" y="53.75" dx="3" dy="2.15" layer="1"/>
@@ -5374,12 +5374,25 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="-0.508" y="-0.635" size="0.0254" layer="27">&gt;VALUE</text>
 <text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 </package>
+<package name="TP20SQ" urn="urn:adsk.eagle:footprint:27937/1" library_version="1">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="2" dy="2" layer="1" cream="no"/>
+<text x="-1" y="1.05" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-1.143" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="TP10SQ" urn="urn:adsk.eagle:package:27962/1" type="box" library_version="1">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP10SQ"/>
+</packageinstances>
+</package3d>
+<package3d name="TP20SQ" urn="urn:adsk.eagle:package:27980/1" type="box" library_version="1">
+<description>TEST PAD</description>
+<packageinstances>
+<packageinstance name="TP20SQ"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -5647,6 +5660,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="24.765" y="11.2014" size="1.016" layer="25"/>
 <attribute name="VALUE" x="24.765" y="9.8298" size="1.016" layer="27"/>
 </element>
+<element name="THERM" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1" value="TPSQTP20SQ" x="41.91" y="80.645" smashed="yes">
+<attribute name="NAME" x="39.894" y="78.5454" size="0.8128" layer="25"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="41.91" y="78.105" size="1" layer="37"/>
+</element>
 </elements>
 <signals>
 <signal name="LI_TX">
@@ -5706,11 +5723,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="GND">
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
-<polygon width="0.2032" layer="16">
-<vertex x="0" y="90.17"/>
+<polygon width="0.2032" layer="16" rank="2">
+<vertex x="38.735" y="90.17"/>
 <vertex x="95.885" y="90.17"/>
 <vertex x="95.885" y="0"/>
-<vertex x="0" y="0"/>
+<vertex x="38.735" y="0"/>
 </polygon>
 <contactref element="C4" pad="2"/>
 <contactref element="C3" pad="2"/>
@@ -5741,14 +5758,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="GND" pad="TP"/>
 <wire x1="53.975" y1="3.175" x2="55.245" y2="3.175" width="0.2032" layer="1"/>
 <via x="55.245" y="3.175" extent="1-16" drill="0.254"/>
-<contactref element="LITHIUM-2" pad="THERM3"/>
-<contactref element="LITHIUM-2" pad="THERM1"/>
-<contactref element="LITHIUM-2" pad="THERM2"/>
-<contactref element="LITHIUM-2" pad="THERM4"/>
-<contactref element="LITHIUM-2" pad="GND2"/>
+<contactref element="LITHIUM-2" pad="GND"/>
 <contactref element="LITHIUM-2" pad="RF_GND1"/>
 <contactref element="LITHIUM-2" pad="RF_GND2"/>
-<contactref element="LITHIUM-2" pad="RF_GND"/>
 <wire x1="39.585" y1="70.97" x2="39.7096" y2="71.0946" width="1.524" layer="1"/>
 <wire x1="39.7096" y1="71.0946" x2="42.0878" y2="71.0946" width="1.524" layer="1"/>
 <via x="42.0878" y="71.0946" extent="1-16" drill="1.016"/>
@@ -5762,7 +5774,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="39.585" y1="67.72" x2="39.585" y2="67.371" width="1.397" layer="1"/>
 <wire x1="39.585" y1="67.371" x2="42.418" y2="67.371" width="1.397" layer="1"/>
 <wire x1="42.418" y1="67.371" x2="44.4144" y2="67.371" width="1.397" layer="1"/>
-<wire x1="30.385" y1="53.07" x2="22.065" y2="60.63" width="0" layer="19" extent="1-1"/>
 <wire x1="44.4144" y1="67.371" x2="44.4246" y2="67.3608" width="1.397" layer="1"/>
 </signal>
 <signal name="GPS_TX">
@@ -5892,6 +5903,32 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="23.495" y1="10.475" x2="23.495" y2="3.175" width="0.1524" layer="1"/>
 <wire x1="23.175" y1="10.795" x2="23.495" y2="10.475" width="0.1524" layer="1"/>
 <wire x1="39.37" y1="22.97" x2="35.35" y2="22.97" width="0.2032" layer="1"/>
+</signal>
+<signal name="MNT1">
+<contactref element="LITHIUM-2" pad="THERM4"/>
+<contactref element="LITHIUM-2" pad="THERM1"/>
+<contactref element="LITHIUM-2" pad="RF_GND"/>
+<contactref element="LITHIUM-2" pad="THERM2"/>
+<contactref element="LITHIUM-2" pad="THERM3"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="0" y="90.17"/>
+<vertex x="10.16" y="90.17"/>
+<vertex x="43.815" y="90.17"/>
+<vertex x="43.815" y="78.105"/>
+<vertex x="36.83" y="78.105"/>
+<vertex x="36.83" y="34.29"/>
+<vertex x="0" y="34.29"/>
+</polygon>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="0" y="90.17"/>
+<vertex x="10.16" y="90.17"/>
+<vertex x="38.1" y="90.17"/>
+<vertex x="38.1" y="76.2"/>
+<vertex x="38.1" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
+<contactref element="THERM" pad="TP"/>
+<contactref element="U$1" pad="MNT1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
