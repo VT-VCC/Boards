@@ -617,12 +617,10 @@
 <wire x1="-1.524" y1="33.5876" x2="-1.524" y2="0" width="0.001" layer="51"/>
 <rectangle x1="0" y1="11.4809" x2="11.1506" y2="18.5929" layer="39"/>
 <wire x1="0" y1="31.9914" x2="0" y2="22.9998" width="0.001" layer="21"/>
-<polygon width="0.001" layer="21" spacing="0.3048" pour="hatch">
-<vertex x="11.1506" y="18.5929"/>
-<vertex x="0" y="18.5929"/>
-<vertex x="0" y="11.4809"/>
-<vertex x="11.1506" y="11.4809"/>
-</polygon>
+<wire x1="11.1506" y1="18.5929" x2="0" y2="18.5929" width="0.127" layer="21"/>
+<wire x1="0" y1="18.5929" x2="0" y2="11.4809" width="0.127" layer="21"/>
+<wire x1="0" y1="11.4809" x2="11.1506" y2="11.4809" width="0.127" layer="21"/>
+<wire x1="11.1506" y1="11.4809" x2="11.1506" y2="18.5929" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
