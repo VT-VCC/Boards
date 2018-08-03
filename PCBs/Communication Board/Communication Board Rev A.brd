@@ -5406,35 +5406,35 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="oshpark-2layer">
-<description language="en">&lt;b&gt;OSH Park Design Rules&lt;/b&gt;
+<designrules name="typical_4pcb">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
-Please make sure your boards conform to these design rules.
-&lt;/p&gt;
-&lt;p&gt;
-Note, that not all DRC settings must be set by the manufacturer. Several can be adjusted for the design, including those listed on our docs page here. 
-&lt;a href=&quot;http://docs.oshpark.com/design-tools/eagle/design-rules-files/&quot;&gt;Adjustable Settings&lt;/a&gt;
-&lt;/p&gt;</description>
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;Typical 4PCB&lt;/b&gt;</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035559375mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.035559375mm"/>
-<param name="mtIsolate" value="1.6mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
-<param name="mdWireVia" value="6mil"/>
-<param name="mdPadPad" value="6mil"/>
-<param name="mdPadVia" value="6mil"/>
-<param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
+<param name="mtCopper" value="0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm"/>
+<param name="mtIsolate" value="1.501140625mm 0.149859375mm 0.200659375mm 0.149859375mm 0.200659375mm 0.149859375mm 0.200659375mm 0.149859375mm 0.200659375mm 0.149859375mm 0.200659375mm 0.149859375mm 0.200659375mm 0.149859375mm 0.200659375mm"/>
+<param name="mdWireWire" value="7mil"/>
+<param name="mdWirePad" value="7mil"/>
+<param name="mdWireVia" value="7mil"/>
+<param name="mdPadPad" value="7mil"/>
+<param name="mdPadVia" value="7mil"/>
+<param name="mdViaVia" value="7mil"/>
+<param name="mdSmdPad" value="7mil"/>
+<param name="mdSmdVia" value="7mil"/>
+<param name="mdSmdSmd" value="7mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="15mil"/>
-<param name="mdDrill" value="6mil"/>
+<param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
-<param name="msDrill" value="10mil"/>
-<param name="msMicroVia" value="10mil"/>
+<param name="msWidth" value="7mil"/>
+<param name="msDrill" value="5mil"/>
+<param name="msMicroVia" value="9.98981875mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -5443,19 +5443,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="5mil"/>
+<param name="rlMinPadTop" value="7mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="5mil"/>
+<param name="rlMinPadInner" value="7mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="5mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
 <param name="rlMinViaOuter" value="5mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
 <param name="rlMinViaInner" value="5mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="5mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="5mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
@@ -5464,10 +5464,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="2.5mil"/>
-<param name="mlMaxStopFrame" value="2.5mil"/>
-<param name="mlMinCreamFrame" value="0mil"/>
-<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinCreamFrame" value="1mil"/>
+<param name="mlMaxCreamFrame" value="1mil"/>
 <param name="mlViaStopLimit" value="0mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
@@ -5670,13 +5670,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="83.185" y1="38.1" x2="60.0456" y2="38.1" width="0.2032" layer="1"/>
 <contactref element="U$1" pad="31"/>
 <contactref element="LI_TX" pad="TP"/>
-<wire x1="31.115" y1="5.955" x2="31.115" y2="3.175" width="0.1524" layer="1"/>
+<wire x1="31.115" y1="5.955" x2="31.115" y2="3.175" width="0.2032" layer="1"/>
 <contactref element="LITHIUM-2" pad="TX_UART"/>
 <wire x1="43.18" y1="21.2344" x2="43.18" y2="19.05" width="0.2032" layer="1"/>
 <wire x1="43.18" y1="19.05" x2="41.1" y2="16.97" width="0.2032" layer="1"/>
 <wire x1="41.1" y1="16.97" x2="39.585" y2="16.97" width="0.2032" layer="1"/>
 <wire x1="60.0456" y1="38.1" x2="43.18" y2="21.2344" width="0.2032" layer="1"/>
-<wire x1="39.585" y1="16.97" x2="31.115" y2="8.5" width="0.1524" layer="1"/>
+<wire x1="39.585" y1="16.97" x2="31.115" y2="8.5" width="0.2032" layer="1"/>
 <wire x1="31.115" y1="8.5" x2="31.115" y2="5.955" width="0.2032" layer="1"/>
 </signal>
 <signal name="LI_RX">
@@ -5686,9 +5686,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="LITHIUM-2" pad="RX_UART"/>
 <wire x1="40.29" y1="19.97" x2="39.585" y2="19.97" width="0.2032" layer="1"/>
 <wire x1="60.96" y1="40.64" x2="40.29" y2="19.97" width="0.2032" layer="1"/>
-<wire x1="38.315" y1="19.97" x2="27.305" y2="8.96" width="0.1524" layer="1"/>
-<wire x1="27.305" y1="8.96" x2="27.305" y2="3.175" width="0.1524" layer="1"/>
-<wire x1="39.585" y1="19.97" x2="38.315" y2="19.97" width="0.1524" layer="1"/>
+<wire x1="38.315" y1="19.97" x2="27.305" y2="8.96" width="0.2032" layer="1"/>
+<wire x1="27.305" y1="8.96" x2="27.305" y2="3.175" width="0.2032" layer="1"/>
+<wire x1="39.585" y1="19.97" x2="38.315" y2="19.97" width="0.2032" layer="1"/>
 </signal>
 <signal name="SW3">
 <contactref element="C2" pad="1"/>
@@ -5704,9 +5704,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="37.465" y="66.04"/>
 <vertex x="89.535" y="66.04"/>
 </polygon>
-<wire x1="15.875" y1="3.175" x2="15.875" y2="12.7" width="0.1524" layer="1"/>
-<wire x1="15.875" y1="12.7" x2="41.91" y2="38.735" width="0.1524" layer="1"/>
-<wire x1="41.91" y1="38.735" x2="41.91" y2="60.325" width="0.1524" layer="1"/>
+<wire x1="15.875" y1="3.175" x2="15.875" y2="12.7" width="0.2032" layer="1"/>
+<wire x1="15.875" y1="12.7" x2="41.91" y2="38.735" width="0.2032" layer="1"/>
+<wire x1="41.91" y1="38.735" x2="41.91" y2="60.325" width="0.2032" layer="1"/>
 </signal>
 <signal name="OA_RESET">
 <wire x1="81.28" y1="10.16" x2="72.517" y2="1.397" width="0.2032" layer="1"/>
@@ -5780,14 +5780,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="50.07" y1="24.31" x2="61.32" y2="35.56" width="0.2032" layer="1"/>
 <wire x1="61.32" y1="35.56" x2="83.185" y2="35.56" width="0.2032" layer="1"/>
 <contactref element="GPS_TX" pad="TP"/>
-<wire x1="50.07" y1="24.31" x2="51.3842" y2="22.9958" width="0.1524" layer="1"/>
-<wire x1="51.3842" y1="15.2908" x2="52.07" y2="14.605" width="0.1524" layer="1"/>
-<wire x1="52.07" y1="14.605" x2="52.07" y2="12.573" width="0.1524" layer="1"/>
-<wire x1="43.6118" y1="11.2268" x2="38.735" y2="6.35" width="0.1524" layer="1"/>
-<wire x1="38.735" y1="6.35" x2="38.735" y2="3.175" width="0.1524" layer="1"/>
-<wire x1="51.3842" y1="22.9958" x2="51.3842" y2="15.2908" width="0.1524" layer="1"/>
-<wire x1="52.07" y1="12.573" x2="50.7238" y2="11.2268" width="0.1524" layer="1"/>
-<wire x1="50.7238" y1="11.2268" x2="43.6118" y2="11.2268" width="0.1524" layer="1"/>
+<wire x1="50.07" y1="24.31" x2="51.3842" y2="22.9958" width="0.2032" layer="1"/>
+<wire x1="51.3842" y1="15.2908" x2="52.07" y2="14.605" width="0.2032" layer="1"/>
+<wire x1="52.07" y1="14.605" x2="52.07" y2="12.573" width="0.2032" layer="1"/>
+<wire x1="43.6118" y1="11.2268" x2="38.735" y2="6.35" width="0.2032" layer="1"/>
+<wire x1="38.735" y1="6.35" x2="38.735" y2="3.175" width="0.2032" layer="1"/>
+<wire x1="51.3842" y1="22.9958" x2="51.3842" y2="15.2908" width="0.2032" layer="1"/>
+<wire x1="52.07" y1="12.573" x2="50.7238" y2="11.2268" width="0.2032" layer="1"/>
+<wire x1="50.7238" y1="11.2268" x2="43.6118" y2="11.2268" width="0.2032" layer="1"/>
 </signal>
 <signal name="GPS_RX">
 <wire x1="47.786" y1="24.13" x2="47.786" y2="19.05" width="0.2032" layer="1"/>
@@ -5801,8 +5801,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="47.786" y1="19.05" x2="50.07" y2="16.766" width="0.2032" layer="1"/>
 <wire x1="50.07" y1="16.766" x2="50.07" y2="16.69" width="0.2032" layer="1"/>
 <contactref element="GPS_RX" pad="TP"/>
-<wire x1="47.786" y1="19.05" x2="34.925" y2="6.189" width="0.1524" layer="1"/>
-<wire x1="34.925" y1="6.189" x2="34.925" y2="3.175" width="0.1524" layer="1"/>
+<wire x1="47.786" y1="19.05" x2="34.925" y2="6.189" width="0.2032" layer="1"/>
+<wire x1="34.925" y1="6.189" x2="34.925" y2="3.175" width="0.2032" layer="1"/>
 </signal>
 <signal name="SW9">
 <contactref element="C4" pad="1"/>
@@ -5827,8 +5827,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="61.5" y1="10.16" x2="61.5" y2="6.594" width="0.762" layer="1"/>
 <wire x1="61.563" y1="6.531" x2="61.563" y2="4.191" width="0.762" layer="1"/>
 <contactref element="GPS_3V3" pad="TP"/>
-<wire x1="57.15" y1="10.16" x2="50.165" y2="3.175" width="0.1524" layer="1"/>
-<wire x1="61.5" y1="10.16" x2="57.15" y2="10.16" width="0.1524" layer="1"/>
+<wire x1="57.15" y1="10.16" x2="50.165" y2="3.175" width="0.2032" layer="1"/>
+<wire x1="61.5" y1="10.16" x2="57.15" y2="10.16" width="0.2032" layer="1"/>
 </signal>
 <signal name="GPS_VPP">
 <wire x1="88.9" y1="31.75" x2="89.535" y2="32.385" width="0.2032" layer="1"/>
@@ -5841,12 +5841,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="55.15" y1="24.31" x2="62.59" y2="31.75" width="0.2032" layer="1"/>
 <wire x1="62.59" y1="31.75" x2="88.9" y2="31.75" width="0.2032" layer="1"/>
 <contactref element="GPS_VPP" pad="TP"/>
-<wire x1="55.15" y1="24.31" x2="53.8988" y2="23.0588" width="0.1524" layer="1"/>
-<wire x1="53.8988" y1="12.6238" x2="51.435" y2="10.16" width="0.1524" layer="1"/>
-<wire x1="51.435" y1="10.16" x2="46.355" y2="10.16" width="0.1524" layer="1"/>
-<wire x1="46.355" y1="10.16" x2="42.545" y2="6.35" width="0.1524" layer="1"/>
-<wire x1="42.545" y1="6.35" x2="42.545" y2="3.175" width="0.1524" layer="1"/>
-<wire x1="53.8988" y1="23.0588" x2="53.8988" y2="12.6238" width="0.1524" layer="1"/>
+<wire x1="55.15" y1="24.31" x2="53.8988" y2="23.0588" width="0.2032" layer="1"/>
+<wire x1="53.8988" y1="12.6238" x2="51.435" y2="10.16" width="0.2032" layer="1"/>
+<wire x1="51.435" y1="10.16" x2="46.355" y2="10.16" width="0.2032" layer="1"/>
+<wire x1="46.355" y1="10.16" x2="42.545" y2="6.35" width="0.2032" layer="1"/>
+<wire x1="42.545" y1="6.35" x2="42.545" y2="3.175" width="0.2032" layer="1"/>
+<wire x1="53.8988" y1="23.0588" x2="53.8988" y2="12.6238" width="0.2032" layer="1"/>
 </signal>
 <signal name="GPS_PF">
 <contactref element="U$1" pad="24"/>
@@ -5861,11 +5861,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="86.995" y1="49.53" x2="92.075" y2="49.53" width="0.2032" layer="1"/>
 <wire x1="92.075" y1="21.59" x2="78.105" y2="21.59" width="0.2032" layer="1"/>
 <contactref element="GPS_PF" pad="TP"/>
-<wire x1="55.15" y1="16.69" x2="55.15" y2="11.97" width="0.1524" layer="1"/>
-<wire x1="46.355" y1="6.35" x2="46.355" y2="3.175" width="0.1524" layer="1"/>
-<wire x1="55.15" y1="11.97" x2="52.07" y2="8.89" width="0.1524" layer="1"/>
-<wire x1="52.07" y1="8.89" x2="48.895" y2="8.89" width="0.1524" layer="1"/>
-<wire x1="48.895" y1="8.89" x2="46.355" y2="6.35" width="0.1524" layer="1"/>
+<wire x1="55.15" y1="16.69" x2="55.15" y2="11.97" width="0.2032" layer="1"/>
+<wire x1="46.355" y1="6.35" x2="46.355" y2="3.175" width="0.2032" layer="1"/>
+<wire x1="55.15" y1="11.97" x2="52.07" y2="8.89" width="0.2032" layer="1"/>
+<wire x1="52.07" y1="8.89" x2="48.895" y2="8.89" width="0.2032" layer="1"/>
+<wire x1="48.895" y1="8.89" x2="46.355" y2="6.35" width="0.2032" layer="1"/>
 </signal>
 <signal name="3V3">
 <contactref element="C1" pad="1"/>
@@ -5882,23 +5882,23 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="R1" pad="1"/>
 <wire x1="36.59" y1="28.97" x2="21.275" y2="13.655" width="0.2032" layer="1"/>
 <wire x1="21.275" y1="13.655" x2="21.275" y2="10.795" width="0.2032" layer="1"/>
-<wire x1="21.275" y1="7.62" x2="19.685" y2="6.03" width="0.1524" layer="1"/>
-<wire x1="19.685" y1="6.03" x2="19.685" y2="3.175" width="0.1524" layer="1"/>
-<wire x1="21.275" y1="10.795" x2="21.275" y2="7.62" width="0.1524" layer="1"/>
+<wire x1="21.275" y1="7.62" x2="19.685" y2="6.03" width="0.2032" layer="1"/>
+<wire x1="19.685" y1="6.03" x2="19.685" y2="3.175" width="0.2032" layer="1"/>
+<wire x1="21.275" y1="10.795" x2="21.275" y2="7.62" width="0.2032" layer="1"/>
 </signal>
 <signal name="LI_RST">
 <contactref element="U$1" pad="27"/>
 <contactref element="LITHIUM-2" pad="RESET"/>
 <contactref element="LI_RST" pad="TP"/>
 <contactref element="R1" pad="2"/>
-<wire x1="39.585" y1="22.97" x2="39.37" y2="22.97" width="0.1524" layer="1"/>
+<wire x1="39.585" y1="22.97" x2="39.37" y2="22.97" width="0.2032" layer="1"/>
 <wire x1="35.35" y1="22.97" x2="23.175" y2="10.795" width="0.2032" layer="1"/>
 <wire x1="62.23" y1="43.18" x2="41.91" y2="22.86" width="0.2032" layer="1"/>
 <wire x1="41.91" y1="22.86" x2="39.48" y2="22.86" width="0.2032" layer="1"/>
 <wire x1="39.48" y1="22.86" x2="39.37" y2="22.97" width="0.2032" layer="1"/>
 <wire x1="83.185" y1="43.18" x2="62.23" y2="43.18" width="0.2032" layer="1"/>
-<wire x1="23.495" y1="10.475" x2="23.495" y2="3.175" width="0.1524" layer="1"/>
-<wire x1="23.175" y1="10.795" x2="23.495" y2="10.475" width="0.1524" layer="1"/>
+<wire x1="23.495" y1="10.475" x2="23.495" y2="3.175" width="0.2032" layer="1"/>
+<wire x1="23.175" y1="10.795" x2="23.495" y2="10.475" width="0.2032" layer="1"/>
 <wire x1="39.37" y1="22.97" x2="35.35" y2="22.97" width="0.2032" layer="1"/>
 </signal>
 <signal name="MNT1">
@@ -5936,7 +5936,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="23,1,2ec1b2b1b35e2f2e"/>
+<approved hash="23,1,5fe93d293caa5e6a"/>
 </errors>
 </board>
 </drawing>
