@@ -38,9 +38,9 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
@@ -64,18 +64,6 @@
 <wire x1="4.5" y1="-3.7" x2="4.5" y2="10.7" width="0.127" layer="51"/>
 <wire x1="-4.5" y1="10.7" x2="4.5" y2="10.7" width="0.127" layer="51"/>
 <text x="-5.83865" y="-5.87873125" size="1.273559375" layer="27">&gt;VALUE</text>
-<wire x1="-5.2" y1="0.8" x2="-4.2" y2="0.8" width="0" layer="46"/>
-<wire x1="-4.2" y1="0.8" x2="-4.2" y2="-0.8" width="0" layer="46"/>
-<wire x1="-4.2" y1="-0.8" x2="-5.2" y2="-0.8" width="0" layer="46"/>
-<wire x1="-5.2" y1="-0.8" x2="-5.2" y2="0.8" width="0" layer="46"/>
-<wire x1="-0.8" y1="2.5" x2="-0.8" y2="3.5" width="0" layer="46"/>
-<wire x1="-0.8" y1="3.5" x2="0.8" y2="3.5" width="0" layer="46"/>
-<wire x1="0.8" y1="3.5" x2="0.8" y2="2.5" width="0" layer="46"/>
-<wire x1="0.8" y1="2.5" x2="-0.8" y2="2.5" width="0" layer="46"/>
-<wire x1="-0.8" y1="-3.5" x2="-0.8" y2="-2.5" width="0" layer="46"/>
-<wire x1="-0.8" y1="-2.5" x2="0.8" y2="-2.5" width="0" layer="46"/>
-<wire x1="0.8" y1="-2.5" x2="0.8" y2="-3.5" width="0" layer="46"/>
-<wire x1="0.8" y1="-3.5" x2="-0.8" y2="-3.5" width="0" layer="46"/>
 <text x="-6.27003125" y="11.0352" size="1.274059375" layer="25">&gt;NAME</text>
 <wire x1="-4.5" y1="10.7" x2="4.5" y2="10.7" width="0.127" layer="21"/>
 <wire x1="-4.5" y1="10.7" x2="-4.5" y2="1.7" width="0.127" layer="21"/>
@@ -83,10 +71,28 @@
 <wire x1="4.5" y1="-3.7" x2="1.75" y2="-3.7" width="0.127" layer="21"/>
 <wire x1="-4.5" y1="-1.75" x2="-4.5" y2="-3.7" width="0.127" layer="21"/>
 <wire x1="-4.5" y1="-3.7" x2="-1.75" y2="-3.7" width="0.127" layer="21"/>
-<pad name="2" x="0" y="3" drill="1"/>
-<pad name="1" x="0" y="-3" drill="1"/>
-<pad name="3" x="-4.7" y="0" drill="1" rot="R90"/>
+<pad name="2" x="0" y="3" drill="1" shape="long"/>
+<pad name="1" x="0" y="-3" drill="1" shape="long"/>
+<pad name="3" x="-4.7" y="0" drill="1" shape="long" rot="R90"/>
 <rectangle x1="-6" y1="-4.5" x2="4.75" y2="11" layer="39"/>
+<polygon width="0" layer="46">
+<vertex x="-0.8" y="2.5"/>
+<vertex x="0.8" y="2.5"/>
+<vertex x="0.8" y="3.5"/>
+<vertex x="-0.8" y="3.5"/>
+</polygon>
+<polygon width="0" layer="46">
+<vertex x="-4.2" y="0.8"/>
+<vertex x="-5.2" y="0.8"/>
+<vertex x="-5.2" y="-0.8"/>
+<vertex x="-4.2" y="-0.8"/>
+</polygon>
+<polygon width="0" layer="46">
+<vertex x="0.8" y="-2.5"/>
+<vertex x="-0.8" y="-2.5"/>
+<vertex x="-0.8" y="-3.5"/>
+<vertex x="0.8" y="-3.5"/>
+</polygon>
 </package>
 </packages>
 <symbols>
