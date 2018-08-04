@@ -1,0 +1,31 @@
+Partlist
+
+Exported from Communication Board Rev A.brd at 8/4/18 3:42 PM
+
+EAGLE Version 9.1.2 Copyright (c) 1988-2018 Autodesk, Inc.
+
+Assembly variant: 
+
+Part            Value                             Package               Library         Position (mil)        Orientation
+
+C1              0.1uF                             C0805                 resistor        (1675 1080)           R270
+C2              10uF                              C0805                 resistor        (1670 2615)           R90
+C3              0.1uF                             C0805                 resistor        (2386.33858 257.12598) R180
+C4              1uF                               C0805                 resistor        (2386.33858 165)      R180
+GND             TPSQTP10SQ                        TP10SQ                testpad         (2125 125)            R90
+GPS_3V3         TPSQTP10SQ                        TP10SQ                testpad         (1975 125)            R90
+GPS_PF          TPSQTP10SQ                        TP10SQ                testpad         (1825 125)            R90
+GPS_RX          TPSQTP10SQ                        TP10SQ                testpad         (1375 125)            R90
+GPS_TX          TPSQTP10SQ                        TP10SQ                testpad         (1525 125)            R90
+GPS_VPP         TPSQTP10SQ                        TP10SQ                testpad         (1675 125)            R90
+LITHIUM-2       LI-2                              LI-2                  Cubesat         (275 550)             R0
+LI_3V3          TPSQTP10SQ                        TP10SQ                testpad         (775 125)             R90
+LI_AMP          TPSQTP10SQ                        TP10SQ                testpad         (625 125)             R90
+LI_RST          TPSQTP10SQ                        TP10SQ                testpad         (925 125)             R90
+LI_RX           TPSQTP10SQ                        TP10SQ                testpad         (1075 125)            R90
+LI_TX           TPSQTP10SQ                        TP10SQ                testpad         (1225 125)            R90
+OA_RST          TPSQTP10SQ                        TP10SQ                testpad         (475 125)             R90
+PINAV-CONNECTOR HLE-110-02-X-DVHLE-110-X-DV-PE-BA HLE-110-02-X-DV-PE-BE HLE-110-02-X-DV (2421.25984 807.08661) R180
+R1              47k                               R0805                 resistor        (875 425)             R0
+R2              0                                 R0805                 resistor        (1632 3063)           R270
+U$1             PC104_NO_DIMENSION                PC104_NO_DIMENSION    Cubesat         (0 0)                 R0

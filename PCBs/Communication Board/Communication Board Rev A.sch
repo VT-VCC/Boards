@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.1.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9190,7 +9190,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="47uF"/>
+<part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 <part name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF"/>
@@ -9212,7 +9212,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="LITHIUM-2" library="Cubesat" deviceset="LI-2" device=""/>
 <part name="LI_RST" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1"/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="47k"/>
-<part name="THERM" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1"/>
+<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -9246,7 +9246,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="LITHIUM-2" gate="G$1" x="53.34" y="53.34"/>
 <instance part="LI_RST" gate="G$1" x="7.62" y="81.28" rot="R180"/>
 <instance part="R1" gate="G$1" x="7.62" y="71.12" rot="R90"/>
-<instance part="THERM" gate="G$1" x="48.26" y="48.26"/>
+<instance part="R2" gate="G$1" x="55.88" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -9406,6 +9406,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="175.26" y="48.26"/>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="43.18" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
+<label x="63.5" y="43.18" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPS_TX" class="0">
 <segment>
@@ -9542,12 +9547,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <pinref part="LITHIUM-2" gate="G$1" pin="THERM"/>
 <wire x1="48.26" y1="55.88" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="55.88" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
-<label x="53.34" y="50.8" size="1.778" layer="95"/>
-<wire x1="43.18" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="THERM" gate="G$1" pin="TP"/>
-<wire x1="48.26" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
-<junction x="48.26" y="50.8"/>
+<wire x1="43.18" y1="55.88" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
+<label x="53.34" y="48.26" size="1.778" layer="95"/>
+<wire x1="43.18" y1="48.26" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="48.26" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="48.26" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
+<junction x="48.26" y="48.26"/>
+<wire x1="48.26" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="A" pin="MNT1"/>

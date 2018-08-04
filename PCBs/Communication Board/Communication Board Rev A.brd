@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.1.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -180,7 +180,7 @@
 <wire x1="27.305" y1="85.09" x2="32.385" y2="90.17" width="0.2032" layer="20" curve="-90"/>
 <wire x1="32.385" y1="90.17" x2="90.805" y2="90.17" width="0.2032" layer="20"/>
 <text x="79.375" y="89.535" size="1.778" layer="48" rot="R180">VT VCC Communication Board
-Rev A - 8/02/18</text>
+Rev A - 8/03/18</text>
 <rectangle x1="33.569275" y1="80.686275" x2="33.581975" y2="80.692625" layer="200"/>
 <rectangle x1="33.569275" y1="80.692625" x2="33.581975" y2="80.698975" layer="200"/>
 <rectangle x1="33.562925" y1="80.698975" x2="33.588325" y2="80.705325" layer="200"/>
@@ -5374,25 +5374,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="-0.508" y="-0.635" size="0.0254" layer="27">&gt;VALUE</text>
 <text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 </package>
-<package name="TP20SQ" urn="urn:adsk.eagle:footprint:27937/1" library_version="1">
-<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
-<smd name="TP" x="0" y="0" dx="2" dy="2" layer="1" cream="no"/>
-<text x="-1" y="1.05" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-1.143" size="0.0254" layer="27">&gt;VALUE</text>
-<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
-</package>
 </packages>
 <packages3d>
 <package3d name="TP10SQ" urn="urn:adsk.eagle:package:27962/1" type="box" library_version="1">
 <description>TEST PAD</description>
 <packageinstances>
 <packageinstance name="TP10SQ"/>
-</packageinstances>
-</package3d>
-<package3d name="TP20SQ" urn="urn:adsk.eagle:package:27980/1" type="box" library_version="1">
-<description>TEST PAD</description>
-<packageinstances>
-<packageinstance name="TP20SQ"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -5449,9 +5436,9 @@ einem neuen Namen ab.</description>
 <param name="rlMaxPadInner" value="20mil"/>
 <param name="rlMinPadBottom" value="7mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="5mil"/>
+<param name="rlMinViaOuter" value="7mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="5mil"/>
+<param name="rlMinViaInner" value="7mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -5588,7 +5575,7 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="41.91" y="31.115" size="1.016" layer="25"/>
 <attribute name="VALUE" x="41.275" y="29.845" size="1.016" layer="27"/>
 </element>
-<element name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="47uF" x="42.418" y="66.421" smashed="yes" rot="R90">
+<element name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF" x="42.418" y="66.421" smashed="yes" rot="R90">
 <attribute name="NAME" x="44.7294" y="70.9168" size="1.016" layer="25" rot="R180"/>
 <attribute name="VALUE" x="44.7548" y="69.596" size="1.016" layer="27" rot="R180"/>
 </element>
@@ -5660,9 +5647,9 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="24.765" y="11.2014" size="1.016" layer="25"/>
 <attribute name="VALUE" x="24.765" y="9.8298" size="1.016" layer="27"/>
 </element>
-<element name="THERM" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1" value="TPSQTP20SQ" x="41.91" y="80.645" smashed="yes">
-<attribute name="NAME" x="39.894" y="78.5454" size="0.8128" layer="25"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="41.91" y="78.105" size="1" layer="37"/>
+<element name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0" x="41.4528" y="77.8002" smashed="yes" rot="R270">
+<attribute name="NAME" x="42.5704" y="77.9018" size="1.016" layer="25"/>
+<attribute name="VALUE" x="42.5704" y="76.581" size="1.016" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -5696,12 +5683,12 @@ einem neuen Namen ab.</description>
 <contactref element="LI_AMP" pad="TP"/>
 <contactref element="LITHIUM-2" pad="V_AMP2"/>
 <contactref element="LITHIUM-2" pad="V_AMP1"/>
-<polygon width="0.1524" layer="1" thermals="no">
+<polygon width="0.2032" layer="1" thermals="no">
 <vertex x="89.535" y="65.024"/>
 <vertex x="89.535" y="61.976"/>
 <vertex x="89.535" y="59.69"/>
-<vertex x="37.465" y="59.69"/>
-<vertex x="37.465" y="66.04"/>
+<vertex x="38.1" y="59.69"/>
+<vertex x="38.1" y="66.04"/>
 <vertex x="89.535" y="66.04"/>
 </polygon>
 <wire x1="15.875" y1="3.175" x2="15.875" y2="12.7" width="0.2032" layer="1"/>
@@ -5765,14 +5752,17 @@ einem neuen Namen ab.</description>
 <via x="44.4246" y="67.3608" extent="1-16" drill="0.9398"/>
 <wire x1="42.545" y1="26.482" x2="40.097" y2="26.482" width="0.762" layer="1"/>
 <wire x1="40.097" y1="26.482" x2="39.585" y2="25.97" width="0.762" layer="1"/>
-<wire x1="42.545" y1="26.482" x2="42.545" y2="25.1714" width="0.762" layer="1"/>
-<via x="42.545" y="25.1714" extent="1-16" drill="0.508"/>
+<wire x1="42.545" y1="26.482" x2="42.545" y2="25.0952" width="0.762" layer="1"/>
+<via x="42.545" y="25.0952" extent="1-16" drill="0.508"/>
 <wire x1="39.585" y1="67.72" x2="39.585" y2="67.371" width="1.397" layer="1"/>
 <wire x1="39.585" y1="67.371" x2="42.418" y2="67.371" width="1.397" layer="1"/>
 <wire x1="42.418" y1="67.371" x2="44.4144" y2="67.371" width="1.397" layer="1"/>
 <wire x1="44.4144" y1="67.371" x2="44.4246" y2="67.3608" width="1.397" layer="1"/>
 <wire x1="42.0878" y1="71.0946" x2="39.7096" y2="71.0946" width="1.524" layer="1"/>
 <wire x1="39.7096" y1="71.0946" x2="39.585" y2="70.97" width="1.524" layer="1"/>
+<contactref element="R2" pad="2"/>
+<wire x1="41.4528" y1="76.8502" x2="41.4528" y2="75.184" width="1.27" layer="1"/>
+<via x="41.4528" y="75.184" extent="1-16" drill="0.8382"/>
 </signal>
 <signal name="GPS_TX">
 <contactref element="U$1" pad="33"/>
@@ -5907,7 +5897,7 @@ einem neuen Namen ab.</description>
 <contactref element="LITHIUM-2" pad="RF_GND"/>
 <contactref element="LITHIUM-2" pad="THERM2"/>
 <contactref element="LITHIUM-2" pad="THERM3"/>
-<polygon width="0.1524" layer="1" thermals="no">
+<polygon width="0.2032" layer="1" thermals="no">
 <vertex x="0" y="90.17"/>
 <vertex x="10.16" y="90.17"/>
 <vertex x="43.815" y="90.17"/>
@@ -5916,7 +5906,7 @@ einem neuen Namen ab.</description>
 <vertex x="36.83" y="34.29"/>
 <vertex x="0" y="34.29"/>
 </polygon>
-<polygon width="0.1524" layer="16" thermals="no">
+<polygon width="0.2032" layer="16" thermals="no">
 <vertex x="0" y="90.17"/>
 <vertex x="10.16" y="90.17"/>
 <vertex x="38.1" y="90.17"/>
@@ -5924,8 +5914,8 @@ einem neuen Namen ab.</description>
 <vertex x="38.1" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
-<contactref element="THERM" pad="TP"/>
 <contactref element="U$1" pad="MNT1"/>
+<contactref element="R2" pad="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
